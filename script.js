@@ -5,6 +5,7 @@ let currentFilter = 'all';
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
     loadMenuData();
+    setupScrollToTop();
 });
 
 // Load menu data from JSON file
@@ -31,7 +32,7 @@ function initializeMenu() {
     // Update cafe name in header
     const headerTitle = document.querySelector('.header h1');
     if (headerTitle) {
-        headerTitle.textContent = menuData.cafeName;
+        headerTitle.textContent = `🌿 ${menuData.cafeName}`;
     }
     
     // Create category navigation
@@ -206,9 +207,33 @@ function createMenuItem(item) {
         description.textContent = item.description;
         content.appendChild(description);
     }
-    
+
+    // Badges
+    if (item.badges && item.badges.length > 0) {
+        const badgeContainer = document.createElement('div');
+        badgeContainer.className = 'badge-container';
+        badgeContainer.innerHTML = renderBadges(item.badges);
+        content.appendChild(badgeContainer);
+    }
+
     card.appendChild(content);
     return card;
+}
+
+// Render badge HTML string for a list of badge keys
+function renderBadges(badges) {
+    if (!badges || badges.length === 0) return '';
+
+    const badgeIcons = {
+        'vegan': '🌱',
+        'glutensiz': '🌾',
+        'sekersiz': '🍯',
+        'organik': '☘️'
+    };
+
+    return badges.map(badge =>
+        `<span class="badge badge-${badge}">${badgeIcons[badge] || ''} ${badge}</span>`
+    ).join('');
 }
 
 // Show error message
@@ -225,4 +250,22 @@ function showLoading() {
     if (!container) return;
     
     container.innerHTML = '<div class="loading">Menü yükleniyor</div>';
+}
+
+// Setup scroll-to-top button
+function setupScrollToTop() {
+    const btn = document.getElementById('scrollToTop');
+    if (!btn) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    });
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 }

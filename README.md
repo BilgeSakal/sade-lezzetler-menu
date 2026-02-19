@@ -97,6 +97,29 @@ GitHub Pages aktifleştikten sonra, yukarıdaki URL'yi ziyaret ederek menünüz�
 }
 ```
 
+### Ürünlere Etiket (Badge) Ekleme
+
+Ürünlere sağlık ve içerik etiketleri ekleyebilirsiniz. `menu-data.json`'da ürüne `badges` alanı ekleyin:
+
+```json
+{
+  "id": 1,
+  "name": "Ürün Adı",
+  "description": "Açıklama",
+  "price": "50",
+  "image": "images/urun.jpg",
+  "badges": ["vegan", "organik"]
+}
+```
+
+**Desteklenen Etiketler:**
+- `"vegan"` → 🌱 Vegan
+- `"glutensiz"` → 🌾 Glütensiz
+- `"sekersiz"` → 🍯 Şekersiz
+- `"organik"` → ☘️ Organik
+
+> **Not:** `badges` alanı opsiyoneldir. Etiket eklenmeyen ürünler normal görünür.
+
 ### Ürün veya Kategori Silme
 
 1. `menu-data.json` dosyasını açın
@@ -111,9 +134,10 @@ GitHub Pages aktifleştikten sonra, yukarıdaki URL'yi ziyaret ederek menünüz�
 
 ```css
 :root {
-    --primary-color: #2c3e50;    /* Ana renk */
-    --accent-color: #e74c3c;      /* Vurgu rengi */
-    --background-color: #f8f9fa;  /* Arka plan */
+    --color-primary: #6B8E23;    /* Ana yeşil */
+    --color-secondary: #4A6741;  /* Koyu yeşil */
+    --color-accent: #D4A574;     /* Altın/vurgu */
+    --color-bg: #FDFEF9;         /* Arka plan */
 }
 ```
 
