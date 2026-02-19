@@ -1,0 +1,117 @@
+{
+  "cafeName": "Sade Lezzetler",
+  "categories": [
+    {
+      "id": "sicak-icecekler",
+      "name": "Sıcak İçecekler",
+      "icon": "☕",
+      "items": [
+        {
+          "id": 1,
+          "name": "Türk Kahvesi",
+          "description": "Geleneksel lezzetimiz",
+          "price": "45",
+          "image": "images/turk-kahvesi.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Cappuccino",
+          "description": "Kremalı ve köpüklü",
+          "price": "55",
+          "image": "images/cappuccino.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Filtre Kahve",
+          "description": "Özel çekirdeklerimizden",
+          "price": "50",
+          "image": "images/filtre-kahve.jpg"
+        }
+      ]
+    },
+    {
+      "id": "soguk-icecekler",
+      "name": "Soğuk İçecekler",
+      "icon": "🥤",
+      "items": [
+        {
+          "id": 4,
+          "name": "Ice Latte",
+          "description": "Buzlu sütlü kahve",
+          "price": "60",
+          "image": "images/ice-latte.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Limonata",
+          "description": "Taze sıkılmış limon",
+          "price": "45",
+          "image": "images/limonata.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Milkshake",
+          "description": "Çikolata, vanilya veya çilek",
+          "price": "70",
+          "image": "images/milkshake.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tatlilar",
+      "name": "Tatlılar",
+      "icon": "🍰",
+      "items": [
+        {
+          "id": 7,
+          "name": "Cheesecake",
+          "description": "Orman meyveli",
+          "price": "75",
+          "image": "images/cheesecake.jpg"
+        },
+        {
+          "id": 8,
+          "name": "Brownie",
+          "description": "Sıcak, çikolatalı",
+          "price": "65",
+          "image": "images/brownie.jpg"
+        },
+        {
+          "id": 9,
+          "name": "Tiramisu",
+          "description": "İtalyan klasiği",
+          "price": "80",
+          "image": "images/tiramisu.jpg"
+        }
+      ]
+    },
+    {
+      "id": "yiyecekler",
+      "name": "Yiyecekler",
+      "icon": "🍴",
+      "items": [
+        {
+          "id": 10,
+          "name": "Karışık Tost",
+          "description": "Kaşar, sucuk, domates",
+          "price": "85",
+          "image": "images/tost.jpg"
+        },
+        {
+          "id": 11,
+          "name": "Waffle",
+          "description": "Çikolata soslu",
+          "price": "90",
+          "image": "images/waffle.jpg"
+        },
+        {
+          "id": 12,
+          "name": "Pankek",
+          "description": "Meyve ve akçaağaç şurubu",
+          "price": "85",
+          "image": "images/pankek.jpg"
+        }
+      ]
+    }
+  ]
+}
