@@ -2,6 +2,34 @@
 let menuData = null;
 let currentFilter = 'all';
 
+// Build menu data with auto-generated "En Sevilenler" category
+function buildMenuData(data) {
+    const menuData = JSON.parse(JSON.stringify(data)); // Deep copy
+
+    // Collect all featured items
+    const featuredItems = [];
+    menuData.categories.forEach(category => {
+        category.items.forEach(item => {
+            if (item.featured === true) {
+                featuredItems.push(JSON.parse(JSON.stringify(item)));
+            }
+        });
+    });
+
+    // If there are featured items, prepend the category
+    if (featuredItems.length > 0) {
+        const featuredCategory = {
+            id: 'en-sevilenler',
+            name: '⭐ En Sevilenler',
+            icon: '🌟',
+            items: featuredItems
+        };
+        menuData.categories.unshift(featuredCategory);
+    }
+
+    return menuData;
+}
+
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
     loadMenuData();
@@ -17,7 +45,8 @@ async function loadMenuData() {
             throw new Error('Menü verisi yüklenemedi');
         }
         
-        menuData = await response.json();
+        const rawData = await response.json();
+        menuData = buildMenuData(rawData);
         initializeMenu();
     } catch (error) {
         console.error('Error loading menu data:', error);
@@ -164,8 +193,17 @@ function createCategorySection(category) {
 // Create a single menu item card
 function createMenuItem(item) {
     const card = document.createElement('div');
-    card.className = 'menu-item';
-    
+    card.className = item.featured ? 'menu-item is-featured' : 'menu-item';
+
+    // Featured badge
+    if (item.featured) {
+        const badge = document.createElement('span');
+        badge.className = 'featured-badge';
+        badge.setAttribute('aria-label', 'En Sevilen Ürün');
+        badge.textContent = 'En Sevilen';
+        card.appendChild(badge);
+    }
+
     // Create image
     const img = document.createElement('img');
     img.className = 'menu-item-image';

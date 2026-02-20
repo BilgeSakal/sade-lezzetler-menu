@@ -97,6 +97,29 @@ GitHub Pages aktifleştikten sonra, yukarıdaki URL'yi ziyaret ederek menünüz�
 }
 ```
 
+### 🌟 En Sevilen Ürünler
+
+Herhangi bir ürünü "En Sevilenler" kategorisine eklemek için:
+
+1. `menu-data.json` dosyasını açın
+2. İlgili ürüne `"featured": true` ekleyin:
+
+```json
+{
+  "id": 1,
+  "name": "Avokado Toast",
+  "description": "Müşterilerimizin favorisi",
+  "price": "95",
+  "image": "images/avokado-toast.jpg",
+  "badges": ["vegan", "organik"],
+  "featured": true
+}
+```
+
+3. Ürün otomatik olarak hem "⭐ En Sevilenler" kategorisinde hem de kendi kategorisinde görünecektir.
+
+**Not:** En az bir ürün `"featured": true` olmalı ki "En Sevilenler" kategorisi görünsün.
+
 ### Ürünlere Etiket (Badge) Ekleme
 
 Ürünlere sağlık ve içerik etiketleri ekleyebilirsiniz. `menu-data.json`'da ürüne `badges` alanı ekleyin:
