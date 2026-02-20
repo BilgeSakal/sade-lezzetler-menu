@@ -256,6 +256,51 @@ body {
     margin-bottom: 0.75rem;
 }
 
+/* Featured Badge */
+.featured-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(255, 165, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    z-index: 10;
+}
+
+.featured-badge::before {
+    content: "⭐";
+}
+
+/* Featured item card */
+.menu-item.is-featured {
+    position: relative;
+}
+
+.menu-item.is-featured:hover {
+    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.15);
+}
+
+/* En Sevilenler category button */
+.category-btn[data-category="en-sevilenler"] {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: white;
+    font-weight: 600;
+    border-color: #FFA500;
+}
+
+.category-btn[data-category="en-sevilenler"]:hover,
+.category-btn[data-category="en-sevilenler"].active {
+    background: linear-gradient(135deg, #FFA500, #FF8C00);
+    border-color: #FF8C00;
+}
+
 /* Badge Styles */
 .badge-container {
     display: flex;
