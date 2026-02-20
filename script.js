@@ -20,7 +20,7 @@ function buildMenuData(data) {
     if (featuredItems.length > 0) {
         const featuredCategory = {
             id: 'en-sevilenler',
-            name: '⭐ En Sevilenler',
+            name: 'En Sevilenler',
             icon: '🌟',
             items: featuredItems
         };
@@ -79,17 +79,22 @@ function createCategoryNav() {
     const nav = document.getElementById('categoryNav');
     if (!nav) return;
     
-    // Clear existing content
     nav.innerHTML = '';
     
-    // Add "All" button
+    const featuredCategory = menuData.categories.find(cat => cat.id === 'en-sevilenler');
+    if (featuredCategory) {
+        const btn = createCategoryButton(featuredCategory.id, featuredCategory.name, featuredCategory.icon);
+        nav.appendChild(btn);
+    }
+
     const allBtn = createCategoryButton('all', 'Tümü', '🍽️');
     nav.appendChild(allBtn);
     
-    // Add category buttons
     menuData.categories.forEach(category => {
-        const btn = createCategoryButton(category.id, category.name, category.icon);
-        nav.appendChild(btn);
+        if (category.id !== 'en-sevilenler') {
+            const btn = createCategoryButton(category.id, category.name, category.icon);
+            nav.appendChild(btn);
+        }
     });
 }
 
