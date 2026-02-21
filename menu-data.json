@@ -326,7 +326,7 @@
         {
           "id": 38,
           "name": "Acılı Çıtır",
-          "description": "Kajun soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
+          "description": "Cajun soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
           "price": "370",
           "image": "images/3.jpg",
           "featured": false
@@ -358,8 +358,110 @@
         {
           "id": 42,
           "name": "Sade Çıtır",
-          "description": "200 gr. çıtır tavuk, köz biber sos, ballı hardal, kajun sos, burger sos, mayonez",
+          "description": "200 gr. çıtır tavuk, köz biber sos, ballı hardal, cajun sos, burger sos, mayonez",
           "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "gurme-serisi",
+      "name": "Gurme Serisi",
+      "icon": "🍴",
+      "items": [
+        {
+          "id": 43,
+          "name": "Köfte Burger",
+          "description": "El yapımı hamberger ekmeği, burger sos, marul, 150 gr. dana köfte, cheddar peyniri, karamelize soğan, mayonez, jalapeno, patates",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": true
+        },
+        {
+          "id": 44,
+          "name": "Tavuk Burger",
+          "description": "El yapımı hamburger ekmeği, marul, acılı ballı hardal, çıtır tavuk but, çıtır kaşar peyniri, kuru soğan, mayonez, jalapeno, patates",
+          "price": "550",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 45,
+          "name": "Gurme French Toast",
+          "description": "El yapımı brioche ekmeği, kuzu tandır, kapya biber, soğan, eski kaşar, salata",
+          "price": "650",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "durum-burrito",
+      "name": "Dürüm ve Burrito",
+      "icon": "🍴",
+      "items": [
+        {
+          "id": 46,
+          "name": "Çıtır Tavuk Dürüm",
+          "description": "Cajun sos, çıtır tavuk, marul, jalapeno, mayonez",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": true
+        },
+        {
+          "id": 47,
+          "name": "Tavuk Dürüm",
+          "description": "Mayonez, marul, tavuk, soğan, jalapone, mayonez",
+          "price": "370",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 48,
+          "name": "Köfte Dürüm",
+          "description": "Anne köftesi, burger sos, kaşar peyniri, marul, karamelize soğan, mayonez, jalapeno",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 49,
+          "name": "Tavuk Burrito",
+          "description": "Basmati, labne, soya soslu marine edilmiş mantarlı tavuk göğüs, mısır, meksika fasulyesi, jalapeno, kibrit havuç, sarımsaklı mayonez",
+          "price": "450",
+          "image": "images/3.jpg",
+          "featured": true
+        },
+        {
+          "id": 50,
+          "name": "Meksika Burrito",
+          "description": "Basmati, bolonez sos, guacamole sos, marul, jalapeno, mayonez, jalapeno",
+          "price": "550",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 51,
+          "name": "Köfte Burrito",
+          "description": "Basmati, anne köftesi, köz biber, sade sos, soğan, mayonez, jalapeno",
+          "price": "450",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 52,
+          "name": "Mantar Burrito (Vegan)",
+          "description": "Basmati, avokado sos, sarımsak kreması, soya soslu mantar sote, havuç, mısır, marul, jalapeno",
+          "price": "470",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 53,
+          "name": "Tandır Burrito",
+          "description": "Basmati, sade sos, guacamole sos, kuzu tandır, cheddar peyniri, mayonez, jalapeno",
+          "price": "600",
           "image": "images/3.jpg",
           "featured": false
         }
