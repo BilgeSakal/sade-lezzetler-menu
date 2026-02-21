@@ -211,7 +211,7 @@
           "description": "Ekşi mayalı ekmek, labneli avokado, haşlanmış yumurta, söğüş",
           "price": "400",
           "image": "images/3.jpg",
-          "featured": false
+          "featured": true
         },
         {
           "id": 26,
@@ -227,7 +227,7 @@
           "description": "Ekşi mayalı ekmek, labne, hindi füme, avokado, biberli omlet, söğüş",
           "price": "400",
           "image": "images/3.jpg",
-          "featured": false
+          "featured": true
         },
         {
           "id": 28,
