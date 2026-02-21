@@ -201,31 +201,74 @@
       ]
     },
     {
-      "id": "soguk-icecekler",
-      "name": "Soğuk İçecekler",
+      "id": "ekmek-ustu",
+      "name": "Ekmek Üstü",
       "icon": "🥤",
       "items": [
         {
-          "id": 4,
-          "name": "Ice Latte",
-          "description": "Buzlu sütlü kahve",
-          "price": "60",
-          "image": "images/ice-latte.jpg"
+          "id": 25,
+          "name": "Avokadolu Ekmek Üstü",
+          "description": "Ekşi mayalı ekmek, labneli avokado, haşlanmış yumurta, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
         },
         {
-          "id": 5,
-          "name": "Limonata",
-          "description": "Taze sıkılmış limon",
-          "price": "45",
-          "image": "images/limonata.jpg"
+          "id": 26,
+          "name": "Hellimli Ekmek Üstü",
+          "description": "Ekşi mayalı ekmek, çırpılmış yumurta, ızgara hellim, avokado, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
         },
         {
-          "id": 6,
-          "name": "Milkshake",
-          "description": "Çikolata, vanilya veya çilek",
-          "price": "70",
-          "image": "images/milkshake.jpg"
-        }
+          "id": 27,
+          "name": "Hindi Fümeli Ekmek Üstü",
+          "description": "Ekşi mayalı ekmek, labne, hindi füme, avokado, biberli omlet, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 28,
+          "name": "Pesto Ekmek Üstü",
+          "description": "Ekşi mayalı ekmek, pesto sos, ezine peynirli avokado, göz yumurta, acı yağ, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 29,
+          "name": "Sweet Chilli Ekmek Üstü",
+          "description": "Ekşi mayalı ekmek, avokado, sweet chilli soslu hellim ızgara, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 30,
+          "name": "Sucuklu Ekmek Üstü",
+          "description": "Ekşi mayalı ekmek, sucuklu hellimli yumurta, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 31,
+          "name": "Humuslu Ekmek Üstü",
+          "description": "Ekşi mayalı ekmek, humus, çıtır nohut, pastırma, acı yağ, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 32,
+          "name": "Mantarlı Ekmek Üstü",
+          "description": "Ekşi mayalı ekmek, avokado, sarımsak kreması, soyalı mantar, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
       ]
     },
     {
