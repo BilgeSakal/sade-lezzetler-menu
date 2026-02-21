@@ -2,16 +2,16 @@
   "cafeName": "Sade Lezzetler",
   "categories": [
     {
-      "id": "sicak-icecekler",
-      "name": "Sıcak İçecekler",
+      "id": "bowl",
+      "name": "Bowl",
       "icon": "☕",
       "items": [
         {
           "id": 1,
-          "name": "Türk Kahvesi",
-          "description": "Geleneksel lezzetimiz",
-          "price": "45",
-          "image": "images/turk-kahvesi.jpg",
+          "name": "Şalganlı Kuskus",
+          "description": "Şalgamlı kuskus, ızgara kabak, tavuk sote, yoğurt, yeşil zeytin",
+          "price": "400",
+          "image": "images/1.heic",
           "featured": true
         },
         {
