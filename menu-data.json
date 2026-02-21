@@ -272,61 +272,96 @@
       ]
     },
     {
-      "id": "tatlilar",
-      "name": "Tatlılar",
+      "id": "salatalar",
+      "name": "Salatalar",
       "icon": "🍰",
       "items": [
         {
-          "id": 7,
-          "name": "Cheesecake",
-          "description": "Orman meyveli",
-          "price": "75",
-          "image": "images/cheesecake.jpg",
+          "id": 33,
+          "name": "Tavuklu Salata",
+          "description": "Marul, turşu, soğan, cherry domates, yoğurt sos, ızgara tavuk, mısır, meksika fasulyesi",
+          "price": "370",
+          "image": "images/3.jpg",
           "featured": true
         },
         {
-          "id": 8,
-          "name": "Brownie",
-          "description": "Sıcak, çikolatalı",
-          "price": "65",
-          "image": "images/brownie.jpg",
+          "id": 34,
+          "name": "Hellimli Salata",
+          "description": "Marul, yeşillik, cherry domates, avokado sos, ızgara hellim, kabak çekirdeği",
+          "price": "370",
+          "image": "images/3.jpg",
           "featured": false
         },
         {
-          "id": 9,
-          "name": "Tiramisu",
-          "description": "İtalyan klasiği",
-          "price": "80",
-          "image": "images/tiramisu.jpg",
+          "id": 35,
+          "name": "Falafelli Salata",
+          "description": "Marul, karabuğday, yeşillik, falafel, tahin sos, susam, cherry domates",
+          "price": "370",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 36,
+          "name": "Çıtır Salata",
+          "description": "Marul, roka, turşu, kırmızı soğan, domates, çıtır tavuk, ballı hardal",
+          "price": "370",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 37,
+          "name": "Ton Balıklı Salata",
+          "description": "Marul, yeşillik, cherry domates, ton balığı",
+          "price": "370",
+          "image": "images/3.jpg",
           "featured": false
         }
       ]
     },
     {
-      "id": "yiyecekler",
-      "name": "Yiyecekler",
+      "id": "cıtırlar",
+      "name": "Çıtırlar",
       "icon": "🍴",
       "items": [
         {
-          "id": 10,
-          "name": "Karışık Tost",
-          "description": "Kaşar, sucuk, domates",
-          "price": "85",
-          "image": "images/tost.jpg"
+          "id": 38,
+          "name": "Acılı Çıtır",
+          "description": "Kajun soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
+          "price": "370",
+          "image": "images/3.jpg",
+          "featured": false
         },
         {
-          "id": 11,
-          "name": "Waffle",
-          "description": "Çikolata soslu",
-          "price": "90",
-          "image": "images/waffle.jpg"
+          "id": 39,
+          "name": "Sweet Chilli Çıtır",
+          "description": "Sweet Chilli soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
+          "price": "370",
+          "image": "images/3.jpg",
+          "featured": false
         },
         {
-          "id": 12,
-          "name": "Pankek",
-          "description": "Meyve ve akçaağaç şurubu",
-          "price": "85",
-          "image": "images/pankek.jpg"
+          "id": 40,
+          "name": "Çıtır Tahin",
+          "description": "Thai soslu çıtır tavuk, patates, köz biber sos, mayonez",
+          "price": "370",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 41,
+          "name": "Çıtır Köri",
+          "description": "Körili çıtır tavuk, patates, köz biber sos, mayonez",
+          "price": "370",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 42,
+          "name": "Sade Çıtır",
+          "description": "200 gr. çıtır tavuk, köz biber sos, ballı hardal, kajun sos, burger sos, mayonez",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
         }
       ]
     }
