@@ -4,7 +4,7 @@
     {
       "id": "bowl",
       "name": "Bowl",
-      "icon": "☕",
+      "icon": "🥗",
       "items": [
         {
           "id": 1,
@@ -203,7 +203,7 @@
     {
       "id": "ekmek-ustu",
       "name": "Ekmek Üstü",
-      "icon": "🥤",
+      "icon": "🥪",
       "items": [
         {
           "id": 25,
@@ -274,7 +274,7 @@
     {
       "id": "salatalar",
       "name": "Salatalar",
-      "icon": "🍰",
+      "icon": "🥬",
       "items": [
         {
           "id": 33,
@@ -321,7 +321,7 @@
     {
       "id": "cıtırlar",
       "name": "Çıtırlar",
-      "icon": "🍴",
+      "icon": "🍗",
       "items": [
         {
           "id": 38,
@@ -368,7 +368,7 @@
     {
       "id": "gurme-serisi",
       "name": "Gurme Serisi",
-      "icon": "🍴",
+      "icon": "👨‍🍳",
       "items": [
         {
           "id": 43,
@@ -399,7 +399,7 @@
     {
       "id": "durum-burrito",
       "name": "Dürüm ve Burrito",
-      "icon": "🍴",
+      "icon": "🌯",
       "items": [
         {
           "id": 46,
