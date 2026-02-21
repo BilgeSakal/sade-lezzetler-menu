@@ -86,9 +86,6 @@ function createCategoryNav() {
         const btn = createCategoryButton(featuredCategory.id, featuredCategory.name, featuredCategory.icon);
         nav.appendChild(btn);
     }
-
-    const allBtn = createCategoryButton('all', 'Tümü', '🍽️');
-    nav.appendChild(allBtn);
     
     menuData.categories.forEach(category => {
         if (category.id !== 'en-sevilenler') {
