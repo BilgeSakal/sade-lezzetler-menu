@@ -11,7 +11,7 @@
           "name": "Şalgamlı Kuskus",
           "description": "Şalgamlı kuskus, ızgara kabak, tavuk sote, yoğurt, yeşil zeytin",
           "price": "400",
-          "image": "images/1.heic",
+          "image": "images/1.jpg",
           "featured": true
         },
         {
@@ -35,7 +35,7 @@
           "name": "Kinoalı Hellim Bowl",
           "description": "Kinoa salatası, ızgara hellim, avokado, kuru üzüm",
           "price": "400",
-          "image": "images/3.jpg",
+          "image": "images/4.jpg",
           "featured": false
         },
         {
@@ -43,7 +43,7 @@
           "name": "Izgara Tavuk Bowl",
           "description": "Kuru cacık, ızgara tavuk, marul, avokado, yeşil zeytin",
           "price": "400",
-          "image": "images/3.jpg",
+          "image": "images/5.jpg",
           "featured": false
         },
         {
@@ -51,7 +51,7 @@
           "name": "Mantarlı Tavuklu Bowl",
           "description": "Makarna, kremalı mantarlı tavuk, marul, mor lahana, mısır",
           "price": "400",
-          "image": "images/3.jpg",
+          "image": "images/6.jpg",
           "featured": true
         },
         {
@@ -59,7 +59,7 @@
           "name": "Tavuk Pilav Bowl",
           "description": "Nohutlu pilav, haşlanmış tavuk, çoban salata",
           "price": "400",
-          "image": "images/3.jpg",
+          "image": "images/7.jpg",
           "featured": false
         },
         {
@@ -143,7 +143,7 @@
           "featured": false
         },
         {
-          "id": 22,
+          "id": 18,
           "name": "Sipesiyal Köfte Bowl",
           "description": "Pilav, sebzeli dometesli köfte, köz patlıcan salatası",
           "price": "400",
@@ -151,7 +151,7 @@
           "featured": false
         },
         {
-          "id": 24,
+          "id": 19,
           "name": "Humus Bowl",
           "description": "Kinoa, humus, çıtır nohut, söğüş, avokado, yeşil zeytin",
           "price": "400",
@@ -159,7 +159,7 @@
           "featured": false
         },
         {
-          "id": 18,
+          "id": 20,
           "name": "Somon Bowl",
           "description": "Soya soslu patates, ızgara kabak, biber, somon",
           "price": "650",
@@ -167,7 +167,7 @@
           "featured": false
         },
         {
-          "id": 19,
+          "id": 21,
           "name": "Kremalı Somon",
           "description": "Kinoa, krema soslu somon, roka, havuç",
           "price": "650",
@@ -175,7 +175,7 @@
           "featured": false
         },
         {
-          "id": 20,
+          "id": 22,
           "name": "Teriyaki Soslu Somon",
           "description": "Basmati, teriyaki soslu somon, lahana turşusu, havuç",
           "price": "650",
@@ -183,7 +183,7 @@
           "featured": false
         },
         {
-          "id": 21,
+          "id": 23,
           "name": "Tandır Bowl",
           "description": "Siyah pirinç, kuzu tandır, guacamole sos, baharatlı mısır, sade sos, mısır",
           "price": "650",
@@ -191,7 +191,7 @@
           "featured": false
         },
         {
-          "id": 23,
+          "id": 24,
           "name": "Happy Fish",
           "description": "Pesto soslu kuskus, somon, salata",
           "price": "650",
