@@ -44,9 +44,6 @@ body {
     color: white;
     padding: 2rem 1rem;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     box-shadow: var(--shadow-md);
 }
 
@@ -103,10 +100,10 @@ body {
     gap: 0.5rem;
     overflow-x: auto;
     scroll-behavior: smooth;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
-    top: 100px;
-    z-index: 999;
+    top: 0;
+    z-index: 100;
     -webkit-overflow-scrolling: touch;
 }
 
