@@ -99,6 +99,7 @@ body {
     display: flex;
     gap: 0.5rem;
     overflow-x: auto;
+    margin: 0;
     scroll-behavior: smooth;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -151,6 +152,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
+}
+
+.container,
+.main {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 /* Category Section */
