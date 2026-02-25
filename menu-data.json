@@ -1043,6 +1043,92 @@
           "featured": false
         }
       ]
+    },
+    {
+      "id": "smoothie",
+      "name": "Smoothie",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": 120,
+          "name": "Böğürtlenli Smoothie",
+          "description": "",
+          "price": "200",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 121,
+          "name": "Avokadolu Smoothie",
+          "description": "",
+          "price": "200",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 122,
+          "name": "Yeşil Detoks Smoothie",
+          "description": "",
+          "price": "200",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 123,
+          "name": "Kakaolu Smoothie",
+          "description": "",
+          "price": "200",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "dogal-icecekler",
+      "name": "Doğal İçecekler",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": 124,
+          "name": "Limonata Çeşitleri",
+          "description": "Sade, çilekli, muzlu, böğürtlenli, sütlü",
+          "price": "75",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 125,
+          "name": "Ayran Çeşitleri",
+          "description": "Sade, yeşil, sarı, pembe",
+          "price": "75",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 126,
+          "name": "Yerli Gazoz Çeşitleri",
+          "description": "",
+          "price": "70",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+        {
+          "id": 127,
+          "name": "Çay",
+          "description": "",
+          "price": "60",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 128,
+          "name": "Su",
+          "description": "",
+          "price": "20",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
     }
   ]
 }
