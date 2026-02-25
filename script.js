@@ -212,11 +212,23 @@ function createMenuItem(item) {
     img.alt = item.name;
     img.loading = 'lazy';
     
-    // Set image source with fallback
-    img.src = item.image;
-    img.onerror = () => {
-        img.src = 'images/placeholder.svg';
+    // Auto-generate path from item ID: images/{id}.jpg
+    const imagePath = `images/${item.id}.jpg`;
+
+    // Handle image load errors (if image doesn't exist, show placeholder)
+    img.onerror = function() {
+        console.error('❌ Image not found:', imagePath);
+        this.src = 'images/placeholder.svg';
+        this.onerror = null; // Prevent infinite loop if placeholder also fails
     };
+
+    // Log successful image loads
+    img.onload = function() {
+        console.log('✅ Image loaded:', imagePath);
+    };
+
+    // Set the auto-generated image path
+    img.src = imagePath;
     
     card.appendChild(img);
     
