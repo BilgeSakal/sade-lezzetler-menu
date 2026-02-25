@@ -11,7 +11,6 @@
           "name": "Şalgamlı Kuskus",
           "description": "Şalgamlı kuskus, ızgara kabak, tavuk sote, yoğurt, yeşil zeytin",
           "price": "400",
-          "image": "images/1.jpg",
           "featured": true
         },
         {
@@ -19,7 +18,6 @@
           "name": "Falafel Bowl",
           "description": "Karabuğday salatası, falafel, söğüş, tahin sos",
           "price": "400",
-          "image": "images/2.jpg",
           "featured": false
         },
         {
@@ -27,7 +25,6 @@
           "name": "Fettucini Bowl",
           "description": "Limon soslu kremalı makarna, haşlanmış sebze, ızgara tavuk",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": true
         },
         {
@@ -35,7 +32,6 @@
           "name": "Kinoalı Hellim Bowl",
           "description": "Kinoa salatası, ızgara hellim, avokado, kuru üzüm",
           "price": "400",
-          "image": "images/4.jpg",
           "featured": false
         },
         {
@@ -43,7 +39,6 @@
           "name": "Izgara Tavuk Bowl",
           "description": "Kuru cacık, ızgara tavuk, marul, avokado, yeşil zeytin",
           "price": "400",
-          "image": "images/5.jpg",
           "featured": false
         },
         {
@@ -51,7 +46,6 @@
           "name": "Mantarlı Tavuklu Bowl",
           "description": "Makarna, kremalı mantarlı tavuk, marul, mor lahana, mısır",
           "price": "400",
-          "image": "images/6.jpg",
           "featured": true
         },
         {
@@ -59,7 +53,6 @@
           "name": "Tavuk Pilav Bowl",
           "description": "Nohutlu pilav, haşlanmış tavuk, çoban salata",
           "price": "400",
-          "image": "images/7.jpg",
           "featured": false
         },
         {
@@ -67,7 +60,6 @@
           "name": "Thai Usulü Bowl",
           "description": "Sade pilav, ızgara mantar, thai soslu çıtır tavuk, salata",
           "price": "400",
-          "image": "images/8.jpg",
           "featured": true
         },
         {
@@ -75,7 +67,6 @@
           "name": "Köri Bowl",
           "description": "Makarna, köri soslu tavuk, salata",
           "price": "400",
-          "image": "images/9.jpg",
           "featured": false
         },
         {
@@ -83,7 +74,6 @@
           "name": "Teriyaki Bowl",
           "description": "Pilav, teriyaki soslu tavuk, salata",
           "price": "400",
-          "image": "images/10.jpg",
           "featured": false
         },
         {
@@ -91,7 +81,6 @@
           "name": "Bulgur Bowl",
           "description": "Meyhane pilavı, kaşarlı mantar, havuç tarator",
           "price": "400",
-          "image": "images/11.jpg",
           "featured": false
         },
         {
@@ -99,7 +88,6 @@
           "name": "Mantarlı Kuskus Bowl",
           "description": "Mantarlı peynir soslu kuskus, haşlanmış sebze, ızgara tavuk",
           "price": "420",
-          "image": "images/12.jpg",
           "featured": true
         },
         {
@@ -107,7 +95,6 @@
           "name": "Vegan Bowl",
           "description": "Mercimek salatası, marul, söğüş, kavrulmuş nohut, lahana turşusu",
           "price": "400",
-          "image": "images/13.jpg",
           "featured": false
         },
         {
@@ -115,7 +102,6 @@
           "name": "Köfte Bowl",
           "description": "Pilav, çoban salata, anne köftesi, patates",
           "price": "400",
-          "image": "images/14.jpg",
           "featured": false
         },
         {
@@ -123,7 +109,6 @@
           "name": "Sade Soslu Bowl",
           "description": "Pilav, sade soslu tavuk, salata",
           "price": "400",
-          "image": "images/15.jpg",
           "featured": false
         },
         {
@@ -131,7 +116,6 @@
           "name": "Köz Patlıcanlı Kuskus Bowl",
           "description": "Sade soslu kuskus, ızgara tavuk, salata",
           "price": "400",
-          "image": "images/16.jpg",
           "featured": false
         },
         {
@@ -139,7 +123,6 @@
           "name": "Pesto Bowl",
           "description": "Pesto soslu fettucini, ızgara tavuk, salata",
           "price": "400",
-          "image": "images/17.jpg",
           "featured": false
         },
         {
@@ -147,7 +130,6 @@
           "name": "Spesiyal Köfte Bowl",
           "description": "Pilav, sebzeli dometesli köfte, köz patlıcan salatası",
           "price": "400",
-          "image": "images/18.jpg",
           "featured": false
         },
         {
@@ -155,7 +137,6 @@
           "name": "Humus Bowl",
           "description": "Kinoa, humus, çıtır nohut, söğüş, avokado, yeşil zeytin",
           "price": "400",
-          "image": "images/19.jpg",
           "featured": false
         },
         {
@@ -163,7 +144,6 @@
           "name": "Somon Bowl",
           "description": "Soya soslu patates, ızgara kabak, biber, somon",
           "price": "650",
-          "image": "images/20.jpg",
           "featured": false
         },
         {
@@ -171,7 +151,6 @@
           "name": "Kremalı Somon",
           "description": "Kinoa, krema soslu somon, roka, havuç",
           "price": "650",
-          "image": "images/21.jpg",
           "featured": false
         },
         {
@@ -179,7 +158,6 @@
           "name": "Teriyaki Soslu Somon",
           "description": "Basmati, teriyaki soslu somon, lahana turşusu, havuç",
           "price": "650",
-          "image": "images/22.jpg",
           "featured": false
         },
         {
@@ -187,7 +165,6 @@
           "name": "Tandır Bowl",
           "description": "Siyah pirinç, kuzu tandır, guacamole sos, baharatlı mısır, sade sos, mısır",
           "price": "650",
-          "image": "images/23.jpg",
           "featured": false
         },
         {
@@ -195,7 +172,6 @@
           "name": "Happy Fish",
           "description": "Pesto soslu kuskus, somon, salata",
           "price": "650",
-          "image": "images/24.jpg",
           "featured": false
         }
       ]
@@ -210,7 +186,6 @@
           "name": "Avokadolu Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, labneli avokado, haşlanmış yumurta, söğüş",
           "price": "400",
-          "image": "images/25.jpg",
           "featured": true
         },
         {
@@ -218,7 +193,6 @@
           "name": "Hellimli Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, çırpılmış yumurta, ızgara hellim, avokado, söğüş",
           "price": "400",
-          "image": "images/26.jpg",
           "featured": false
         },
         {
@@ -226,7 +200,6 @@
           "name": "Hindi Fümeli Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, labne, hindi füme, avokado, biberli omlet, söğüş",
           "price": "400",
-          "image": "images/27.jpg",
           "featured": true
         },
         {
@@ -234,7 +207,6 @@
           "name": "Pesto Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, pesto sos, ezine peynirli avokado, göz yumurta, acı yağ, söğüş",
           "price": "400",
-          "image": "images/28.jpg",
           "featured": false
         },
         {
@@ -242,7 +214,6 @@
           "name": "Sweet Chilli Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, avokado, sweet chilli soslu hellim ızgara, söğüş",
           "price": "400",
-          "image": "images/29.jpg",
           "featured": false
         },
         {
@@ -250,7 +221,6 @@
           "name": "Sucuklu Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, sucuklu hellimli yumurta, söğüş",
           "price": "400",
-          "image": "images/30.jpg",
           "featured": false
         },
         {
@@ -258,7 +228,6 @@
           "name": "Humuslu Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, humus, çıtır nohut, pastırma, acı yağ, söğüş",
           "price": "400",
-          "image": "images/31.jpg",
           "featured": false
         },
         {
@@ -266,7 +235,6 @@
           "name": "Mantarlı Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, avokado, sarımsak kreması, soyalı mantar, söğüş",
           "price": "400",
-          "image": "images/32.jpg",
           "featured": false
         }
       ]
@@ -281,7 +249,6 @@
           "name": "Tavuklu Salata",
           "description": "Marul, turşu, soğan, cherry domates, yoğurt sos, ızgara tavuk, mısır, meksika fasulyesi",
           "price": "370",
-          "image": "images/33.jpg",
           "featured": true
         },
         {
@@ -289,7 +256,6 @@
           "name": "Hellimli Salata",
           "description": "Marul, yeşillik, cherry domates, avokado sos, ızgara hellim, kabak çekirdeği",
           "price": "370",
-          "image": "images/34.jpg",
           "featured": false
         },
         {
@@ -297,7 +263,6 @@
           "name": "Falafelli Salata",
           "description": "Marul, karabuğday, yeşillik, falafel, tahin sos, susam, cherry domates",
           "price": "370",
-          "image": "images/35.jpg",
           "featured": false
         },
         {
@@ -305,7 +270,6 @@
           "name": "Çıtır Salata",
           "description": "Marul, roka, turşu, kırmızı soğan, domates, çıtır tavuk, ballı hardal",
           "price": "370",
-          "image": "images/36.jpg",
           "featured": false
         },
         {
@@ -313,7 +277,6 @@
           "name": "Ton Balıklı Salata",
           "description": "Marul, yeşillik, cherry domates, ton balığı",
           "price": "370",
-          "image": "images/37.jpg",
           "featured": false
         }
       ]
@@ -328,7 +291,6 @@
           "name": "Acılı Çıtır",
           "description": "Cajun soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
           "price": "370",
-          "image": "images/38.jpg",
           "featured": false
         },
         {
@@ -336,7 +298,6 @@
           "name": "Sweet Chilli Çıtır",
           "description": "Sweet Chilli soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
           "price": "370",
-          "image": "images/39.jpg",
           "featured": false
         },
         {
@@ -344,7 +305,6 @@
           "name": "Çıtır Thai",
           "description": "Thai soslu çıtır tavuk, patates, köz biber sos, mayonez",
           "price": "370",
-          "image": "images/40.jpg",
           "featured": false
         },
         {
@@ -352,7 +312,6 @@
           "name": "Çıtır Köri",
           "description": "Körili çıtır tavuk, patates, köz biber sos, mayonez",
           "price": "370",
-          "image": "images/41.jpg",
           "featured": false
         },
         {
@@ -360,7 +319,6 @@
           "name": "Sade Çıtır",
           "description": "200 gr. çıtır tavuk, köz biber sos, ballı hardal, cajun sos, burger sos, mayonez",
           "price": "400",
-          "image": "images/42.jpg",
           "featured": false
         }
       ]
@@ -375,7 +333,6 @@
           "name": "Köfte Burger",
           "description": "El yapımı hamberger ekmeği, burger sos, marul, 150 gr. dana köfte, cheddar peyniri, karamelize soğan, mayonez, jalapeno, patates",
           "price": "500",
-          "image": "images/43.jpg",
           "featured": true
         },
         {
@@ -383,7 +340,6 @@
           "name": "Tavuk Burger",
           "description": "El yapımı hamburger ekmeği, marul, acılı ballı hardal, çıtır tavuk but, çıtır kaşar peyniri, kuru soğan, mayonez, jalapeno, patates",
           "price": "550",
-          "image": "images/44.jpg",
           "featured": false
         },
         {
@@ -391,7 +347,6 @@
           "name": "Gurme French Toast",
           "description": "El yapımı brioche ekmeği, kuzu tandır, kapya biber, soğan, eski kaşar, salata",
           "price": "650",
-          "image": "images/45.jpg",
           "featured": false
         }
       ]
@@ -406,7 +361,6 @@
           "name": "Çıtır Tavuk Dürüm",
           "description": "Cajun sos, çıtır tavuk, marul, jalapeno, mayonez",
           "price": "400",
-          "image": "images/46.jpg",
           "featured": true
         },
         {
@@ -414,7 +368,6 @@
           "name": "Tavuk Dürüm",
           "description": "Mayonez, marul, tavuk, soğan, jalapone, mayonez",
           "price": "370",
-          "image": "images/47.jpg",
           "featured": false
         },
         {
@@ -422,7 +375,6 @@
           "name": "Köfte Dürüm",
           "description": "Anne köftesi, burger sos, kaşar peyniri, marul, karamelize soğan, mayonez, jalapeno",
           "price": "400",
-          "image": "images/48.jpg",
           "featured": false
         },
         {
@@ -430,7 +382,6 @@
           "name": "Tavuk Burrito",
           "description": "Basmati, labne, soya soslu marine edilmiş mantarlı tavuk göğüs, mısır, meksika fasulyesi, jalapeno, kibrit havuç, sarımsaklı mayonez",
           "price": "450",
-          "image": "images/49.jpg",
           "featured": true
         },
         {
@@ -438,7 +389,6 @@
           "name": "Meksika Burrito",
           "description": "Basmati, bolonez sos, guacamole sos, marul, jalapeno, mayonez, jalapeno",
           "price": "550",
-          "image": "images/50.jpg",
           "featured": false
         },
         {
@@ -446,7 +396,6 @@
           "name": "Köfte Burrito",
           "description": "Basmati, anne köftesi, köz biber, sade sos, soğan, mayonez, jalapeno",
           "price": "450",
-          "image": "images/51.jpg",
           "featured": false
         },
         {
@@ -454,7 +403,6 @@
           "name": "Mantar Burrito (Vegan)",
           "description": "Basmati, avokado sos, sarımsak kreması, soya soslu mantar sote, havuç, mısır, marul, jalapeno",
           "price": "470",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -462,7 +410,6 @@
           "name": "Tandır Burrito",
           "description": "Basmati, sade sos, guacamole sos, kuzu tandır, cheddar peyniri, mayonez, jalapeno",
           "price": "600",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
@@ -477,7 +424,6 @@
           "name": "Çilekli French Toast",
           "description": "Brioche ekmeği, labne kreması, kırmızı meyve, bal",
           "price": "450",
-          "image": "images/3.jpg",
           "featured": true
         },
         {
@@ -485,7 +431,6 @@
           "name": "Marmelatlı French Toast",
           "description": "Brioche ekmeği, labne kreması, orman meyvesi marmelatı, limon kabuğu, nane",
           "price": "450",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -493,7 +438,6 @@
           "name": "Muzlu French Toast",
           "description": "Brioche ekmeği, yer fıstığı ezmesi, karamelize muz, bal, badem",
           "price": "450",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -501,7 +445,6 @@
           "name": "Fondü French Toast",
           "description": "Brioche ekmeği, eritilmiş çikolata, çilek, muz",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -509,7 +452,6 @@
           "name": "Çıtır French Toast",
           "description": "Brioche ekmeği, hindi fümeli sos, çıtır tavuk, kuru domates",
           "price": "450",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -517,7 +459,6 @@
           "name": "Scrambled Egg French Toast",
           "description": "Brioche ekmeği, hindi füme, kaşar peyniri, çırpılmış yumurta, söğüş",
           "price": "450",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
@@ -532,7 +473,6 @@
           "name": "Çıtır Bun (3 adet)",
           "description": "Cajun sos, marul, kuru soğan, çıtır tavuk",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -540,7 +480,6 @@
           "name": "Köfte Bun (3 adet)",
           "description": "Burger sos, marul, domates, anne köftesi",
           "price": "470",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -548,7 +487,6 @@
           "name": "Sote Bun (3 adet)",
           "description": "Sweet chilli sos, kaşar peyniri, jalapeno, tavuk sote",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -556,7 +494,6 @@
           "name": "Sucuk Bun (3 adet)",
           "description": "Izgara hellim, sucuk, domates, marul",
           "price": "470",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -564,7 +501,6 @@
           "name": "Tavuklu Soğuk Bun (3 adet)",
           "description": "Tavuklu meze, marul",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -572,7 +508,6 @@
           "name": "Tofu Bun (3 adet) (Vegan)",
           "description": "Sade tofu, havuç, salatalık, lahana turşusu",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -580,7 +515,6 @@
           "name": "Teriyaki Bun (3 adet)",
           "description": "Teriyaki soslu tavuk, soğan, havuç",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -588,7 +522,6 @@
           "name": "Tandır Bun (3 adet)",
           "description": "Kuzu tandır, cheddar peyniri, kibrit patates",
           "price": "520",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -596,7 +529,6 @@
           "name": "Meksika Bun (3 adet)",
           "description": "Bolonez sos, guacamole sos, kibrit patates",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
@@ -611,7 +543,6 @@
           "name": "Peynirli Tost",
           "description": "Cheddar peyniri, kaşar peyniri, söğüş",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -619,7 +550,6 @@
           "name": "Sade'nin Tostu",
           "description": "Kuru domates sos, pesto sos, kaşar peyniri, söğüş",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -627,7 +557,6 @@
           "name": "Anne Tostu",
           "description": "Beyaz peynir, kaşar peyniri, biber, domates, söğüş",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -635,7 +564,6 @@
           "name": "Sucuklu Tost",
           "description": "Sucuk, kaşar peyniri, söğüş",
           "price": "450",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -643,7 +571,6 @@
           "name": "Tandır Tost",
           "description": "Kuzu tandır, eski kaşar",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
@@ -658,7 +585,6 @@
           "name": "Sebzeli Sandviç",
           "description": "Foccacia ekmeği, domates sos, roka, ızgara sebzeler, ezine peyniri",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -666,7 +592,6 @@
           "name": "Tavuklu Soğuk Sandviç",
           "description": "Foccaccia ekmeği, tavuklu meze, soğan turşusu, marul",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
@@ -681,7 +606,6 @@
           "name": "Kremalı Mantarlı Makarna",
           "description": "Fettucini, kuru soğan, mantar",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -689,7 +613,6 @@
           "name": "Tavuklu Fettucini",
           "description": "Tavuk, krema, köy peyniri, çıtır soğan",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -697,7 +620,6 @@
           "name": "Peynir Soslu Penne",
           "description": "4 çeşit peynir, muskat",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -705,7 +627,6 @@
           "name": "Cheddar Soslu Makarna",
           "description": "Çıtır tavuklu",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -713,7 +634,6 @@
           "name": "Tavuklu Noodle",
           "description": "Tavuk, kabak, havuç, biber, taze soğan",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -721,7 +641,6 @@
           "name": "Sebzeli Noodle",
           "description": "Mantar, kabak, havuç, biber, taze soğan",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
@@ -736,7 +655,6 @@
           "name": "Tavuklu Labne Soslu Taco (3 adet)",
           "description": "Labne sos, tavuk, meksika fasulyesi, jalapeno, çıtır soğan",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": true
         },
         {
@@ -744,7 +662,6 @@
           "name": "Klasik Taco",
           "description": "Bolonez sos, guacamole sos, kibrit patates, meksika fasulyesi, jalapeno",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
@@ -759,7 +676,6 @@
           "name": "SADE Tofu Bowl",
           "description": "Zerdeçallı basmati, SADE sos, tofu, salata, avokado",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -767,7 +683,6 @@
           "name": "Vegan Thai Usulü Bowl",
           "description": "Basmati, thai soslu tofu, ızgara mantar, salata",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -775,7 +690,6 @@
           "name": "Çıtır Tofu Salata",
           "description": "Marul, roka, cherry domates, salatalık, mısır, taze soğan, avokado, çıtır tofu, böğürtlen sos",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -783,7 +697,6 @@
           "name": "Sweet Chilli Soslu Bowl",
           "description": "Basmati, haşlanmış sebze, sweet chilli soslu tofu",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -791,7 +704,6 @@
           "name": "Pirinç Bowl",
           "description": "Siyah pirinç, humus, çıtır nohut, teriyaki soslu tofu, salata",
           "price": "400",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -799,7 +711,6 @@
           "name": "Glutensiz Tofu Bun (3 adet)",
           "description": "SADE soslu tofu, salatalık, havuç, lahana turşusu",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -807,7 +718,6 @@
           "name": "Glutensiz Teriyaki Bun (3 adet)",
           "description": "Teriyaki soslu tavuk, havuç, taze soğan",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -815,7 +725,6 @@
           "name": "Glutensiz Tavuklu Soğuk Bun (3 adet)",
           "description": "Tavuklu meze, marul",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -823,7 +732,6 @@
           "name": "Glutensiz Sucuk Bun (3 adet)",
           "description": "Sucuk, hellim, domates, marul",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -831,7 +739,6 @@
           "name": "Glutensiz Sote Bun (3 adet)",
           "description": "Tavuk sote, sweet chilli sos, jalapeno, kaşar peynir",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -839,7 +746,6 @@
           "name": "Glutensiz Tandır Bun (3 adet)",
           "description": "Kuzu tandır, cheddar peyniri, kibrit patates",
           "price": "620",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -847,7 +753,6 @@
           "name": "Glutensiz Meksika Bun (3 adet)",
           "description": "Bolonez sos, guacamole sos, kibrit patates",
           "price": "600",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -855,7 +760,6 @@
           "name": "Glutensiz Sebzeli Sandviç",
           "description": "Domates sos, ızgara sebze, roka, ezine peyniri",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -863,7 +767,6 @@
           "name": "Glutensiz Tavuklu Soğuk Sandviç",
           "description": "Tavuklu meze, soğan turşusu, marul",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -871,7 +774,6 @@
           "name": "Glutensiz Avokadolu Ekmek Üstü",
           "description": "Labneli avokado, haşlanmış yumurta, çörekotu, maydanoz, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -879,7 +781,6 @@
           "name": "Glutensiz Hellimli Ekmek Üstü",
           "description": "Çırpılmış yumurta, ızgara hellim, avokado, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -887,7 +788,6 @@
           "name": "Glutensiz Hindi Fümeli Ekmek Üstü",
           "description": "Labne, hindi füme, avokado, biberli omlet, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -895,7 +795,6 @@
           "name": "Glutensiz Pesto Ekmek Üstü",
           "description": "Pesto sos, ezine peynirli avokado, göz yumurta, acı yağ, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -903,7 +802,6 @@
           "name": "Glutensiz Humuslu Ekmek Üstü",
           "description": "Humus, çıtır nohut, pastırma, acı yağ",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -911,7 +809,6 @@
           "name": "Glutensiz Mantarlı Ekmek Üstü",
           "description": "Sarımsak kreması, avokado, soya soslu mantar, susam, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -919,7 +816,6 @@
           "name": "Glutensiz Sweet Chilli Ekmek Üstü",
           "description": "Avokado, sweet chilli soslu ızgara hellim, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -927,7 +823,6 @@
           "name": "Glutensiz Peynirli Tost",
           "description": "Kaşar peyniri, cheddar peyniri, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -935,7 +830,6 @@
           "name": "Glutensiz SADE'nin Tostu",
           "description": "Kuru domates sos, pesto sos, kaşar peyniri, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -943,7 +837,6 @@
           "name": "Glutensiz Anne Tostu",
           "description": "Beyaz peynir, domates, biber, kaşar peyniri, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -951,7 +844,6 @@
           "name": "Glutensiz Sucuklu Tost",
           "description": "Sucuk, kaşar peyniri, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -959,7 +851,6 @@
           "name": "Glutensiz Tandır Tost",
           "description": "Kuzu tandır, eski kaşar, söğüş",
           "price": "620",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -967,7 +858,6 @@
           "name": "Glutensiz Çıtır Dürüm",
           "description": "Çıtır tavuk, cajun sos, marul, jalapeno, mayonez",
           "price": "450",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -975,7 +865,6 @@
           "name": "Glutensiz Tavuk Dürüm",
           "description": "Mayonez, soğan, marul, tavuk sote, mayonez, jalapeno",
           "price": "420",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -983,7 +872,6 @@
           "name": "Glutensiz Tavuk Burrito",
           "description": "Basmati, labne, soya soslu tavuk, havuç, meksika fasulyesi, mısır, mayonez, jalapeno",
           "price": "550",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -991,7 +879,6 @@
           "name": "Glutensiz Mantar Burrito",
           "description": "Sarımsak kreması, avokado, soya soslu mantar, basmati, havuç, mısır, meksika fasulyesi, jalapeno",
           "price": "570",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -999,7 +886,6 @@
           "name": "Glutensiz Meksika Burrito",
           "description": "Basmati, bolonez sos, guacamole sos, meksika fasulyesi, mısır, yeşillik, mayonez, jalapeno",
           "price": "650",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1007,7 +893,6 @@
           "name": "Glutensiz Tandır Burrito",
           "description": "Basmati, SADE sos, kuzu tandır, cheddar, guacamole sos, mayonez, jalapeno",
           "price": "700",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1015,7 +900,6 @@
           "name": "Glutensiz Simit Bowl",
           "description": "Gulutensiz simit, haşlanmış yumurta, ezine peyniri, yeşil zeytin, avokado, söğüş",
           "price": "500",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1023,7 +907,6 @@
           "name": "Glutensiz Köfte Burger",
           "description": "Burger sos, marul, glutensiz köfte, cheddar peyniri, karamelize soğan, patates, mayonez, jalapeno",
           "price": "550",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1031,7 +914,6 @@
           "name": "Glutensiz Vegan Burger",
           "description": "Taco sos, vegan köfte, karamelize soğan, sote mantar, patates, taco sos, jalapeno",
           "price": "550",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1039,7 +921,6 @@
           "name": "Glutensiz Vegan Pasta Çeşitleri",
           "description": "Limonlu, çilekli, vişneli",
           "price": "600",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
@@ -1054,7 +935,6 @@
           "name": "Böğürtlenli Smoothie",
           "description": "",
           "price": "200",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1062,7 +942,6 @@
           "name": "Avokadolu Smoothie",
           "description": "",
           "price": "200",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1070,7 +949,6 @@
           "name": "Yeşil Detoks Smoothie",
           "description": "",
           "price": "200",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1078,7 +956,6 @@
           "name": "Kakaolu Smoothie",
           "description": "",
           "price": "200",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
@@ -1093,7 +970,6 @@
           "name": "Limonata Çeşitleri",
           "description": "Sade, çilekli, muzlu, böğürtlenli, sütlü",
           "price": "75",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1101,7 +977,6 @@
           "name": "Ayran Çeşitleri",
           "description": "Sade, yeşil, sarı, pembe",
           "price": "75",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1109,7 +984,6 @@
           "name": "Yerli Gazoz Çeşitleri",
           "description": "",
           "price": "70",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1117,7 +991,6 @@
           "name": "Çay",
           "description": "",
           "price": "60",
-          "image": "images/3.jpg",
           "featured": false
         },
         {
@@ -1125,7 +998,6 @@
           "name": "Su",
           "description": "",
           "price": "20",
-          "image": "images/3.jpg",
           "featured": false
         }
       ]
