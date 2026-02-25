@@ -229,7 +229,13 @@ function createMenuItem(item) {
 
     // Set the auto-generated image path
     img.src = imagePath;
-    
+
+    // Make image clickable - open in modal
+    img.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent card click if any
+        openImageModal(this.src, item.name);
+    });
+
     card.appendChild(img);
     
     // Create content section
@@ -321,3 +327,72 @@ function setupScrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
+
+/* ============================================
+   IMAGE MODAL FUNCTIONS
+   ============================================ */
+
+// Open image modal
+function openImageModal(imageSrc, caption) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+
+    if (!modal || !modalImg || !modalCaption) return;
+
+    // Set content
+    modalImg.src = imageSrc;
+    modalImg.alt = caption;
+    modalCaption.textContent = caption;
+
+    // Show modal
+    modal.classList.add('active');
+
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+}
+
+// Close image modal
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    if (!modal) return;
+
+    // Hide modal
+    modal.classList.remove('active');
+
+    // Restore body scroll
+    document.body.style.overflow = 'auto';
+}
+
+// Setup modal event listeners (run once on page load)
+function initImageModal() {
+    const modal = document.getElementById('imageModal');
+    const closeBtn = document.getElementById('modalClose');
+
+    if (!modal || !closeBtn) return;
+
+    // Close button click
+    closeBtn.addEventListener('click', closeImageModal);
+
+    // Click outside image (on overlay)
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeImageModal();
+        }
+    });
+}
+
+// ESC key to close modal (attached once at document level)
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('imageModal');
+        if (modal && modal.classList.contains('active')) {
+            closeImageModal();
+        }
+    }
+});
+
+// Initialize modal on page load
+document.addEventListener('DOMContentLoaded', function() {
+    initImageModal();
+});
