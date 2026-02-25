@@ -600,6 +600,154 @@
           "featured": false
         }
       ]
+    },
+    {
+      "id": "tost",
+      "name": "Tost",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": 69,
+          "name": "Peynirli Tost",
+          "description": "Cheddar peyniri, kaşar peyniri, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 70,
+          "name": "Sade'nin Tostu",
+          "description": "Kuru domates sos, pesto sos, kaşar peyniri, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 71,
+          "name": "Anne Tostu",
+          "description": "Beyaz peynir, kaşar peyniri, biber, domates, söğüş",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 72,
+          "name": "Sucuklu Tost",
+          "description": "Sucuk, kaşar peyniri, söğüş",
+          "price": "450",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 73,
+          "name": "Tandır Tost",
+          "description": "Kuzu tandır, eski kaşar",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "sandvic",
+      "name": "Sandviç",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": 74,
+          "name": "Sebzeli Sandviç",
+          "description": "Foccacia ekmeği, domates sos, roka, ızgara sebzeler, ezine peyniri",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 75,
+          "name": "Tavuklu Soğuk Sandviç",
+          "description": "Foccaccia ekmeği, tavuklu meze, soğan turşusu, marul",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "makarna",
+      "name": "Makarna & Noodle",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": 76,
+          "name": "Kremalı Mantarlı Makarna",
+          "description": "Fettucini, kuru soğan, mantar",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 77,
+          "name": "Tavuklu Fettucini",
+          "description": "Tavuk, krema, köy peyniri, çıtır soğan",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 78,
+          "name": "Peynir Soslu Penne",
+          "description": "4 çeşit peynir, muskat",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 79,
+          "name": "Cheddar Soslu Makarna",
+          "description": "Çıtır tavuklu",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 80,
+          "name": "Tavuklu Noodle",
+          "description": "Tavuk, kabak, havuç, biber, taze soğan",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 81,
+          "name": "Sebzeli Noodle",
+          "description": "Mantar, kabak, havuç, biber, taze soğan",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "taco",
+      "name": "Taco",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": 82,
+          "name": "Tavuklu Labne Soslu Taco (3 adet)",
+          "description": "Labne sos, tavuk, meksika fasulyesi, jalapeno, çıtır soğan",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": true
+        },
+        {
+          "id": 83,
+          "name": "Klasik Taco",
+          "description": "Bolonez sos, guacamole sos, kibrit patates, meksika fasulyesi, jalapeno",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
     }
   ]
 }
