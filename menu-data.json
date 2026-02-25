@@ -921,6 +921,126 @@
           "price": "500",
           "image": "images/3.jpg",
           "featured": false
+        },
+        {
+          "id": 105,
+          "name": "Glutensiz Peynirli Tost",
+          "description": "Kaşar peyniri, cheddar peyniri, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 106,
+          "name": "Glutensiz SADE'nin Tostu",
+          "description": "Kuru domates sos, pesto sos, kaşar peyniri, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 107,
+          "name": "Glutensiz Anne Tostu",
+          "description": "Beyaz peynir, domates, biber, kaşar peyniri, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 108,
+          "name": "Glutensiz Sucuklu Tost",
+          "description": "Sucuk, kaşar peyniri, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 109,
+          "name": "Glutensiz Tandır Tost",
+          "description": "Kuzu tandır, eski kaşar, söğüş",
+          "price": "620",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 110,
+          "name": "Glutensiz Çıtır Dürüm",
+          "description": "Çıtır tavuk, cajun sos, marul, jalapeno, mayonez",
+          "price": "450",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 111,
+          "name": "Glutensiz Tavuk Dürüm",
+          "description": "Mayonez, soğan, marul, tavuk sote, mayonez, jalapeno",
+          "price": "420",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 112,
+          "name": "Glutensiz Tavuk Burrito",
+          "description": "Basmati, labne, soya soslu tavuk, havuç, meksika fasulyesi, mısır, mayonez, jalapeno",
+          "price": "550",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 113,
+          "name": "Glutensiz Mantar Burrito",
+          "description": "Sarımsak kreması, avokado, soya soslu mantar, basmati, havuç, mısır, meksika fasulyesi, jalapeno",
+          "price": "570",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 114,
+          "name": "Glutensiz Meksika Burrito",
+          "description": "Basmati, bolonez sos, guacamole sos, meksika fasulyesi, mısır, yeşillik, mayonez, jalapeno",
+          "price": "650",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 115,
+          "name": "Glutensiz Tandır Burrito",
+          "description": "Basmati, SADE sos, kuzu tandır, cheddar, guacamole sos, mayonez, jalapeno",
+          "price": "700",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 116,
+          "name": "Glutensiz Simit Bowl",
+          "description": "Gulutensiz simit, haşlanmış yumurta, ezine peyniri, yeşil zeytin, avokado, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 117,
+          "name": "Glutensiz Köfte Burger",
+          "description": "Burger sos, marul, glutensiz köfte, cheddar peyniri, karamelize soğan, patates, mayonez, jalapeno",
+          "price": "550",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 118,
+          "name": "Glutensiz Vegan Burger",
+          "description": "Taco sos, vegan köfte, karamelize soğan, sote mantar, patates, taco sos, jalapeno",
+          "price": "550",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 119,
+          "name": "Glutensiz Vegan Pasta Çeşitleri",
+          "description": "Limonlu, çilekli, vişneli",
+          "price": "600",
+          "image": "images/3.jpg",
+          "featured": false
         }
       ]
     }
