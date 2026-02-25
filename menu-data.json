@@ -521,6 +521,85 @@
           "featured": false
         }
       ]
+    },
+    {
+      "id": "bun",
+      "name": "Bun (Ban)",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": 60,
+          "name": "Çıtır Bun (3 adet)",
+          "description": "Cajun sos, marul, kuru soğan, çıtır tavuk",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 61,
+          "name": "Köfte Bun (3 adet)",
+          "description": "Burger sos, marul, domates, anne köftesi",
+          "price": "470",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 62,
+          "name": "Sote Bun (3 adet)",
+          "description": "Sweet chilli sos, kaşar peyniri, jalapeno, tavuk sote",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 63,
+          "name": "Sucuk Bun (3 adet)",
+          "description": "Izgara hellim, sucuk, domates, marul",
+          "price": "470",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 64,
+          "name": "Tavuklu Soğuk Bun (3 adet)",
+          "description": "Tavuklu meze, marul",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 65,
+          "name": "Tofu Bun (3 adet) (Vegan)",
+          "description": "Sade tofu, havuç, salatalık, lahana turşusu",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 66,
+          "name": "Teriyaki Bun (3 adet)",
+          "description": "Teriyaki soslu tavuk, soğan, havuç",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 67,
+          "name": "Tandır Bun (3 adet)",
+          "description": "Kuzu tandır, cheddar peyniri, kibrit patates",
+          "price": "520",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 68,
+          "name": "Meksika Bun (3 adet)",
+          "description": "Bolonez sos, guacamole sos, kibrit patates",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
     }
   ]
 }
