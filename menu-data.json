@@ -466,6 +466,61 @@
           "featured": false
         }
       ]
+    },
+    {
+      "id": "french-toast",
+      "name": "French Toast",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": 54,
+          "name": "Çilekli French Toast",
+          "description": "Brioche ekmeği, labne kreması, kırmızı meyve, bal",
+          "price": "450",
+          "image": "images/3.jpg",
+          "featured": true
+        },
+        {
+          "id": 55,
+          "name": "Marmelatlı French Toast",
+          "description": "Brioche ekmeği, labne kreması, orman meyvesi marmelatı, limon kabuğu, nane",
+          "price": "450",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 56,
+          "name": "Muzlu French Toast",
+          "description": "Brioche ekmeği, yer fıstığı ezmesi, karamelize muz, bal, badem",
+          "price": "450",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 57,
+          "name": "Fondü French Toast",
+          "description": "Brioche ekmeği, eritilmiş çikolata, çilek, muz",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 58,
+          "name": "Çıtır French Toast",
+          "description": "Brioche ekmeği, hindi fümeli sos, çıtır tavuk, kuru domates",
+          "price": "450",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 59,
+          "name": "Scrambled Egg French Toast",
+          "description": "Brioche ekmeği, hindi füme, kaşar peyniri, çırpılmış yumurta, söğüş",
+          "price": "450",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
     }
   ]
 }
