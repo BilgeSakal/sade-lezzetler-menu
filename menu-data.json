@@ -748,6 +748,181 @@
           "featured": false
         }
       ]
+    },
+    {
+      "id": "glutensiz-vegan",
+      "name": "Glutensiz / Vegan",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": 84,
+          "name": "SADE Tofu Bowl",
+          "description": "Zerdeçallı basmati, SADE sos, tofu, salata, avokado",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 85,
+          "name": "Vegan Thai Usulü Bowl",
+          "description": "Basmati, thai soslu tofu, ızgara mantar, salata",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 86,
+          "name": "Çıtır Tofu Salata",
+          "description": "Marul, roka, cherry domates, salatalık, mısır, taze soğan, avokado, çıtır tofu, böğürtlen sos",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 87,
+          "name": "Sweet Chilli Soslu Bowl",
+          "description": "Basmati, haşlanmış sebze, sweet chilli soslu tofu",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 88,
+          "name": "Prinç Bowl",
+          "description": "Siyah pirinç, humus, çıtır nohut, teriyaki soslu tofu, salata",
+          "price": "400",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 89,
+          "name": "Glutensiz Tofu Bun (3 adet)",
+          "description": "SADE soslu tofu, salatalık, havuç, lahana turşusu",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 90,
+          "name": "Glutensiz Teriyaki Bun (3 adet)",
+          "description": "Teriyaki soslu tavuk, havuç, taze soğan",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 91,
+          "name": "Glutensiz Tavuklu Soğuk Bun (3 adet)",
+          "description": "Tavuklu meze, marul",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 92,
+          "name": "Glutensiz Sucuk Bun (3 adet)",
+          "description": "Sucuk, hellim, domates, marul",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 93,
+          "name": "Glutensiz Sote Bun (3 adet)",
+          "description": "Tavuk sote, sweet chilli sos, jalapeno, kaşar peynir",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 94,
+          "name": "Glutensiz Tandır Bun (3 adet)",
+          "description": "Kuzu tandır, cheddar peyniri, kibrit patates",
+          "price": "620",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 95,
+          "name": "Glutensiz Meksika Bun (3 adet)",
+          "description": "Bolonez sos, guacamole sos, kibrit patates",
+          "price": "600",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 96,
+          "name": "Glutensiz Sebzeli Sandviç",
+          "description": "Domates sos, ızgara sebze, roka, ezine peyniri",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 97,
+          "name": "Glutensiz Tavuklu Soğuk Sandviç",
+          "description": "Tavuklu meze, soğan turşusu, marul",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 98,
+          "name": "Glutensiz Avokadolu Ekmek Üstü",
+          "description": "Labneli avokado, haşlanmış yumurta, çörekotu, maydanoz, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 99,
+          "name": "Glutensiz Hellimli Ekmek Üstü",
+          "description": "Çırpılmış yumurta, ızgara hellim, avokado, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 100,
+          "name": "Glutensiz Hindi Fümeli Ekmek Üstü",
+          "description": "Labne, hindi füme, avokado, biberli omlet, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 101,
+          "name": "Glutensiz Pesto Ekmek Üstü",
+          "description": "Pesto sos, ezine peynirli avokado, göz yumurta, acı yağ, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 102,
+          "name": "Glutensiz Humuslu Ekmek Üstü",
+          "description": "Humus, çıtır nohut, pastırma, acı yağ",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 103,
+          "name": "Glutensiz Mantarlı Ekmek Üstü",
+          "description": "Sarımsak kreması, avokado, soya soslu mantar, susam, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        },
+        {
+          "id": 104,
+          "name": "Glutensiz Sweet Chilli Ekmek Üstü",
+          "description": "Avokado, sweet chilli soslu ızgara hellim, söğüş",
+          "price": "500",
+          "image": "images/3.jpg",
+          "featured": false
+        }
+      ]
     }
   ]
 }
