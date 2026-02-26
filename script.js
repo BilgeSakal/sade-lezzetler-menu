@@ -338,6 +338,24 @@ function initCategoryScroll() {
 
     if (!categoryNav) return;
 
+    // Check if categories overflow and set data-overflow attribute for CSS
+    function checkOverflow() {
+        const isOverflowing = categoryNav.scrollWidth > categoryNav.clientWidth;
+
+        if (isOverflowing) {
+            categoryNav.setAttribute('data-overflow', 'true');
+            categoryNav.scrollLeft = 0;
+        } else {
+            categoryNav.removeAttribute('data-overflow');
+        }
+    }
+
+    // Check overflow on initial load
+    checkOverflow();
+
+    // Recheck on window resize (responsive)
+    window.addEventListener('resize', checkOverflow);
+
     // Desktop: Mouse wheel scrolls horizontally
     categoryNav.addEventListener('wheel', function(e) {
         // Only if content overflows (scrollable)
