@@ -329,6 +329,27 @@ function setupScrollToTop() {
 }
 
 /* ============================================
+   CATEGORY NAVIGATION - HORIZONTAL SCROLL
+   ============================================ */
+
+// Enable mouse wheel horizontal scroll on desktop
+function initCategoryScroll() {
+    const categoryNav = document.querySelector('.category-nav');
+
+    if (!categoryNav) return;
+
+    // Desktop: Mouse wheel scrolls horizontally
+    categoryNav.addEventListener('wheel', function(e) {
+        // Only if content overflows (scrollable)
+        if (this.scrollWidth > this.clientWidth) {
+            e.preventDefault();
+            // Convert vertical scroll (deltaY) to horizontal
+            this.scrollLeft += e.deltaY;
+        }
+    }, { passive: false });
+}
+
+/* ============================================
    IMAGE MODAL FUNCTIONS
    ============================================ */
 
@@ -394,5 +415,6 @@ document.addEventListener('keydown', function(e) {
 
 // Initialize modal on page load
 document.addEventListener('DOMContentLoaded', function() {
+    initCategoryScroll();
     initImageModal();
 });
