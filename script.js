@@ -7,7 +7,7 @@ let currentFilter = 'all';
    ============================================ */
 
 // Categories that trigger the celiac disease warning banner
-const WARNING_CATEGORIES = ['glutensiz', 'vegan', 'glutensiz-vegan', 'gluten-free'];
+const WARNING_CATEGORIES = ['glutensiz-vegan'];
 
 // Delay (ms) before scrolling, allowing the slideDown animation to start first
 const WARNING_SCROLL_DELAY = 100;
