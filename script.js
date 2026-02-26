@@ -9,9 +9,6 @@ let currentFilter = 'all';
 // Categories that trigger the celiac disease warning banner
 const WARNING_CATEGORIES = ['glutensiz-vegan'];
 
-// Delay (ms) before scrolling, allowing the slideDown animation to start first
-const WARNING_SCROLL_DELAY = 100;
-
 function checkAndShowWarning(categorySlug) {
     const warningBanner = document.getElementById('warning-banner');
 
@@ -23,86 +20,6 @@ function checkAndShowWarning(categorySlug) {
        warningBanner.style.display = 'none';
     }
 }
-
-/* ============================================
-   FIX: Desktop category scroll position
-   ============================================ */
-
-// Tarayıcı scroll restore kapat
-if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-}
-
-// Desktop (768px+) için scroll fix
-function fixDesktopCategoryScroll() {
-    // Sadece desktop'ta çalış
-    if (window.innerWidth < 768) return;
-    
-    const nav = document.querySelector('.category-nav');
-    if (!nav) return;
-    
-    const firstBtn = nav.querySelector('.category-btn:first-child');
-    if (!firstBtn) return;
-    
-    // 1. Scroll pozisyonunu sıfırla
-    nav.scrollLeft = 0;
-    
-    // 2. İlk butonu görünür alana getir
-    firstBtn.scrollIntoView({ 
-        behavior: 'auto',
-        inline: 'start',
-        block: 'nearest'
-    });
-    
-    // 3. Double-check: tekrar sıfırla
-    requestAnimationFrame(() => {
-        nav.scrollLeft = 0;
-    });
-    
-    console.log('✅ Desktop scroll fixed:', {
-        scrollLeft: nav.scrollLeft,
-        firstButton: firstBtn.textContent.trim()
-    });
-}
-
-// Sayfa yüklendiğinde
-document.addEventListener('DOMContentLoaded', function() {
-    // Hemen dene
-    fixDesktopCategoryScroll();
-    
-    // Kategoriler render edildikten sonra tekrar
-    setTimeout(fixDesktopCategoryScroll, 100);
-    setTimeout(fixDesktopCategoryScroll, 300);
-    setTimeout(fixDesktopCategoryScroll, 500);
-    
-    // MutationObserver: kategoriler eklendikçe
-    const nav = document.querySelector('.category-nav');
-    if (nav) {
-        let attempts = 0;
-        const observer = new MutationObserver(() => {
-            fixDesktopCategoryScroll();
-            if (++attempts >= 5) observer.disconnect();
-        });
-        observer.observe(nav, { childList: true });
-        
-        // 1 saniye sonra observer'ı durdur
-        setTimeout(() => observer.disconnect(), 1000);
-    }
-});
-
-// Window yüklendiğinde
-window.addEventListener('load', fixDesktopCategoryScroll);
-
-// Resize'da (mobil ↔ desktop geçişi)
-let wasDesktop = window.innerWidth >= 768;
-window.addEventListener('resize', () => {
-    const isDesktop = window.innerWidth >= 768;
-    if (!wasDesktop && isDesktop) {
-        // Mobil → Desktop geçişinde fix
-        fixDesktopCategoryScroll();
-    }
-    wasDesktop = isDesktop;
-});
 
 // Build menu data with auto-generated "En Sevilenler" category
 function buildMenuData(data) {
@@ -136,6 +53,8 @@ function buildMenuData(data) {
 document.addEventListener('DOMContentLoaded', () => {
     loadMenuData();
     setupScrollToTop();
+    initCategoryScroll();
+    initImageModal();
 });
 
 // Load menu data from JSON file
@@ -533,10 +452,4 @@ document.addEventListener('keydown', function(e) {
             closeImageModal();
         }
     }
-});
-
-// Initialize modal on page load
-document.addEventListener('DOMContentLoaded', function() {
-    initCategoryScroll();
-    initImageModal();
 });
