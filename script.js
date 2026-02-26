@@ -449,7 +449,6 @@ function initCategoryScroll() {
 
         if (isOverflowing) {
             categoryNav.setAttribute('data-overflow', 'true');
-            categoryNav.scrollLeft = 0;
         } else {
             categoryNav.removeAttribute('data-overflow');
         }
