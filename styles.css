@@ -468,11 +468,6 @@ body {
         top: 0;
     }
 
-    /* Smart centering: Only center when all categories fit on screen */
-    .category-nav:not([data-overflow]) {
-        justify-content: center;
-    }
-
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
