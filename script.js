@@ -18,13 +18,9 @@ function checkAndShowWarning(categorySlug) {
     if (!warningBanner) return;
 
     if (WARNING_CATEGORIES.includes(categorySlug)) {
-        warningBanner.style.display = 'block';
-        // Smooth scroll to warning after animation begins
-        setTimeout(() => {
-            warningBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }, WARNING_SCROLL_DELAY);
+       warningBanner.style.display = 'block';
     } else {
-        warningBanner.style.display = 'none';
+       warningBanner.style.display = 'none';
     }
 }
 
