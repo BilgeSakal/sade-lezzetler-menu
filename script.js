@@ -3,6 +3,32 @@ let menuData = null;
 let currentFilter = 'all';
 
 /* ============================================
+   Category Warning (Çölyak Uyarısı)
+   ============================================ */
+
+// Categories that trigger the celiac disease warning banner
+const WARNING_CATEGORIES = ['glutensiz', 'vegan', 'glutensiz-vegan', 'gluten-free'];
+
+// Delay (ms) before scrolling, allowing the slideDown animation to start first
+const WARNING_SCROLL_DELAY = 100;
+
+function checkAndShowWarning(categorySlug) {
+    const warningBanner = document.getElementById('warning-banner');
+
+    if (!warningBanner) return;
+
+    if (WARNING_CATEGORIES.includes(categorySlug)) {
+        warningBanner.style.display = 'block';
+        // Smooth scroll to warning after animation begins
+        setTimeout(() => {
+            warningBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, WARNING_SCROLL_DELAY);
+    } else {
+        warningBanner.style.display = 'none';
+    }
+}
+
+/* ============================================
    FIX: Desktop category scroll position
    ============================================ */
 
@@ -209,6 +235,9 @@ function setupCategoryFiltering() {
         // Filter menu
         currentFilter = category;
         renderMenu();
+
+        // Show/hide warning banner for gluten-free/vegan categories
+        checkAndShowWarning(category);
         
         // Scroll to menu container
         const menuContainer = document.getElementById('menuContainer');
