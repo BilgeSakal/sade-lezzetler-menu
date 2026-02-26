@@ -218,7 +218,7 @@ function createMenuItem(item) {
     // Handle image load errors (if image doesn't exist, show placeholder)
     img.onerror = function() {
         console.error('❌ Image not found:', imagePath);
-        this.src = 'images/placeholder.svg';
+        this.src = 'images/placeholder-food.svg';  // Food plate silhouette
         this.onerror = null; // Prevent infinite loop if placeholder also fails
     };
 
