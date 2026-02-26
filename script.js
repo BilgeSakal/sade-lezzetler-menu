@@ -2,6 +2,86 @@
 let menuData = null;
 let currentFilter = 'all';
 
+/* ============================================
+   FIX: Desktop category scroll position
+   ============================================ */
+
+// Tarayıcı scroll restore kapat
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+// Desktop (768px+) için scroll fix
+function fixDesktopCategoryScroll() {
+    // Sadece desktop'ta çalış
+    if (window.innerWidth < 768) return;
+    
+    const nav = document.querySelector('.category-nav');
+    if (!nav) return;
+    
+    const firstBtn = nav.querySelector('.category-btn:first-child');
+    if (!firstBtn) return;
+    
+    // 1. Scroll pozisyonunu sıfırla
+    nav.scrollLeft = 0;
+    
+    // 2. İlk butonu görünür alana getir
+    firstBtn.scrollIntoView({ 
+        behavior: 'auto',
+        inline: 'start',
+        block: 'nearest'
+    });
+    
+    // 3. Double-check: tekrar sıfırla
+    requestAnimationFrame(() => {
+        nav.scrollLeft = 0;
+    });
+    
+    console.log('✅ Desktop scroll fixed:', {
+        scrollLeft: nav.scrollLeft,
+        firstButton: firstBtn.textContent.trim()
+    });
+}
+
+// Sayfa yüklendiğinde
+document.addEventListener('DOMContentLoaded', function() {
+    // Hemen dene
+    fixDesktopCategoryScroll();
+    
+    // Kategoriler render edildikten sonra tekrar
+    setTimeout(fixDesktopCategoryScroll, 100);
+    setTimeout(fixDesktopCategoryScroll, 300);
+    setTimeout(fixDesktopCategoryScroll, 500);
+    
+    // MutationObserver: kategoriler eklendikçe
+    const nav = document.querySelector('.category-nav');
+    if (nav) {
+        let attempts = 0;
+        const observer = new MutationObserver(() => {
+            fixDesktopCategoryScroll();
+            if (++attempts >= 5) observer.disconnect();
+        });
+        observer.observe(nav, { childList: true });
+        
+        // 1 saniye sonra observer'ı durdur
+        setTimeout(() => observer.disconnect(), 1000);
+    }
+});
+
+// Window yüklendiğinde
+window.addEventListener('load', fixDesktopCategoryScroll);
+
+// Resize'da (mobil ↔ desktop geçişi)
+let wasDesktop = window.innerWidth >= 768;
+window.addEventListener('resize', () => {
+    const isDesktop = window.innerWidth >= 768;
+    if (!wasDesktop && isDesktop) {
+        // Mobil → Desktop geçişinde fix
+        fixDesktopCategoryScroll();
+    }
+    wasDesktop = isDesktop;
+});
+
 // Build menu data with auto-generated "En Sevilenler" category
 function buildMenuData(data) {
     const menuData = JSON.parse(JSON.stringify(data)); // Deep copy
