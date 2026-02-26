@@ -2,6 +2,22 @@
 let menuData = null;
 let currentFilter = 'all';
 
+/* ============================================
+   FIX: Reset category scroll position
+   ============================================ */
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryNav = document.querySelector('.category-nav');
+    if (categoryNav) {
+        // Zorla scroll pozisyonunu sıfırla
+        categoryNav.scrollLeft = 0;
+        
+        // Render sonrası tekrar kontrol
+        setTimeout(() => {
+            categoryNav.scrollLeft = 0;
+        }, 100);
+    }
+});
+
 // Build menu data with auto-generated "En Sevilenler" category
 function buildMenuData(data) {
     const menuData = JSON.parse(JSON.stringify(data)); // Deep copy
