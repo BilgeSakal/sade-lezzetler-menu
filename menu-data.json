@@ -240,8 +240,8 @@
       ]
     },
     {
-      "id": "salatalar",
-      "name": "Salatalar",
+      "id": "salata",
+      "name": "Salata",
       "icon": "🥬",
       "items": [
         {
@@ -417,7 +417,7 @@
     {
       "id": "french-toast",
       "name": "French Toast",
-      "icon": "🌯",
+      "icon": "🍞",
       "items": [
         {
           "id": 54,
@@ -466,7 +466,7 @@
     {
       "id": "bun",
       "name": "Bun (Ban)",
-      "icon": "🌯",
+      "icon": "🥟",
       "items": [
         {
           "id": 60,
@@ -536,7 +536,7 @@
     {
       "id": "tost",
       "name": "Tost",
-      "icon": "🌯",
+      "icon": "🍞",
       "items": [
         {
           "id": 69,
@@ -578,7 +578,7 @@
     {
       "id": "sandvic",
       "name": "Sandviç",
-      "icon": "🌯",
+      "icon": "🥪",
       "items": [
         {
           "id": 74,
@@ -599,7 +599,7 @@
     {
       "id": "makarna",
       "name": "Makarna & Noodle",
-      "icon": "🌯",
+      "icon": "🍝",
       "items": [
         {
           "id": 76,
@@ -648,7 +648,7 @@
     {
       "id": "taco",
       "name": "Taco",
-      "icon": "🌯",
+      "icon": "🌮",
       "items": [
         {
           "id": 82,
@@ -669,7 +669,7 @@
     {
       "id": "glutensiz-vegan",
       "name": "Glutensiz / Vegan",
-      "icon": "🌯",
+      "icon": "🌱",
       "items": [
         {
           "id": 84,
@@ -928,7 +928,7 @@
     {
       "id": "smoothie",
       "name": "Smoothie",
-      "icon": "🌯",
+      "icon": "🥤",
       "items": [
         {
           "id": 120,
@@ -963,7 +963,7 @@
     {
       "id": "dogal-icecekler",
       "name": "Doğal İçecekler",
-      "icon": "🌯",
+      "icon": "🍹",
       "items": [
         {
           "id": 124,
