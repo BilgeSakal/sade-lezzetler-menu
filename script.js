@@ -229,41 +229,51 @@ function renderMenu() {
 
     let categoriesToRender = menuData.categories;
 
-    // Filter categories if needed
+    // STEP 1: Apply category filter (if selected and not 'all')
     if (currentFilter !== 'all') {
-        categoriesToRender = menuData.categories.filter(cat => cat.id === currentFilter);
+        categoriesToRender = categoriesToRender.filter(cat => cat.id === currentFilter);
     }
 
-    const hasIngredientFilters = activeIngredients.length > 0;
-    const hasPriceFilter = activePriceRange !== 'all';
-
-    let totalVisible = 0;
-
-    // Render each category (only items that match filters)
-    categoriesToRender.forEach(category => {
-        let itemsToRender = category.items;
-
-        if (hasIngredientFilters || hasPriceFilter) {
-            itemsToRender = category.items.filter(item => {
-                const matchesIngredient = hasIngredientFilters ? itemMatchesIngredients(item) : true;
-                const matchesPrice = hasPriceFilter ? itemMatchesPrice(item) : true;
-                return matchesIngredient && matchesPrice;
+    // STEP 2: Apply ingredient and price filters to the selected categories
+    if (activeIngredients.length > 0 || activePriceRange !== 'all') {
+        categoriesToRender = categoriesToRender.map(category => {
+            const filteredItems = category.items.filter(item => {
+                return itemMatchesIngredients(item) && itemMatchesPrice(item);
             });
-        }
+            return { ...category, items: filteredItems };
+        }).filter(category => category.items.length > 0);
+    }
 
-        if (itemsToRender.length === 0) return;
-
-        totalVisible += itemsToRender.length;
-        const categorySection = createCategorySection({ ...category, items: itemsToRender });
+    // Render each category
+    categoriesToRender.forEach(category => {
+        const categorySection = createCategorySection(category);
         container.appendChild(categorySection);
     });
 
-    if ((hasIngredientFilters || hasPriceFilter) && totalVisible === 0) {
+    // Show "no results" message if needed
+    if (container.children.length === 0) {
+        const filterActive = activeIngredients.length > 0 || activePriceRange !== 'all';
+        const categoryName = currentFilter === 'all' ? 'menüde' :
+            (menuData.categories.find(c => c.id === currentFilter)?.name || 'kategoride');
+
         container.innerHTML = `
             <div class="no-results">
-                <span class="no-results-icon">🔍</span>
-                <h3>Sonuç bulunamadı</h3>
-                <p>Seçili filtrelere uygun ürün bulunamadı. Filtreleri temizleyerek tüm ürünleri görebilirsiniz.</p>
+                <div class="no-results-icon">🔍</div>
+                <h3>Sonuç Bulunamadı</h3>
+                <p>${filterActive ?
+                    `Bu ${categoryName} seçtiğiniz filtrelere uygun ürün bulunamadı.` :
+                    'Bu kategoride ürün bulunamadı.'
+                }</p>
+                ${filterActive ? `
+                    <button onclick="clearContentFilters()" class="filter-btn-secondary" style="margin: 1rem 0.5rem 0 0; padding: 0.75rem 1.5rem;">
+                        🔄 Filtreleri Temizle
+                    </button>
+                ` : ''}
+                ${currentFilter !== 'all' ? `
+                    <button onclick="clearCategoryFilter()" class="filter-btn-primary" style="margin-top: 1rem; padding: 0.75rem 1.5rem;">
+                        📋 Tüm Kategorileri Göster
+                    </button>
+                ` : ''}
             </div>`;
     }
 }
@@ -601,9 +611,57 @@ function updateFilterCount() {
 
 // Apply filters and re-render menu
 function applyFilters() {
-    renderMenu();
+    // When filters are applied, reset category to "all" so it searches entire menu
+    if (activeIngredients.length > 0 || activePriceRange !== 'all') {
+        currentFilter = 'all';
+        activateFirstCategoryButton();
+    }
+
     updateFilterCount();
+    renderMenu();
     closeFilterDrawer();
+}
+
+// Activate the first category button and deactivate all others
+function activateFirstCategoryButton() {
+    const categoryNav = document.getElementById('categoryNav');
+    if (!categoryNav) return;
+    categoryNav.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    const firstBtn = categoryNav.querySelector('.category-btn:first-child');
+    if (firstBtn) {
+        firstBtn.classList.add('active');
+    }
+}
+
+// Clear only content/price filters (keep category selection)
+function clearContentFilters() {
+    activeIngredients = [];
+    activePriceRange = 'all';
+    createIngredientFilters();
+    createPriceFilters();
+    updateFilterCount();
+    renderMenu();
+}
+
+// Clear only category filter (keep content/price filters)
+function clearCategoryFilter() {
+    currentFilter = 'all';
+    activateFirstCategoryButton();
+    renderMenu();
+}
+
+// Clear ALL filters (category + content + price)
+function clearAllFilters() {
+    currentFilter = 'all';
+    activateFirstCategoryButton();
+    activeIngredients = [];
+    activePriceRange = 'all';
+    createIngredientFilters();
+    createPriceFilters();
+    updateFilterCount();
+    renderMenu();
 }
 
 // Open filter drawer
@@ -707,12 +765,7 @@ function setupFilterEvents() {
     const clearBtn = document.getElementById('filterClearBtn');
     if (clearBtn) {
         clearBtn.addEventListener('click', () => {
-            activeIngredients = [];
-            activePriceRange = 'all';
-            createIngredientFilters();
-            createPriceFilters();
-            updateFilterCount();
-            renderMenu();
+            clearContentFilters();
             closeFilterDrawer();
         });
     }
