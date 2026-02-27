@@ -58,7 +58,7 @@
         {
           "id": 8,
           "name": "Thai Usulü Bowl",
-          "description": "Sade pilav, ızgara mantar, thai soslu çıtır tavuk, salata",
+          "description": "SADE pilav, ızgara mantar, thai soslu çıtır tavuk, salata",
           "price": "400",
           "featured": true
         },
@@ -106,15 +106,15 @@
         },
         {
           "id": 15,
-          "name": "Sade Soslu Bowl",
-          "description": "Pilav, sade soslu tavuk, salata",
+          "name": "SADE Soslu Bowl",
+          "description": "Pilav, SADE soslu tavuk, salata",
           "price": "400",
           "featured": false
         },
         {
           "id": 16,
           "name": "Köz Patlıcanlı Kuskus Bowl",
-          "description": "Sade soslu kuskus, ızgara tavuk, salata",
+          "description": "SADE soslu kuskus, ızgara tavuk, salata",
           "price": "400",
           "featured": false
         },
@@ -163,7 +163,7 @@
         {
           "id": 23,
           "name": "Tandır Bowl",
-          "description": "Siyah pirinç, kuzu tandır, guacamole sos, baharatlı mısır, sade sos, mısır",
+          "description": "Siyah pirinç, kuzu tandır, guacamole sos, baharatlı mısır, SADE sos, mısır",
           "price": "650",
           "featured": false
         },
@@ -316,7 +316,7 @@
         },
         {
           "id": 42,
-          "name": "Sade Çıtır",
+          "name": "SADE Çıtır",
           "description": "200 gr. çıtır tavuk, köz biber sos, ballı hardal, cajun sos, burger sos, mayonez",
           "price": "400",
           "featured": false
@@ -394,7 +394,7 @@
         {
           "id": 51,
           "name": "Köfte Burrito",
-          "description": "Basmati, anne köftesi, köz biber, sade sos, soğan, mayonez, jalapeno",
+          "description": "Basmati, anne köftesi, köz biber, SADE sos, soğan, mayonez, jalapeno",
           "price": "450",
           "featured": false
         },
@@ -408,7 +408,7 @@
         {
           "id": 53,
           "name": "Tandır Burrito",
-          "description": "Basmati, sade sos, guacamole sos, kuzu tandır, cheddar peyniri, mayonez, jalapeno",
+          "description": "Basmati, SADE sos, guacamole sos, kuzu tandır, cheddar peyniri, mayonez, jalapeno",
           "price": "600",
           "featured": false
         }
@@ -506,7 +506,7 @@
         {
           "id": 65,
           "name": "Tofu Bun (3 adet) (Vegan)",
-          "description": "Sade tofu, havuç, salatalık, lahana turşusu",
+          "description": "SADE tofu, havuç, salatalık, lahana turşusu",
           "price": "400",
           "featured": false
         },
@@ -547,7 +547,7 @@
         },
         {
           "id": 70,
-          "name": "Sade'nin Tostu",
+          "name": "SADE'nin Tostu",
           "description": "Kuru domates sos, pesto sos, kaşar peyniri, söğüş",
           "price": "400",
           "featured": false
