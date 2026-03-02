@@ -673,37 +673,44 @@
       "items": [
         {
           "id": 84,
-          "name": "SADE Tofu Bowl",
+          "name": "Glutensiz SADE Tofu Bowl",
           "description": "Zerdeçallı basmati, SADE sos, tofu, salata, avokado",
           "price": "400",
           "featured": false
         },
         {
           "id": 85,
-          "name": "Vegan Thai Usulü Bowl",
+          "name": "Glutensiz Vegan Thai Usulü Bowl",
           "description": "Basmati, thai soslu tofu, ızgara mantar, salata",
           "price": "400",
           "featured": false
         },
         {
           "id": 86,
-          "name": "Çıtır Tofu Salata",
+          "name": "Glutensiz Çıtır Tofu Salata",
           "description": "Marul, roka, cherry domates, salatalık, mısır, taze soğan, avokado, çıtır tofu, böğürtlen sos",
           "price": "400",
           "featured": false
         },
         {
           "id": 87,
-          "name": "Sweet Chilli Soslu Bowl",
+          "name": "Glutensiz Sweet Chilli Soslu Bowl",
           "description": "Basmati, haşlanmış sebze, sweet chilli soslu tofu",
           "price": "400",
           "featured": false
         },
         {
           "id": 88,
-          "name": "Pirinç Bowl",
+          "name": "Glutensiz Pirinç Bowl",
           "description": "Siyah pirinç, humus, çıtır nohut, teriyaki soslu tofu, salata",
           "price": "400",
+          "featured": false
+        },
+        {
+          "id": 129,
+          "name": "Glutensiz Çıtır Bun (3 adet)",
+          "description": "Cajun sos, marul, kuru soğan, çıtır tavuk",
+          "price": "500",
           "featured": false
         },
         {
