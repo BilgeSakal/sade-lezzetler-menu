@@ -3,161 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sade Lezzetler - Kafe Menümüz">
-    <meta name="keywords" content="kafe, menü, kahve, yiyecek, içecek">
-    <meta name="author" content="Sade Lezzetler">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Sade Lezzetler - QR Menü">
-    <meta property="og:description" content="Menümüzü keşfedin">
-    <meta property="og:type" content="website">
-    
-    <!-- Theme Color for Mobile Browsers -->
-    <meta name="theme-color" content="#4A6741">
-    
-    <!-- Apple Touch Icon -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    <title>Sade Lezzetler - QR Menü</title>
-    
-    <!-- Styles -->
+    <title>Sade Lezzetler - Menü</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-            <h1><span class="header-icon">🌿</span>Sade Lezzetler</h1>
-            <p class="tagline">Sağlıklı Lezzetler, Doğal Tatlar</p>
-            <p class="tagline-en">Healthy & Delicious</p>
-        </div>
-    </header>
-
-    <!-- Category Navigation -->
-    <nav class="category-nav" id="categoryNav">
-        <div class="loading">Yükleniyor</div>
-    </nav>
-
-    <!-- Filter Toggle Button -->
-    <div class="filter-container">
-        <button id="filterToggleBtn" class="filter-toggle-btn">
-            <span class="filter-icon">🔍</span>
-            <span class="filter-text">Filtrele</span>
-            <span id="filterCount" class="filter-count" style="display: none;">0</span>
-        </button>
-    </div>
-
-    <!-- Filter Drawer -->
-    <div id="filterDrawer" class="filter-drawer">
-        <div class="filter-drawer-overlay"></div>
-        <div class="filter-drawer-content">
-            <div class="filter-drawer-header">
-                <h3>🔍 Filtreler</h3>
-                <button id="filterCloseBtn" class="filter-close-btn">✕</button>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">🍽️ Sade Lezzetler</h1>
+                <p class="tagline">Sağlıklı ve Lezzetli Seçenekler</p>
             </div>
+        </header>
 
-            <div class="filter-drawer-body">
-                <!-- Ingredient Filters -->
-                <div class="filter-section">
-                    <h4 class="filter-section-title">İçerik</h4>
+        <!-- Category Navigation -->
+        <nav class="category-nav" id="categoryNav"></nav>
 
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="protein">
-                            <span class="toggle-icon">▶</span>
-                            <span>🍗 Protein Kaynakları</span>
-                        </button>
-                        <div class="filter-group-items" data-group="protein" style="display: none;"></div>
+        <!-- Filter Toggle Button -->
+        <div class="filter-container">
+            <button id="filterToggleBtn" class="filter-toggle-btn">
+                <span class="filter-icon">🔍</span>
+                <span class="filter-text">Filtrele</span>
+                <span id="filterCount" class="filter-count" style="display: none;">0</span>
+            </button>
+        </div>
+
+        <!-- Filter Drawer -->
+        <div id="filterDrawer" class="filter-drawer">
+            <div class="filter-drawer-overlay"></div>
+            <div class="filter-drawer-content">
+                <div class="filter-drawer-header">
+                    <h3>🔍 Filtreler</h3>
+                    <button id="filterCloseBtn" class="filter-close-btn">✕</button>
+                </div>
+                
+                <div class="filter-drawer-body">
+                    <!-- Protein -->
+                    <div class="filter-section">
+                        <h4 class="filter-section-title">🍗 Protein</h4>
+                        <div class="filter-options" id="proteinOptions"></div>
                     </div>
-
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="dairy">
-                            <span class="toggle-icon">▶</span>
-                            <span>🧀 Süt Ürünleri</span>
-                        </button>
-                        <div class="filter-group-items" data-group="dairy" style="display: none;"></div>
+                    
+                    <!-- Carb -->
+                    <div class="filter-section">
+                        <h4 class="filter-section-title">🍞 Karbonhidrat</h4>
+                        <div class="filter-options" id="carbOptions"></div>
                     </div>
-
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="carb">
-                            <span class="toggle-icon">▶</span>
-                            <span>🍞 Karbonhidrat</span>
-                        </button>
-                        <div class="filter-group-items" data-group="carb" style="display: none;"></div>
+                    
+                    <!-- Allergens -->
+                    <div class="filter-section">
+                        <h4 class="filter-section-title">⚠️ Alerjen Maddeler</h4>
+                        <p class="allergen-note">(Seçilenler hariç tutulacak)</p>
+                        <div class="filter-options" id="allergenOptions"></div>
                     </div>
-
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="veggie">
-                            <span class="toggle-icon">▶</span>
-                            <span>🥬 Popüler Sebzeler</span>
-                        </button>
-                        <div class="filter-group-items" data-group="veggie" style="display: none;"></div>
-                    </div>
-
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="sauce">
-                            <span class="toggle-icon">▶</span>
-                            <span>🌶️ Soslar</span>
-                        </button>
-                        <div class="filter-group-items" data-group="sauce" style="display: none;"></div>
-                    </div>
-
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="special">
-                            <span class="toggle-icon">▶</span>
-                            <span>🌭 Şarküteri</span>
-                        </button>
-                        <div class="filter-group-items" data-group="special" style="display: none;"></div>
+                    
+                    <!-- Price -->
+                    <div class="filter-section">
+                        <h4 class="filter-section-title">💰 Fiyat Aralığı</h4>
+                        <div class="price-filters" id="priceFilters"></div>
                     </div>
                 </div>
-
-                <!-- Price Filters -->
-                <div class="filter-section">
-                    <h4 class="filter-section-title">💰 Fiyat Aralığı</h4>
-                    <div class="price-filters" id="priceFilters"></div>
+                
+                <div class="filter-drawer-footer">
+                    <button id="filterClearBtn" class="filter-btn-secondary">🔄 Temizle</button>
+                    <button id="filterApplyBtn" class="filter-btn-primary">✅ Uygula</button>
                 </div>
             </div>
-
-            <div class="filter-drawer-footer">
-                <button id="filterClearBtn" class="filter-btn-secondary">🔄 Temizle</button>
-                <button id="filterApplyBtn" class="filter-btn-primary">✅ Uygula</button>
-            </div>
         </div>
+
+        <!-- Menu Container -->
+        <main class="main-content">
+            <div id="menuContainer" class="menu-container"></div>
+        </main>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
     </div>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Çölyak Uyarı Banner'ı -->
-        <div id="warning-banner" class="category-warning" style="display: none;">
-            <div class="warning-content">
-                <span class="warning-icon">⚠️</span>
-                <p class="warning-text">
-                    <strong>Önemli:</strong> Çölyak rahatsızlığınız varsa lütfen sipariş öncesi personelimize bildiriniz.
-                </p>
+    <!-- Image Modal -->
+    <template id="imageModalTemplate">
+        <div class="image-modal">
+            <div class="image-modal-overlay"></div>
+            <div class="image-modal-content">
+                <button class="image-modal-close">✕</button>
+                <img src="" alt="">
             </div>
         </div>
-        <div id="menuContainer">
-            <div class="loading">Menü yükleniyor</div>
-        </div>
-    </main>
+    </template>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>🌱 Doğal • ♻️ Sürdürülebilir • 💚 Sağlıklı</p>
-        <p class="small-text">Sade Lezzetler - 2026</p>
-    </footer>
-
-    <!-- Scroll-to-top Button -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Yukarı çık">↑</button>
-
-    <!-- Image Modal/Lightbox -->
-    <div class="image-modal" id="imageModal">
-      <span class="modal-close" id="modalClose" aria-label="Kapat">&times;</span>
-      <img class="modal-content" id="modalImage" alt="">
-      <div class="modal-caption" id="modalCaption"></div>
-    </div>
-
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
