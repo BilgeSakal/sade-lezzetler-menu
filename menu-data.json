@@ -11,12 +11,7 @@
           "name": "Şalgamlı Kuskus Bowl",
           "description": "Şalgamlı kuskus, ızgara kabak, tavuk sote, yoğurt, yeşil zeytin",
           "price": "400",
-          "featured": true,
-          "categories": {
-            "protein": ["tavuk"],
-            "carb": ["kuskus"],
-            "allergens": ["sut"]
-          }
+          "featured": true
         },
         {
           "id": 2,
