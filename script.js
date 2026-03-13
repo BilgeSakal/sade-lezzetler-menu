@@ -1,3 +1,7 @@
+// Main application state
+let menuData = null;
+let currentFilter = 'all';
+
 /* ============================================
    MANUAL FILTER SYSTEM
    ============================================ */
@@ -239,4 +243,242 @@ function updateFilterCount() {
     } else {
         badge.style.display = 'none';
     }
+}
+
+// Load menu data
+async function loadMenuData() {
+    try {
+        const response = await fetch('menu-data.json');
+        menuData = await response.json();
+        setupCategoryNav();
+        renderMenu();
+    } catch (error) {
+        console.error('Error loading menu data:', error);
+        document.getElementById('menuContainer').innerHTML = '<p>Menü yüklenemedi</p>';
+    }
+}
+
+// Setup category navigation
+function setupCategoryNav() {
+    const categoryNav = document.getElementById('categoryNav');
+    if (!categoryNav || !menuData) return;
+    
+    categoryNav.innerHTML = '';
+    
+    // All button
+    const allBtn = document.createElement('button');
+    allBtn.className = 'category-btn active';
+    allBtn.dataset.category = 'all';
+    allBtn.textContent = 'Tümü';
+    allBtn.addEventListener('click', () => {
+        currentFilter = 'all';
+        updateCategoryButtons();
+        renderMenu();
+    });
+    categoryNav.appendChild(allBtn);
+    
+    // Category buttons
+    menuData.categories.forEach(category => {
+        const btn = document.createElement('button');
+        btn.className = 'category-btn';
+        btn.dataset.category = category.id;
+        btn.innerHTML = `${category.icon} ${category.name}`;
+        btn.addEventListener('click', () => {
+            currentFilter = category.id;
+            updateCategoryButtons();
+            renderMenu();
+        });
+        categoryNav.appendChild(btn);
+    });
+}
+
+// Update category button states
+function updateCategoryButtons() {
+    document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.category === currentFilter) {
+            btn.classList.add('active');
+        }
+    });
+}
+
+// Render menu
+function renderMenu() {
+    const container = document.getElementById('menuContainer');
+    if (!container || !menuData) return;
+    
+    container.innerHTML = '';
+    
+    let categoriesToRender = menuData.categories;
+    
+    // Apply category filter
+    if (currentFilter !== 'all') {
+        categoriesToRender = categoriesToRender.filter(cat => cat.id === currentFilter);
+    }
+    
+    // Apply content filters
+    categoriesToRender = categoriesToRender.map(category => {
+        const filteredItems = category.items.filter(item => itemMatchesFilters(item));
+        
+        return {
+            ...category,
+            items: filteredItems
+        };
+    }).filter(category => category.items.length > 0);
+    
+    // Render categories
+    if (categoriesToRender.length === 0) {
+        container.innerHTML = `
+            <div class="no-results">
+                <div class="no-results-icon">🔍</div>
+                <h3>Sonuç Bulunamadı</h3>
+                <p>Seçtiğiniz filtrelere uygun ürün bulunamadı.</p>
+            </div>
+        `;
+        return;
+    }
+    
+    categoriesToRender.forEach(category => {
+        const categorySection = createCategorySection(category);
+        container.appendChild(categorySection);
+    });
+}
+
+// Create category section
+function createCategorySection(category) {
+    const section = document.createElement('section');
+    section.className = 'category-section';
+    
+    // Category header
+    const header = document.createElement('div');
+    header.className = 'category-header';
+    header.innerHTML = `
+        <h2><span class="category-icon">${category.icon}</span> ${category.name}</h2>
+    `;
+    section.appendChild(header);
+    
+    // Items grid
+    const grid = document.createElement('div');
+    grid.className = 'items-grid';
+    
+    category.items.forEach(item => {
+        const itemEl = createMenuItemElement(item);
+        grid.appendChild(itemEl);
+    });
+    
+    section.appendChild(grid);
+    return section;
+}
+
+// Create menu item element
+function createMenuItemElement(item) {
+    const div = document.createElement('div');
+    div.className = 'menu-item';
+    if (item.featured) div.classList.add('featured');
+    
+    div.innerHTML = `
+        <div class="item-image-wrapper">
+            <img src="https://via.placeholder.com/300x200?text=${encodeURIComponent(item.name)}" 
+                 alt="${item.name}" 
+                 class="item-image"
+                 loading="lazy">
+            ${item.featured ? '<div class="featured-badge">⭐ Öne Çıkan</div>' : ''}
+        </div>
+        <div class="item-content">
+            <h3 class="item-name">${item.name}</h3>
+            <p class="item-description">${item.description}</p>
+            <div class="item-footer">
+                <span class="item-price">${item.price}₺</span>
+                <button class="item-btn">Sepete Ekle</button>
+            </div>
+        </div>
+    `;
+    
+    return div;
+}
+
+// Scroll to top button
+function setupScrollToTop() {
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    if (!scrollBtn) return;
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollBtn.style.display = 'block';
+        } else {
+            scrollBtn.style.display = 'none';
+        }
+    });
+    
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    loadMenuData();
+    setupScrollToTop();
+    initCategoryScroll();
+    initImageModal();
+    initializeFilters();
+});
+
+// Category scroll functionality
+function initCategoryScroll() {
+    const nav = document.getElementById('categoryNav');
+    if (!nav) return;
+    
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    
+    nav.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - nav.offsetLeft;
+        scrollLeft = nav.scrollLeft;
+    });
+    
+    nav.addEventListener('mouseleave', () => {
+        isDown = false;
+    });
+    
+    nav.addEventListener('mouseup', () => {
+        isDown = false;
+    });
+    
+    nav.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - nav.offsetLeft;
+        const walk = (x - startX) * 1;
+        nav.scrollLeft = scrollLeft - walk;
+    });
+}
+
+// Image modal
+function initImageModal() {
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('item-image')) {
+            const modal = document.createElement('div');
+            modal.className = 'image-modal active';
+            modal.innerHTML = `
+                <div class="image-modal-overlay"></div>
+                <div class="image-modal-content">
+                    <button class="image-modal-close">✕</button>
+                    <img src="${e.target.src}" alt="${e.target.alt}">
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            
+            modal.querySelector('.image-modal-close').addEventListener('click', () => {
+                modal.remove();
+            });
+            
+            modal.querySelector('.image-modal-overlay').addEventListener('click', () => {
+                modal.remove();
+            });
+        }
+    });
 }
