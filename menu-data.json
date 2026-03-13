@@ -1,1013 +1,796 @@
-{
-  "cafeName": "Sade Lezzetler",
-  "categories": [
-    {
-      "id": "bowl",
-      "name": "Bowl",
-      "icon": "🥗",
-      "items": [
-        {
-          "id": 1,
-          "name": "Şalgamlı Kuskus Bowl",
-          "description": "Şalgamlı kuskus, ızgara kabak, tavuk sote, yoğurt, yeşil zeytin",
-          "price": "400",
-          "featured": true
-        },
-        {
-          "id": 2,
-          "name": "Falafel Bowl",
-          "description": "Karabuğday salatası, falafel, söğüş, tahin sos",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 3,
-          "name": "Fettucini Bowl",
-          "description": "Limon soslu kremalı makarna, haşlanmış sebze, ızgara tavuk",
-          "price": "400",
-          "featured": true
-        },
-        {
-          "id": 4,
-          "name": "Kinoalı Hellim Bowl",
-          "description": "Kinoa salatası, ızgara hellim, avokado, kuru üzüm",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 5,
-          "name": "Izgara Tavuk Bowl",
-          "description": "Kuru cacık, ızgara tavuk, marul, avokado, yeşil zeytin",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 6,
-          "name": "Mantarlı Tavuklu Bowl",
-          "description": "Makarna, kremalı mantarlı tavuk, marul, mor lahana, mısır",
-          "price": "400",
-          "featured": true
-        },
-        {
-          "id": 7,
-          "name": "Tavuk Pilav Bowl",
-          "description": "Nohutlu pilav, haşlanmış tavuk, çoban salata",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 8,
-          "name": "Thai Usulü Bowl",
-          "description": "SADE pilav, ızgara mantar, thai soslu çıtır tavuk, salata",
-          "price": "400",
-          "featured": true
-        },
-        {
-          "id": 9,
-          "name": "Köri Bowl",
-          "description": "Makarna, köri soslu tavuk, salata",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 10,
-          "name": "Teriyaki Bowl",
-          "description": "Pilav, teriyaki soslu tavuk, salata",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 11,
-          "name": "Bulgur Bowl",
-          "description": "Meyhane pilavı, kaşarlı mantar, havuç tarator",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 12,
-          "name": "Mantarlı Kuskus Bowl",
-          "description": "Mantarlı peynir soslu kuskus, haşlanmış sebze, ızgara tavuk",
-          "price": "420",
-          "featured": true
-        },
-        {
-          "id": 13,
-          "name": "Vegan Bowl",
-          "description": "Mercimek salatası, marul, söğüş, kavrulmuş nohut, lahana turşusu",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 14,
-          "name": "Köfte Bowl",
-          "description": "Pilav, çoban salata, anne köftesi, patates",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 15,
-          "name": "SADE Soslu Bowl",
-          "description": "Pilav, SADE soslu tavuk, salata",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 16,
-          "name": "Köz Patlıcanlı Kuskus Bowl",
-          "description": "SADE soslu kuskus, ızgara tavuk, salata",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 17,
-          "name": "Pesto Bowl",
-          "description": "Pesto soslu fettucini, ızgara tavuk, salata",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 18,
-          "name": "Spesiyal Köfte Bowl",
-          "description": "Pilav, sebzeli dometesli köfte, köz patlıcan salatası",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 19,
-          "name": "Humus Bowl",
-          "description": "Kinoa, humus, çıtır nohut, söğüş, avokado, yeşil zeytin",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 20,
-          "name": "Somon Bowl",
-          "description": "Soya soslu patates, ızgara kabak, biber, somon",
-          "price": "650",
-          "featured": false
-        },
-        {
-          "id": 21,
-          "name": "Kremalı Somon",
-          "description": "Kinoa, krema soslu somon, roka, havuç",
-          "price": "650",
-          "featured": false
-        },
-        {
-          "id": 22,
-          "name": "Teriyaki Soslu Somon",
-          "description": "Basmati, teriyaki soslu somon, lahana turşusu, havuç",
-          "price": "650",
-          "featured": false
-        },
-        {
-          "id": 23,
-          "name": "Tandır Bowl",
-          "description": "Siyah pirinç, kuzu tandır, guacamole sos, baharatlı mısır, SADE sos, mısır",
-          "price": "650",
-          "featured": false
-        },
-        {
-          "id": 24,
-          "name": "Happy Fish",
-          "description": "Pesto soslu kuskus, somon, salata",
-          "price": "650",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "ekmek-ustu",
-      "name": "Ekmek Üstü",
-      "icon": "🥪",
-      "items": [
-        {
-          "id": 25,
-          "name": "Avokadolu Ekmek Üstü",
-          "description": "Ekşi mayalı ekmek, labneli avokado, haşlanmış yumurta, söğüş",
-          "price": "400",
-          "featured": true
-        },
-        {
-          "id": 26,
-          "name": "Hellimli Ekmek Üstü",
-          "description": "Ekşi mayalı ekmek, çırpılmış yumurta, ızgara hellim, avokado, söğüş",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 27,
-          "name": "Hindi Fümeli Ekmek Üstü",
-          "description": "Ekşi mayalı ekmek, labne, hindi füme, avokado, biberli omlet, söğüş",
-          "price": "400",
-          "featured": true
-        },
-        {
-          "id": 28,
-          "name": "Pesto Ekmek Üstü",
-          "description": "Ekşi mayalı ekmek, pesto sos, ezine peynirli avokado, göz yumurta, acı yağ, söğüş",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 29,
-          "name": "Sweet Chilli Ekmek Üstü",
-          "description": "Ekşi mayalı ekmek, avokado, sweet chilli soslu hellim ızgara, söğüş",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 30,
-          "name": "Sucuklu Ekmek Üstü",
-          "description": "Ekşi mayalı ekmek, sucuklu hellimli yumurta, söğüş",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 31,
-          "name": "Humuslu Ekmek Üstü",
-          "description": "Ekşi mayalı ekmek, humus, çıtır nohut, pastırma, acı yağ, söğüş",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 32,
-          "name": "Mantarlı Ekmek Üstü",
-          "description": "Ekşi mayalı ekmek, avokado, sarımsak kreması, soyalı mantar, söğüş",
-          "price": "400",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "salata",
-      "name": "Salata",
-      "icon": "🥬",
-      "items": [
-        {
-          "id": 33,
-          "name": "Tavuklu Salata",
-          "description": "Marul, turşu, soğan, cherry domates, yoğurt sos, ızgara tavuk, mısır, meksika fasulyesi",
-          "price": "370",
-          "featured": true
-        },
-        {
-          "id": 34,
-          "name": "Hellimli Salata",
-          "description": "Marul, yeşillik, cherry domates, avokado sos, ızgara hellim, kabak çekirdeği",
-          "price": "370",
-          "featured": false
-        },
-        {
-          "id": 35,
-          "name": "Falafelli Salata",
-          "description": "Marul, karabuğday, yeşillik, falafel, tahin sos, susam, cherry domates",
-          "price": "370",
-          "featured": false
-        },
-        {
-          "id": 36,
-          "name": "Çıtır Salata",
-          "description": "Marul, roka, turşu, kırmızı soğan, domates, çıtır tavuk, ballı hardal",
-          "price": "370",
-          "featured": false
-        },
-        {
-          "id": 37,
-          "name": "Ton Balıklı Salata",
-          "description": "Marul, yeşillik, cherry domates, ton balığı",
-          "price": "370",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "cıtır",
-      "name": "Çıtır",
-      "icon": "🍗",
-      "items": [
-        {
-          "id": 38,
-          "name": "Acılı Çıtır",
-          "description": "Cajun soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
-          "price": "370",
-          "featured": false
-        },
-        {
-          "id": 39,
-          "name": "Sweet Chilli Çıtır",
-          "description": "Sweet Chilli soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
-          "price": "370",
-          "featured": false
-        },
-        {
-          "id": 40,
-          "name": "Çıtır Thai",
-          "description": "Thai soslu çıtır tavuk, patates, köz biber sos, mayonez",
-          "price": "370",
-          "featured": false
-        },
-        {
-          "id": 41,
-          "name": "Çıtır Köri",
-          "description": "Körili çıtır tavuk, patates, köz biber sos, mayonez",
-          "price": "370",
-          "featured": false
-        },
-        {
-          "id": 42,
-          "name": "SADE Çıtır",
-          "description": "200 gr. çıtır tavuk, köz biber sos, ballı hardal, cajun sos, burger sos, mayonez",
-          "price": "400",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "gurme-serisi",
-      "name": "Gurme Serisi",
-      "icon": "👩🏻‍🍳",
-      "items": [
-        {
-          "id": 43,
-          "name": "Köfte Burger",
-          "description": "El yapımı hamberger ekmeği, burger sos, marul, 150 gr. dana köfte, cheddar peyniri, karamelize soğan, mayonez, jalapeno, patates",
-          "price": "500",
-          "featured": true
-        },
-        {
-          "id": 44,
-          "name": "Tavuk Burger",
-          "description": "El yapımı hamburger ekmeği, marul, acılı ballı hardal, çıtır tavuk but, çıtır kaşar peyniri, kuru soğan, mayonez, jalapeno, patates",
-          "price": "550",
-          "featured": false
-        },
-        {
-          "id": 45,
-          "name": "Gurme French Toast",
-          "description": "El yapımı brioche ekmeği, kuzu tandır, kapya biber, soğan, eski kaşar, salata",
-          "price": "650",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "durum-burrito",
-      "name": "Dürüm ve Burrito",
-      "icon": "🌯",
-      "items": [
-        {
-          "id": 46,
-          "name": "Çıtır Tavuk Dürüm",
-          "description": "Cajun sos, çıtır tavuk, marul, jalapeno, mayonez",
-          "price": "400",
-          "featured": true
-        },
-        {
-          "id": 47,
-          "name": "Tavuk Dürüm",
-          "description": "Mayonez, marul, tavuk, soğan, jalapone, mayonez",
-          "price": "370",
-          "featured": false
-        },
-        {
-          "id": 48,
-          "name": "Köfte Dürüm",
-          "description": "Anne köftesi, burger sos, kaşar peyniri, marul, karamelize soğan, mayonez, jalapeno",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 49,
-          "name": "Tavuk Burrito",
-          "description": "Basmati, labne, soya soslu marine edilmiş mantarlı tavuk göğüs, mısır, meksika fasulyesi, jalapeno, kibrit havuç, sarımsaklı mayonez",
-          "price": "450",
-          "featured": true
-        },
-        {
-          "id": 50,
-          "name": "Meksika Burrito",
-          "description": "Basmati, bolonez sos, guacamole sos, marul, jalapeno, mayonez, jalapeno",
-          "price": "550",
-          "featured": false
-        },
-        {
-          "id": 51,
-          "name": "Köfte Burrito",
-          "description": "Basmati, anne köftesi, köz biber, SADE sos, soğan, mayonez, jalapeno",
-          "price": "450",
-          "featured": false
-        },
-        {
-          "id": 52,
-          "name": "Mantar Burrito (Vegan)",
-          "description": "Basmati, avokado sos, sarımsak kreması, soya soslu mantar sote, havuç, mısır, marul, jalapeno",
-          "price": "470",
-          "featured": false
-        },
-        {
-          "id": 53,
-          "name": "Tandır Burrito",
-          "description": "Basmati, SADE sos, guacamole sos, kuzu tandır, cheddar peyniri, mayonez, jalapeno",
-          "price": "600",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "french-toast",
-      "name": "French Toast",
-      "icon": "🍞",
-      "items": [
-        {
-          "id": 54,
-          "name": "Çilekli French Toast",
-          "description": "Brioche ekmeği, labne kreması, kırmızı meyve, bal",
-          "price": "450",
-          "featured": true
-        },
-        {
-          "id": 55,
-          "name": "Marmelatlı French Toast",
-          "description": "Brioche ekmeği, labne kreması, orman meyvesi marmelatı, limon kabuğu, nane",
-          "price": "450",
-          "featured": false
-        },
-        {
-          "id": 56,
-          "name": "Muzlu French Toast",
-          "description": "Brioche ekmeği, yer fıstığı ezmesi, karamelize muz, bal, badem",
-          "price": "450",
-          "featured": false
-        },
-        {
-          "id": 57,
-          "name": "Fondü French Toast",
-          "description": "Brioche ekmeği, eritilmiş çikolata, çilek, muz",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 58,
-          "name": "Çıtır French Toast",
-          "description": "Brioche ekmeği, hindi fümeli sos, çıtır tavuk, kuru domates",
-          "price": "450",
-          "featured": false
-        },
-        {
-          "id": 59,
-          "name": "Scrambled Egg French Toast",
-          "description": "Brioche ekmeği, hindi füme, kaşar peyniri, çırpılmış yumurta, söğüş",
-          "price": "450",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "bun",
-      "name": "Bun (Ban)",
-      "icon": "🥟",
-      "items": [
-        {
-          "id": 60,
-          "name": "Çıtır Bun (3 adet)",
-          "description": "Cajun sos, marul, kuru soğan, çıtır tavuk",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 61,
-          "name": "Köfte Bun (3 adet)",
-          "description": "Burger sos, marul, domates, anne köftesi",
-          "price": "470",
-          "featured": false
-        },
-        {
-          "id": 62,
-          "name": "Sote Bun (3 adet)",
-          "description": "Sweet chilli sos, kaşar peyniri, jalapeno, tavuk sote",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 63,
-          "name": "Sucuk Bun (3 adet)",
-          "description": "Izgara hellim, sucuk, domates, marul",
-          "price": "470",
-          "featured": false
-        },
-        {
-          "id": 64,
-          "name": "Tavuklu Soğuk Bun (3 adet)",
-          "description": "Tavuklu meze, marul",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 65,
-          "name": "Tofu Bun (3 adet) (Vegan)",
-          "description": "SADE tofu, havuç, salatalık, lahana turşusu",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 66,
-          "name": "Teriyaki Bun (3 adet)",
-          "description": "Teriyaki soslu tavuk, soğan, havuç",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 67,
-          "name": "Tandır Bun (3 adet)",
-          "description": "Kuzu tandır, cheddar peyniri, kibrit patates",
-          "price": "520",
-          "featured": false
-        },
-        {
-          "id": 68,
-          "name": "Meksika Bun (3 adet)",
-          "description": "Bolonez sos, guacamole sos, kibrit patates",
-          "price": "500",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "tost",
-      "name": "Tost",
-      "icon": "🍞",
-      "items": [
-        {
-          "id": 69,
-          "name": "Peynirli Tost",
-          "description": "Cheddar peyniri, kaşar peyniri, söğüş",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 70,
-          "name": "SADE'nin Tostu",
-          "description": "Kuru domates sos, pesto sos, kaşar peyniri, söğüş",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 71,
-          "name": "Anne Tostu",
-          "description": "Beyaz peynir, kaşar peyniri, biber, domates, söğüş",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 72,
-          "name": "Sucuklu Tost",
-          "description": "Sucuk, kaşar peyniri, söğüş",
-          "price": "450",
-          "featured": false
-        },
-        {
-          "id": 73,
-          "name": "Tandır Tost",
-          "description": "Kuzu tandır, eski kaşar",
-          "price": "500",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "sandvic",
-      "name": "Sandviç",
-      "icon": "🥪",
-      "items": [
-        {
-          "id": 74,
-          "name": "Sebzeli Sandviç",
-          "description": "Foccacia ekmeği, domates sos, roka, ızgara sebzeler, ezine peyniri",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 75,
-          "name": "Tavuklu Soğuk Sandviç",
-          "description": "Foccaccia ekmeği, tavuklu meze, soğan turşusu, marul",
-          "price": "400",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "makarna",
-      "name": "Makarna & Noodle",
-      "icon": "🍝",
-      "items": [
-        {
-          "id": 76,
-          "name": "Kremalı Mantarlı Makarna",
-          "description": "Fettucini, kuru soğan, mantar",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 77,
-          "name": "Tavuklu Fettucini",
-          "description": "Tavuk, krema, köy peyniri, çıtır soğan",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 78,
-          "name": "Peynir Soslu Penne",
-          "description": "4 çeşit peynir, muskat",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 79,
-          "name": "Cheddar Soslu Makarna",
-          "description": "Çıtır tavuklu",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 80,
-          "name": "Tavuklu Noodle",
-          "description": "Tavuk, kabak, havuç, biber, taze soğan",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 81,
-          "name": "Sebzeli Noodle",
-          "description": "Mantar, kabak, havuç, biber, taze soğan",
-          "price": "400",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "taco",
-      "name": "Taco",
-      "icon": "🌮",
-      "items": [
-        {
-          "id": 82,
-          "name": "Tavuklu Labne Soslu Taco (3 adet)",
-          "description": "Labne sos, tavuk, meksika fasulyesi, jalapeno, çıtır soğan",
-          "price": "400",
-          "featured": true
-        },
-        {
-          "id": 83,
-          "name": "Klasik Taco",
-          "description": "Bolonez sos, guacamole sos, kibrit patates, meksika fasulyesi, jalapeno",
-          "price": "500",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "glutensiz-vegan",
-      "name": "Glutensiz / Vegan",
-      "icon": "🌱",
-      "items": [
-        {
-          "id": 84,
-          "name": "Glutensiz SADE Tofu Bowl",
-          "description": "Zerdeçallı basmati, SADE sos, tofu, salata, avokado",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 85,
-          "name": "Glutensiz Vegan Thai Usulü Bowl",
-          "description": "Basmati, thai soslu tofu, ızgara mantar, salata",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 86,
-          "name": "Glutensiz Çıtır Tofu Salata",
-          "description": "Marul, roka, cherry domates, salatalık, mısır, taze soğan, avokado, çıtır tofu, böğürtlen sos",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 87,
-          "name": "Glutensiz Sweet Chilli Soslu Bowl",
-          "description": "Basmati, haşlanmış sebze, sweet chilli soslu tofu",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 88,
-          "name": "Glutensiz Pirinç Bowl",
-          "description": "Siyah pirinç, humus, çıtır nohut, teriyaki soslu tofu, salata",
-          "price": "400",
-          "featured": false
-        },
-        {
-          "id": 129,
-          "name": "Glutensiz Çıtır Bun (3 adet)",
-          "description": "Cajun sos, marul, kuru soğan, çıtır tavuk",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 89,
-          "name": "Glutensiz Tofu Bun (3 adet)",
-          "description": "SADE soslu tofu, salatalık, havuç, lahana turşusu",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 90,
-          "name": "Glutensiz Teriyaki Bun (3 adet)",
-          "description": "Teriyaki soslu tavuk, havuç, taze soğan",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 91,
-          "name": "Glutensiz Tavuklu Soğuk Bun (3 adet)",
-          "description": "Tavuklu meze, marul",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 92,
-          "name": "Glutensiz Sucuk Bun (3 adet)",
-          "description": "Sucuk, hellim, domates, marul",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 93,
-          "name": "Glutensiz Sote Bun (3 adet)",
-          "description": "Tavuk sote, sweet chilli sos, jalapeno, kaşar peynir",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 94,
-          "name": "Glutensiz Tandır Bun (3 adet)",
-          "description": "Kuzu tandır, cheddar peyniri, kibrit patates",
-          "price": "620",
-          "featured": false
-        },
-        {
-          "id": 95,
-          "name": "Glutensiz Meksika Bun (3 adet)",
-          "description": "Bolonez sos, guacamole sos, kibrit patates",
-          "price": "600",
-          "featured": false
-        },
-        {
-          "id": 96,
-          "name": "Glutensiz Sebzeli Sandviç",
-          "description": "Domates sos, ızgara sebze, roka, ezine peyniri",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 97,
-          "name": "Glutensiz Tavuklu Soğuk Sandviç",
-          "description": "Tavuklu meze, soğan turşusu, marul",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 98,
-          "name": "Glutensiz Avokadolu Ekmek Üstü",
-          "description": "Labneli avokado, haşlanmış yumurta, çörekotu, maydanoz, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 99,
-          "name": "Glutensiz Hellimli Ekmek Üstü",
-          "description": "Çırpılmış yumurta, ızgara hellim, avokado, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 100,
-          "name": "Glutensiz Hindi Fümeli Ekmek Üstü",
-          "description": "Labne, hindi füme, avokado, biberli omlet, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 101,
-          "name": "Glutensiz Pesto Ekmek Üstü",
-          "description": "Pesto sos, ezine peynirli avokado, göz yumurta, acı yağ, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 102,
-          "name": "Glutensiz Humuslu Ekmek Üstü",
-          "description": "Humus, çıtır nohut, pastırma, acı yağ",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 103,
-          "name": "Glutensiz Mantarlı Ekmek Üstü",
-          "description": "Sarımsak kreması, avokado, soya soslu mantar, susam, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 104,
-          "name": "Glutensiz Sweet Chilli Ekmek Üstü",
-          "description": "Avokado, sweet chilli soslu ızgara hellim, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 105,
-          "name": "Glutensiz Peynirli Tost",
-          "description": "Kaşar peyniri, cheddar peyniri, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 106,
-          "name": "Glutensiz SADE'nin Tostu",
-          "description": "Kuru domates sos, pesto sos, kaşar peyniri, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 107,
-          "name": "Glutensiz Anne Tostu",
-          "description": "Beyaz peynir, domates, biber, kaşar peyniri, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 108,
-          "name": "Glutensiz Sucuklu Tost",
-          "description": "Sucuk, kaşar peyniri, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 109,
-          "name": "Glutensiz Tandır Tost",
-          "description": "Kuzu tandır, eski kaşar, söğüş",
-          "price": "620",
-          "featured": false
-        },
-        {
-          "id": 110,
-          "name": "Glutensiz Çıtır Dürüm",
-          "description": "Çıtır tavuk, cajun sos, marul, jalapeno, mayonez",
-          "price": "450",
-          "featured": false
-        },
-        {
-          "id": 111,
-          "name": "Glutensiz Tavuk Dürüm",
-          "description": "Mayonez, soğan, marul, tavuk sote, mayonez, jalapeno",
-          "price": "420",
-          "featured": false
-        },
-        {
-          "id": 112,
-          "name": "Glutensiz Tavuk Burrito",
-          "description": "Basmati, labne, soya soslu tavuk, havuç, meksika fasulyesi, mısır, mayonez, jalapeno",
-          "price": "550",
-          "featured": false
-        },
-        {
-          "id": 113,
-          "name": "Glutensiz Mantar Burrito",
-          "description": "Sarımsak kreması, avokado, soya soslu mantar, basmati, havuç, mısır, meksika fasulyesi, jalapeno",
-          "price": "570",
-          "featured": false
-        },
-        {
-          "id": 114,
-          "name": "Glutensiz Meksika Burrito",
-          "description": "Basmati, bolonez sos, guacamole sos, meksika fasulyesi, mısır, yeşillik, mayonez, jalapeno",
-          "price": "650",
-          "featured": false
-        },
-        {
-          "id": 115,
-          "name": "Glutensiz Tandır Burrito",
-          "description": "Basmati, SADE sos, kuzu tandır, cheddar, guacamole sos, mayonez, jalapeno",
-          "price": "700",
-          "featured": false
-        },
-        {
-          "id": 116,
-          "name": "Glutensiz Simit Bowl",
-          "description": "Gulutensiz simit, haşlanmış yumurta, ezine peyniri, yeşil zeytin, avokado, söğüş",
-          "price": "500",
-          "featured": false
-        },
-        {
-          "id": 117,
-          "name": "Glutensiz Köfte Burger",
-          "description": "Burger sos, marul, glutensiz köfte, cheddar peyniri, karamelize soğan, patates, mayonez, jalapeno",
-          "price": "550",
-          "featured": false
-        },
-        {
-          "id": 118,
-          "name": "Glutensiz Vegan Burger",
-          "description": "Taco sos, vegan köfte, karamelize soğan, sote mantar, patates, taco sos, jalapeno",
-          "price": "550",
-          "featured": false
-        },
-        {
-          "id": 119,
-          "name": "Glutensiz Vegan Pasta Çeşitleri",
-          "description": "Limonlu, çilekli, vişneli",
-          "price": "600",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "smoothie",
-      "name": "Smoothie",
-      "icon": "🥤",
-      "items": [
-        {
-          "id": 120,
-          "name": "Böğürtlenli Smoothie",
-          "description": "",
-          "price": "200",
-          "featured": false
-        },
-        {
-          "id": 121,
-          "name": "Avokadolu Smoothie",
-          "description": "",
-          "price": "200",
-          "featured": false
-        },
-        {
-          "id": 122,
-          "name": "Yeşil Detoks Smoothie",
-          "description": "",
-          "price": "200",
-          "featured": false
-        },
-        {
-          "id": 123,
-          "name": "Kakaolu Smoothie",
-          "description": "",
-          "price": "200",
-          "featured": false
-        }
-      ]
-    },
-    {
-      "id": "dogal-icecekler",
-      "name": "Doğal İçecekler",
-      "icon": "🍹",
-      "items": [
-        {
-          "id": 124,
-          "name": "Limonata Çeşitleri",
-          "description": "Sade, çilekli, muzlu, böğürtlenli, sütlü",
-          "price": "75",
-          "featured": false
-        },
-        {
-          "id": 125,
-          "name": "Ayran Çeşitleri",
-          "description": "Sade, yeşil, sarı, pembe",
-          "price": "75",
-          "featured": false
-        },
-        {
-          "id": 126,
-          "name": "Yerli Gazoz Çeşitleri",
-          "description": "",
-          "price": "70",
-          "featured": false
-        },
-        {
-          "id": 127,
-          "name": "Çay",
-          "description": "",
-          "price": "60",
-          "featured": false
-        },
-        {
-          "id": 128,
-          "name": "Su",
-          "description": "",
-          "price": "20",
-          "featured": false
-        }
-      ]
+// Main application state
+let menuData = null;
+let currentFilter = 'all';
+let activeIngredients = [];
+let activePriceRange = 'all';
+
+/* ============================================
+   SMART INGREDIENT FILTERS (19 filters, 41+ ingredients covered)
+   ============================================ */
+
+const SMART_INGREDIENTS = [
+    // GRUP 1: Protein Kaynakları
+    { id: 'tavuk', name: 'Tavuk', icon: '🍗', category: 'protein', description: 'Tavuk içeren tüm yemekler' },
+    { id: 'kirmizi-et', name: 'Kırmızı Et', icon: '🥩', category: 'protein', description: 'Et, köfte, kuzu, tandır', includes: ['et', 'köfte', 'kuzu', 'tandır', 'dana', 'anne köftesi'] },
+    { id: 'deniz-urunleri', name: 'Deniz Ürünleri', icon: '🐟', category: 'protein', description: 'Somon, ton balığı', includes: ['somon', 'ton balığı', 'balık'] },
+    { id: 'yumurta', name: 'Yumurta', icon: '🥚', category: 'protein', description: 'Yumurta içeren yemekler' },
+
+    // GRUP 2: Vejetaryen/Vegan Protein
+    { id: 'baklagil', name: 'Baklagiller', icon: '🫘', category: 'protein', description: 'Falafel, humus, nohut, fasulye', includes: ['falafel', 'humus', 'nohut', 'çıtır nohut', 'meksika fasulyesi', 'fasulye'] },
+    { id: 'tofu', name: 'Tofu', icon: '🟨', category: 'protein', description: 'Tofu içeren vegan yemekler' },
+    { id: 'hellim', name: 'Hellim', icon: '🧀', category: 'protein', description: 'Izgara hellim' },
+
+    // GRUP 3: Süt Ürünleri
+    { id: 'peynir', name: 'Peynir', icon: '🧀', category: 'dairy', description: 'Kaşar, cheddar, ezine, parmesan', includes: ['kaşar', 'cheddar', 'ezine', 'eski kaşar', 'beyaz peynir', 'peynir', 'köy peyniri', 'parmesan'] },
+    { id: 'sut-urunleri', name: 'Süt/Krema/Yoğurt', icon: '🥛', category: 'dairy', description: 'Krema, yoğurt, labne içeren', includes: ['krema', 'yoğurt', 'labne', 'süt', 'kuru cacık'] },
+
+    // GRUP 4: Karbonhidrat
+    { id: 'ekmek', name: 'Ekmek', icon: '🍞', category: 'carb', description: 'Tüm ekmek ürünleri', includes: ['ekmek', 'ekşi mayalı ekmek', 'wrap', 'tortilla', 'bun', 'brioche', 'foccacia'] },
+    { id: 'pilav-tahil', name: 'Pilav/Tahıl', icon: '🍚', category: 'carb', description: 'Pilav, kinoa, bulgur, kuskus', includes: ['pilav', 'basmati', 'siyah pirinç', 'pirinç', 'kinoa', 'bulgur', 'kuskus', 'karabuğday', 'meyhane pilavı'] },
+    { id: 'makarna', name: 'Makarna/Noodle', icon: '🍝', category: 'carb', description: 'Makarna, fettucini, penne, noodle', includes: ['makarna', 'fettucini', 'penne', 'noodle', 'pasta'] },
+
+    // GRUP 5: Popüler Sebzeler
+    { id: 'avokado', name: 'Avokado', icon: '🥑', category: 'veggie', description: 'Avokado içeren' },
+    { id: 'mantar', name: 'Mantar', icon: '🍄', category: 'veggie', description: 'Mantar sote, ızgara mantar' },
+    { id: 'patates', name: 'Patates', icon: '🥔', category: 'veggie', description: 'Patates, kibrit patates' },
+
+    // GRUP 6: Sos Profilleri
+    { id: 'acili', name: 'Acılı', icon: '🌶️', category: 'sauce', description: 'Cajun, thai, sweet chilli, jalapeno', includes: ['cajun', 'cajun sos', 'thai', 'thai sos', 'sweet chilli', 'jalapeno', 'acı'] },
+    { id: 'kremali', name: 'Kremalı Soslar', icon: '🥛', category: 'sauce', description: 'Krema sos, peynir sos, cheddar sos', includes: ['krema sos', 'kremalı', 'peynir sos', 'cheddar sos', 'limon soslu kremalı'] },
+    { id: 'asya-usulu', name: 'Asya Sosları', icon: '🥢', category: 'sauce', description: 'Teriyaki, soya sos', includes: ['teriyaki', 'teriyaki sos', 'soya', 'soya sos'] },
+    { id: 'ozel-soslar', name: 'SADE Özel Soslar', icon: '⭐', category: 'sauce', description: 'SADE sos, pesto, guacamole, tahin', includes: ['SADE sos', 'pesto', 'pesto sos', 'guacamole', 'guacamole sos', 'tahin', 'tahin sos', 'burger sos', 'köz biber sos', 'ballı hardal'] },
+
+    // GRUP 7: Şarküteri
+    { id: 'sarkuteri', name: 'Şarküteri', icon: '🌭', category: 'special', description: 'Sucuk, pastırma, hindi füme', includes: ['sucuk', 'pastırma', 'hindi füme', 'hindi fümeli'] }
+];
+
+const PRICE_RANGES = [
+    { id: 'all', name: 'Tümü', min: 0, max: Infinity, icon: '💰' },
+    { id: '0-300', name: '0-300₺', min: 0, max: 300, icon: '💰' },
+    { id: '300-450', name: '300-450₺', min: 300, max: 450, icon: '💰💰' },
+    { id: '450-600', name: '450-600₺', min: 450, max: 600, icon: '💰💰💰' },
+    { id: '600+', name: '600₺+', min: 600, max: Infinity, icon: '💎' }
+];
+
+/* ============================================
+   Category Warning (Çölyak Uyarısı)
+   ============================================ */
+
+// Categories that trigger the celiac disease warning banner
+const WARNING_CATEGORIES = ['glutensiz-vegan'];
+
+function checkAndShowWarning(categorySlug) {
+    const warningBanner = document.getElementById('warning-banner');
+
+    if (!warningBanner) return;
+
+    if (WARNING_CATEGORIES.includes(categorySlug)) {
+       warningBanner.style.display = 'block';
+    } else {
+       warningBanner.style.display = 'none';
     }
-  ]
+}
+
+// Build menu data with auto-generated "En Sevilenler" category
+function buildMenuData(data) {
+    const menuData = JSON.parse(JSON.stringify(data)); // Deep copy
+
+    // Collect all featured items
+    const featuredItems = [];
+    menuData.categories.forEach(category => {
+        category.items.forEach(item => {
+            if (item.featured === true) {
+                featuredItems.push(JSON.parse(JSON.stringify(item)));
+            }
+        });
+    });
+
+    // If there are featured items, prepend the category
+    if (featuredItems.length > 0) {
+        const featuredCategory = {
+            id: 'en-sevilenler',
+            name: 'En Sevilenler',
+            icon: '🌟',
+            items: featuredItems
+        };
+        menuData.categories.unshift(featuredCategory);
+    }
+
+    return menuData;
+}
+
+// Initialize the application
+document.addEventListener('DOMContentLoaded', () => {
+    loadMenuData();
+    setupScrollToTop();
+    initCategoryScroll();
+    initImageModal();
+    initializeFilters();
+});
+
+// Load menu data from JSON file
+async function loadMenuData() {
+    try {
+        const response = await fetch('menu-data.json');
+        
+        if (!response.ok) {
+            throw new Error('Menü verisi yüklenemedi');
+        }
+        
+        const rawData = await response.json();
+        menuData = buildMenuData(rawData);
+        initializeMenu();
+    } catch (error) {
+        console.error('Error loading menu data:', error);
+        showError('Menü yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.');
+    }
+}
+
+// Initialize menu after data is loaded
+function initializeMenu() {
+    if (!menuData) return;
+    
+    // Update cafe name in header
+    const headerTitle = document.querySelector('.header h1');
+    if (headerTitle) {
+        headerTitle.textContent = `🌿 ${menuData.cafeName}`;
+    }
+    
+    // Create category navigation
+    createCategoryNav();
+    
+    // Render all menu items
+    renderMenu();
+    
+    // Setup category filtering
+    setupCategoryFiltering();
+}
+
+// Create category navigation buttons
+function createCategoryNav() {
+    const nav = document.getElementById('categoryNav');
+    if (!nav) return;
+    
+    nav.innerHTML = '';
+    
+    const featuredCategory = menuData.categories.find(cat => cat.id === 'en-sevilenler');
+    if (featuredCategory) {
+        const btn = createCategoryButton(featuredCategory.id, featuredCategory.name, featuredCategory.icon);
+        nav.appendChild(btn);
+    }
+    
+    menuData.categories.forEach(category => {
+        if (category.id !== 'en-sevilenler') {
+            const btn = createCategoryButton(category.id, category.name, category.icon);
+            nav.appendChild(btn);
+        }
+    });
+}
+
+// Create a single category button
+function createCategoryButton(id, name, icon) {
+    const button = document.createElement('button');
+    button.className = 'category-btn';
+    button.dataset.category = id;
+    button.innerHTML = `<span class="category-icon">${icon}</span><span>${name}</span>`;
+    
+    if (id === 'all') {
+        button.classList.add('active');
+    }
+    
+    return button;
+}
+
+// Setup category filtering functionality
+function setupCategoryFiltering() {
+    const nav = document.getElementById('categoryNav');
+    if (!nav) return;
+    
+    nav.addEventListener('click', (e) => {
+        const button = e.target.closest('.category-btn');
+        if (!button) return;
+        
+        const category = button.dataset.category;
+        
+        // Update active state
+        nav.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        button.classList.add('active');
+        
+        // Filter menu
+        currentFilter = category;
+        renderMenu();
+
+        // Show/hide warning banner for gluten-free/vegan categories
+        checkAndShowWarning(category);
+        
+        // Scroll to menu container
+        const menuContainer = document.getElementById('menuContainer');
+        if (menuContainer) {
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const navHeight = nav.offsetHeight;
+            const offset = headerHeight + navHeight + 20;
+            
+            window.scrollTo({
+                top: menuContainer.offsetTop - offset,
+                behavior: 'smooth'
+            });
+        }
+    });
+}
+
+// Render the menu based on current filter
+function renderMenu() {
+    const container = document.getElementById('menuContainer');
+    if (!container) return;
+
+    container.innerHTML = '';
+
+    let categoriesToRender = menuData.categories;
+
+    // STEP 1: Apply category filter (if selected and not 'all')
+    if (currentFilter !== 'all') {
+        categoriesToRender = categoriesToRender.filter(cat => cat.id === currentFilter);
+    }
+
+    // STEP 2: Apply ingredient and price filters to the selected categories
+    if (activeIngredients.length > 0 || activePriceRange !== 'all') {
+        categoriesToRender = categoriesToRender.map(category => {
+            const filteredItems = category.items.filter(item => {
+                return itemMatchesIngredients(item) && itemMatchesPrice(item);
+            });
+            return { ...category, items: filteredItems };
+        }).filter(category => category.items.length > 0);
+    }
+
+    // Render each category
+    categoriesToRender.forEach(category => {
+        const categorySection = createCategorySection(category);
+        container.appendChild(categorySection);
+    });
+
+    // Show "no results" message if needed
+    if (container.children.length === 0) {
+        const filterActive = activeIngredients.length > 0 || activePriceRange !== 'all';
+        const categoryName = currentFilter === 'all' ? 'menüde' :
+            (menuData.categories.find(c => c.id === currentFilter)?.name || 'kategoride');
+
+        container.innerHTML = `
+            <div class="no-results">
+                <div class="no-results-icon">🔍</div>
+                <h3>Sonuç Bulunamadı</h3>
+                <p>${filterActive ?
+                    `Bu ${categoryName} seçtiğiniz filtrelere uygun ürün bulunamadı.` :
+                    'Bu kategoride ürün bulunamadı.'
+                }</p>
+                ${filterActive ? `
+                    <button onclick="clearContentFilters()" class="filter-btn-secondary" style="margin: 1rem 0.5rem 0 0; padding: 0.75rem 1.5rem;">
+                        🔄 Filtreleri Temizle
+                    </button>
+                ` : ''}
+                ${currentFilter !== 'all' ? `
+                    <button onclick="clearCategoryFilter()" class="filter-btn-primary" style="margin-top: 1rem; padding: 0.75rem 1.5rem;">
+                        📋 Tüm Kategorileri Göster
+                    </button>
+                ` : ''}
+            </div>`;
+    }
+}
+
+// Create a category section with all its items
+function createCategorySection(category) {
+    const section = document.createElement('section');
+    section.className = 'category-section';
+    section.id = category.id;
+    
+    // Category title
+    const title = document.createElement('h2');
+    title.className = 'category-title';
+    title.innerHTML = `<span class="category-icon">${category.icon}</span><span>${category.name}</span>`;
+    section.appendChild(title);
+    
+    // Menu grid
+    const grid = document.createElement('div');
+    grid.className = 'menu-grid';
+    
+    // Add menu items
+    category.items.forEach(item => {
+        const itemCard = createMenuItem(item);
+        grid.appendChild(itemCard);
+    });
+    
+    section.appendChild(grid);
+    return section;
+}
+
+// Create a single menu item card
+function createMenuItem(item) {
+    const card = document.createElement('div');
+    card.className = item.featured ? 'menu-item is-featured' : 'menu-item';
+
+    // Featured badge
+    if (item.featured) {
+        const badge = document.createElement('span');
+        badge.className = 'featured-badge';
+        badge.setAttribute('aria-label', 'En Sevilen Ürün');
+        badge.textContent = 'En Sevilen';
+        card.appendChild(badge);
+    }
+
+    // Create image
+    const img = document.createElement('img');
+    img.className = 'menu-item-image';
+    img.alt = item.name;
+    img.loading = 'lazy';
+    
+    // Auto-generate path from item ID: images/{id}.jpg
+    const imagePath = `images/${item.id}.jpg`;
+
+    // Handle image load errors (if image doesn't exist, show placeholder)
+    img.onerror = function() {
+        console.error('❌ Image not found:', imagePath);
+        this.src = 'images/placeholder-food.svg';  // Food plate silhouette
+        this.onerror = null; // Prevent infinite loop if placeholder also fails
+    };
+
+    // Log successful image loads
+    img.onload = function() {
+        console.log('✅ Image loaded:', imagePath);
+    };
+
+    // Set the auto-generated image path
+    img.src = imagePath;
+
+    // Make image clickable - open in modal
+    img.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent card click if any
+        openImageModal(this.src, item.name);
+    });
+
+    card.appendChild(img);
+    
+    // Create content section
+    const content = document.createElement('div');
+    content.className = 'menu-item-content';
+    
+    // Header with name and price
+    const header = document.createElement('div');
+    header.className = 'menu-item-header';
+    
+    const name = document.createElement('h3');
+    name.className = 'menu-item-name';
+    name.textContent = item.name;
+    
+    const price = document.createElement('div');
+    price.className = 'menu-item-price';
+    price.textContent = `₺${item.price}`;
+    
+    header.appendChild(name);
+    header.appendChild(price);
+    content.appendChild(header);
+    
+    // Description
+    if (item.description) {
+        const description = document.createElement('p');
+        description.className = 'menu-item-description';
+        description.textContent = item.description;
+        content.appendChild(description);
+    }
+
+    // Badges
+    if (item.badges && item.badges.length > 0) {
+        const badgeContainer = document.createElement('div');
+        badgeContainer.className = 'badge-container';
+        badgeContainer.innerHTML = renderBadges(item.badges);
+        content.appendChild(badgeContainer);
+    }
+
+    card.appendChild(content);
+    return card;
+}
+
+// Render badge HTML string for a list of badge keys
+function renderBadges(badges) {
+    if (!badges || badges.length === 0) return '';
+
+    const badgeIcons = {
+        'vegan': '🌱',
+        'glutensiz': '🌾',
+        'sekersiz': '🍯',
+        'organik': '☘️'
+    };
+
+    return badges.map(badge =>
+        `<span class="badge badge-${badge}">${badgeIcons[badge] || ''} ${badge}</span>`
+    ).join('');
+}
+
+// Show error message
+function showError(message) {
+    const container = document.getElementById('menuContainer');
+    if (!container) return;
+    
+    container.innerHTML = `<div class="error">${message}</div>`;
+}
+
+// Show loading state
+function showLoading() {
+    const container = document.getElementById('menuContainer');
+    if (!container) return;
+    
+    container.innerHTML = '<div class="loading">Menü yükleniyor</div>';
+}
+
+// Setup scroll-to-top button
+function setupScrollToTop() {
+    const btn = document.getElementById('scrollToTop');
+    if (!btn) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    });
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+/* ============================================
+   CATEGORY NAVIGATION - HORIZONTAL SCROLL
+   ============================================ */
+
+// Enable mouse wheel horizontal scroll on desktop
+function initCategoryScroll() {
+    const categoryNav = document.querySelector('.category-nav');
+
+    if (!categoryNav) return;
+
+    // Check if categories overflow and set data-overflow attribute for CSS
+    function checkOverflow() {
+        const isOverflowing = categoryNav.scrollWidth > categoryNav.clientWidth;
+
+        if (isOverflowing) {
+            categoryNav.setAttribute('data-overflow', 'true');
+        } else {
+            categoryNav.removeAttribute('data-overflow');
+        }
+    }
+
+    // Check overflow on initial load
+    checkOverflow();
+
+    // Recheck on window resize (responsive)
+    window.addEventListener('resize', checkOverflow);
+
+    // Desktop: Mouse wheel scrolls horizontally
+    categoryNav.addEventListener('wheel', function(e) {
+        // Only if content overflows (scrollable)
+        if (this.scrollWidth > this.clientWidth) {
+            e.preventDefault();
+            // Convert vertical scroll (deltaY) to horizontal
+            this.scrollLeft += e.deltaY;
+        }
+    }, { passive: false });
+}
+
+/* ============================================
+   IMAGE MODAL FUNCTIONS
+   ============================================ */
+
+// Open image modal
+function openImageModal(imageSrc, caption) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+
+    if (!modal || !modalImg || !modalCaption) return;
+
+    // Set content
+    modalImg.src = imageSrc;
+    modalImg.alt = caption;
+    modalCaption.textContent = caption;
+
+    // Show modal
+    modal.classList.add('active');
+
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+}
+
+// Close image modal
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    if (!modal) return;
+
+    // Hide modal
+    modal.classList.remove('active');
+
+    // Restore body scroll
+    document.body.style.overflow = 'auto';
+}
+
+// Setup modal event listeners (run once on page load)
+function initImageModal() {
+    const modal = document.getElementById('imageModal');
+    const closeBtn = document.getElementById('modalClose');
+
+    if (!modal || !closeBtn) return;
+
+    // Close button click
+    closeBtn.addEventListener('click', closeImageModal);
+
+    // Click outside image (on overlay)
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeImageModal();
+        }
+    });
+}
+
+// ESC key to close modal (attached once at document level)
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('imageModal');
+        if (modal && modal.classList.contains('active')) {
+            closeImageModal();
+        }
+
+        const drawer = document.getElementById('filterDrawer');
+        if (drawer && drawer.classList.contains('open')) {
+            closeFilterDrawer();
+        }
+    }
+});
+
+/* ============================================
+   SMART FILTER SYSTEM
+   ============================================ */
+
+// Auto-detect ingredients from item name/description
+function autoExtractIngredients(item) {
+    const desc = (item.description || '').toLowerCase();
+    const name = item.name.toLowerCase();
+    const text = desc + ' ' + name;
+
+    const foundIngredients = [];
+
+    // Word-boundary check that handles Turkish characters
+    function containsWord(haystack, needle) {
+        const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        return new RegExp('(^|[\\s,;.()])' + escaped + '($|[\\s,;.()/])', 'i').test(haystack);
+    }
+
+    SMART_INGREDIENTS.forEach(ingredient => {
+        if (ingredient.includes) {
+            if (ingredient.includes.some(keyword => containsWord(text, keyword.toLowerCase()))) {
+                foundIngredients.push(ingredient.id);
+            }
+        } else {
+            if (containsWord(text, ingredient.name.toLowerCase())) {
+                foundIngredients.push(ingredient.id);
+            }
+        }
+    });
+
+    return [...new Set(foundIngredients)];
+}
+
+// Check if item matches any selected ingredient filter (OR logic)
+function itemMatchesIngredients(item) {
+    if (activeIngredients.length === 0) return true;
+    const itemIngredients = autoExtractIngredients(item);
+    return activeIngredients.some(id => itemIngredients.includes(id));
+}
+
+// Check if item price falls within selected range
+function itemMatchesPrice(item) {
+    if (activePriceRange === 'all') return true;
+    const range = PRICE_RANGES.find(r => r.id === activePriceRange);
+    if (!range) return true;
+    const price = Number(item.price) || 0;
+    return price >= range.min && price < range.max;
+}
+
+// Update badge showing number of active filters
+function updateFilterCount() {
+    const badge = document.getElementById('filterCount');
+    if (!badge) return;
+    const count = activeIngredients.length + (activePriceRange !== 'all' ? 1 : 0);
+    if (count > 0) {
+        badge.textContent = count;
+        badge.style.display = 'flex';
+    } else {
+        badge.style.display = 'none';
+    }
+}
+
+// Apply filters and re-render menu
+function applyFilters() {
+    // When filters are applied, reset category to "all" so it searches entire menu
+    if (activeIngredients.length > 0 || activePriceRange !== 'all') {
+        currentFilter = 'all';
+        activateFirstCategoryButton();
+    }
+
+    updateFilterCount();
+    renderMenu();
+    closeFilterDrawer();
+}
+
+// Activate the first category button and deactivate all others
+function activateFirstCategoryButton() {
+    const categoryNav = document.getElementById('categoryNav');
+    if (!categoryNav) return;
+    categoryNav.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    const firstBtn = categoryNav.querySelector('.category-btn:first-child');
+    if (firstBtn) {
+        firstBtn.classList.add('active');
+    }
+}
+
+// Clear only content/price filters (keep category selection)
+function clearContentFilters() {
+    activeIngredients = [];
+    activePriceRange = 'all';
+    createIngredientFilters();
+    createPriceFilters();
+    updateFilterCount();
+    renderMenu();
+}
+
+// Clear only category filter (keep content/price filters)
+function clearCategoryFilter() {
+    currentFilter = 'all';
+    activateFirstCategoryButton();
+    renderMenu();
+}
+
+// Clear ALL filters (category + content + price)
+function clearAllFilters() {
+    currentFilter = 'all';
+    activateFirstCategoryButton();
+    activeIngredients = [];
+    activePriceRange = 'all';
+    createIngredientFilters();
+    createPriceFilters();
+    updateFilterCount();
+    renderMenu();
+}
+
+// Open filter drawer
+function openFilterDrawer() {
+    const drawer = document.getElementById('filterDrawer');
+    if (drawer) {
+        drawer.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+// Close filter drawer
+function closeFilterDrawer() {
+    const drawer = document.getElementById('filterDrawer');
+    if (drawer) {
+        drawer.classList.remove('open');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Generate ingredient checkboxes grouped by category
+function createIngredientFilters() {
+    const categories = ['protein', 'dairy', 'carb', 'veggie', 'sauce', 'special'];
+    categories.forEach(cat => {
+        const container = document.querySelector(`.filter-group-items[data-group="${cat}"]`);
+        if (!container) return;
+        container.innerHTML = '';
+        SMART_INGREDIENTS.filter(ing => ing.category === cat).forEach(ingredient => {
+            const label = document.createElement('label');
+            label.className = 'filter-item' + (activeIngredients.includes(ingredient.id) ? ' checked' : '');
+            label.innerHTML = `
+                <input type="checkbox" value="${ingredient.id}" ${activeIngredients.includes(ingredient.id) ? 'checked' : ''}>
+                <span>${ingredient.icon} ${ingredient.name}</span>`;
+            const checkbox = label.querySelector('input');
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                    if (!activeIngredients.includes(ingredient.id)) {
+                        activeIngredients.push(ingredient.id);
+                    }
+                    label.classList.add('checked');
+                } else {
+                    activeIngredients = activeIngredients.filter(id => id !== ingredient.id);
+                    label.classList.remove('checked');
+                }
+                updateFilterCount();
+            });
+            container.appendChild(label);
+        });
+    });
+}
+
+// Generate price range radio buttons
+function createPriceFilters() {
+    const container = document.getElementById('priceFilters');
+    if (!container) return;
+    container.innerHTML = '';
+    PRICE_RANGES.forEach(range => {
+        const label = document.createElement('label');
+        label.className = 'price-filter-item' + (activePriceRange === range.id ? ' checked' : '');
+        label.innerHTML = `
+            <input type="radio" name="priceRange" value="${range.id}" ${activePriceRange === range.id ? 'checked' : ''}>
+            <span>${range.icon} ${range.name}</span>`;
+        const radio = label.querySelector('input');
+        radio.addEventListener('change', () => {
+            activePriceRange = range.id;
+            container.querySelectorAll('.price-filter-item').forEach(el => el.classList.remove('checked'));
+            label.classList.add('checked');
+            updateFilterCount();
+        });
+        container.appendChild(label);
+    });
+}
+
+// Set up all event listeners for the filter system
+function setupFilterEvents() {
+    // Toggle button opens drawer
+    const toggleBtn = document.getElementById('filterToggleBtn');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', openFilterDrawer);
+    }
+
+    // Close button
+    const closeBtn = document.getElementById('filterCloseBtn');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeFilterDrawer);
+    }
+
+    // Overlay closes drawer
+    const overlay = document.querySelector('.filter-drawer-overlay');
+    if (overlay) {
+        overlay.addEventListener('click', closeFilterDrawer);
+    }
+
+    // Apply button
+    const applyBtn = document.getElementById('filterApplyBtn');
+    if (applyBtn) {
+        applyBtn.addEventListener('click', applyFilters);
+    }
+
+    // Clear button
+    const clearBtn = document.getElementById('filterClearBtn');
+    if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+            clearContentFilters();
+            closeFilterDrawer();
+        });
+    }
+
+    // Collapsible group toggles
+    document.querySelectorAll('.filter-group-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const group = btn.dataset.group;
+            const items = document.querySelector(`.filter-group-items[data-group="${group}"]`);
+            if (!items) return;
+            const isExpanded = btn.classList.contains('expanded');
+            if (isExpanded) {
+                btn.classList.remove('expanded');
+                items.style.display = 'none';
+            } else {
+                btn.classList.add('expanded');
+                items.style.display = 'flex';
+            }
+        });
+    });
+}
+
+// Initialize the entire filter system
+function initializeFilters() {
+    createIngredientFilters();
+    createPriceFilters();
+    setupFilterEvents();
 }
