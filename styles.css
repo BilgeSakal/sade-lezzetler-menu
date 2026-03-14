@@ -626,6 +626,37 @@ body {
     padding: 0.625rem 1rem;
     display: flex;
     align-items: center;
+    gap: 0.75rem;
+}
+
+/* Language Switcher Button */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--radius-lg);
+    padding: 0.4rem 0.875rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    min-height: 40px;
+    letter-spacing: 0.05em;
+    margin-left: auto;
+}
+
+.language-switcher:hover {
+    background-color: var(--color-secondary);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.language-switcher:active {
+    transform: translateY(0);
+    opacity: 0.9;
 }
 
 /* Filter Toggle Button */

@@ -2,6 +2,119 @@
 let menuData = null;
 let currentFilter = 'all';
 
+/* ============================================
+   LANGUAGE / TRANSLATION SYSTEM
+   ============================================ */
+
+let currentLanguage = localStorage.getItem('language') || 'tr';
+let translations = {};
+
+// Load translations from JSON file
+async function loadTranslations() {
+    try {
+        const response = await fetch('translations.json');
+        if (!response.ok) throw new Error('Translations could not be loaded');
+        translations = await response.json();
+    } catch (error) {
+        console.error('Error loading translations:', error);
+        translations = {};
+    }
+}
+
+// Get a translated string by dot-notation path, with optional fallback
+function getTranslation(path, fallback) {
+    const keys = path.split('.');
+    let obj = translations[currentLanguage];
+    for (const key of keys) {
+        if (obj == null) return fallback !== undefined ? fallback : path;
+        obj = obj[key];
+    }
+    return (obj !== undefined && obj !== null) ? obj : (fallback !== undefined ? fallback : path);
+}
+
+// Switch the active language and refresh all UI text
+function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+    document.documentElement.lang = lang;
+
+    // Update the language switcher button to show the OTHER language
+    const btn = document.getElementById('languageSwitcher');
+    if (btn) btn.textContent = lang === 'tr' ? 'EN' : 'TR';
+
+    // Update all static DOM text
+    updateStaticText();
+
+    // Re-render all dynamic content
+    if (menuData) {
+        createCategoryNav();
+        renderMenu();
+    }
+    createFilterOptions();
+    createPriceFilters();
+}
+
+// Update static DOM elements with translated strings
+function updateStaticText() {
+    // Header tagline
+    const tagline = document.querySelector('.header .tagline');
+    if (tagline) tagline.textContent = getTranslation('header.tagline');
+
+    // Filter toggle button text
+    const filterText = document.querySelector('#filterToggleBtn .filter-text');
+    if (filterText) filterText.textContent = getTranslation('filters.toggleBtn');
+
+    // Filter drawer header
+    const drawerTitle = document.querySelector('.filter-drawer-header h3');
+    if (drawerTitle) drawerTitle.textContent = getTranslation('filters.title');
+
+    // Accordion toggle labels
+    const proteinToggle = document.querySelector('#proteinToggle span:first-child');
+    if (proteinToggle) proteinToggle.textContent = getTranslation('filters.protein');
+
+    const carbToggle = document.querySelector('#carbToggle span:first-child');
+    if (carbToggle) carbToggle.textContent = getTranslation('filters.carb');
+
+    const allergenToggle = document.querySelector('#allergenToggle span:first-child');
+    if (allergenToggle) allergenToggle.textContent = getTranslation('filters.allergen');
+
+    // Price range section title
+    const priceTitle = document.querySelector('.filter-section-title');
+    if (priceTitle) priceTitle.textContent = getTranslation('filters.priceRange');
+
+    // Allergen note
+    const allergenNote = document.querySelector('.allergen-note');
+    if (allergenNote) allergenNote.textContent = getTranslation('filters.allergenNote');
+
+    // Footer buttons
+    const clearBtn = document.getElementById('filterClearBtn');
+    if (clearBtn) clearBtn.textContent = getTranslation('buttons.clear');
+
+    const applyBtn = document.getElementById('filterApplyBtn');
+    if (applyBtn) applyBtn.textContent = getTranslation('buttons.apply');
+
+    // Warning banner
+    const warningText = document.querySelector('.warning-text');
+    if (warningText) {
+        warningText.innerHTML = `<strong>${getTranslation('warning.important')}</strong> ${getTranslation('warning.celiac')}`;
+    }
+
+    // Footer
+    const footerMain = document.querySelector('.footer p:first-child');
+    if (footerMain) footerMain.textContent = getTranslation('footer.text');
+
+    const footerCopy = document.querySelector('.footer .small-text');
+    if (footerCopy) footerCopy.textContent = getTranslation('footer.copy');
+
+    // Scroll-to-top aria-label
+    const scrollBtn = document.getElementById('scrollToTop');
+    if (scrollBtn) scrollBtn.setAttribute('aria-label', getTranslation('scrollToTop'));
+
+    // Modal close aria-label
+    const modalClose = document.getElementById('modalClose');
+    if (modalClose) modalClose.setAttribute('aria-label', getTranslation('modalClose'));
+}
+
 const activeFilters = {
     protein: [],
     carb: [],
@@ -82,7 +195,7 @@ function buildMenuData(data) {
     if (featuredItems.length > 0) {
         const featuredCategory = {
             id: 'en-sevilenler',
-            name: 'En Sevilenler',
+            name: getTranslation('categories.en-sevilenler', 'En Sevilenler'),
             icon: '🌟',
             items: featuredItems
         };
@@ -93,7 +206,19 @@ function buildMenuData(data) {
 }
 
 // Initialize the application
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadTranslations();
+
+    // Apply saved language on first load
+    const langBtn = document.getElementById('languageSwitcher');
+    if (langBtn) {
+        langBtn.textContent = currentLanguage === 'tr' ? 'EN' : 'TR';
+        langBtn.addEventListener('click', () => {
+            setLanguage(currentLanguage === 'tr' ? 'en' : 'tr');
+        });
+    }
+
+    updateStaticText();
     loadMenuData();
     setupScrollToTop();
     initCategoryScroll();
@@ -143,18 +268,20 @@ function initializeMenu() {
 function createCategoryNav() {
     const nav = document.getElementById('categoryNav');
     if (!nav) return;
-    
+
     nav.innerHTML = '';
-    
+
     const featuredCategory = menuData.categories.find(cat => cat.id === 'en-sevilenler');
     if (featuredCategory) {
-        const btn = createCategoryButton(featuredCategory.id, featuredCategory.name, featuredCategory.icon);
+        const translatedName = getTranslation(`categories.${featuredCategory.id}`, featuredCategory.name);
+        const btn = createCategoryButton(featuredCategory.id, translatedName, featuredCategory.icon);
         nav.appendChild(btn);
     }
-    
+
     menuData.categories.forEach(category => {
         if (category.id !== 'en-sevilenler') {
-            const btn = createCategoryButton(category.id, category.name, category.icon);
+            const translatedName = getTranslation(`categories.${category.id}`, category.name);
+            const btn = createCategoryButton(category.id, translatedName, category.icon);
             nav.appendChild(btn);
         }
     });
@@ -250,25 +377,27 @@ function renderMenu() {
     if (container.children.length === 0) {
         const filterActive = activeFilters.protein.length > 0 || activeFilters.carb.length > 0 ||
                              activeFilters.allergens.length > 0 || activeFilters.price !== 'all';
-        const categoryName = currentFilter === 'all' ? 'menüde' :
-            (menuData.categories.find(c => c.id === currentFilter)?.name || 'kategoride');
+        const categoryName = currentFilter === 'all'
+            ? getTranslation('menu.menuIn', 'menüde')
+            : (getTranslation(`categories.${currentFilter}`, menuData.categories.find(c => c.id === currentFilter)?.name || ''));
+
+        const noResultsMsg = filterActive
+            ? getTranslation('menu.noResultsFiltered', '').replace('{category}', categoryName)
+            : getTranslation('menu.noResultsCategory', '');
 
         container.innerHTML = `
             <div class="no-results">
                 <div class="no-results-icon">🔍</div>
-                <h3>Sonuç Bulunamadı</h3>
-                <p>${filterActive ?
-                    `Bu ${categoryName} seçtiğiniz filtrelere uygun ürün bulunamadı.` :
-                    'Bu kategoride ürün bulunamadı.'
-                }</p>
+                <h3>${getTranslation('menu.noResults')}</h3>
+                <p>${noResultsMsg}</p>
                 ${filterActive ? `
                     <button onclick="clearContentFilters()" class="filter-btn-secondary" style="margin: 1rem 0.5rem 0 0; padding: 0.75rem 1.5rem;">
-                        🔄 Filtreleri Temizle
+                        ${getTranslation('buttons.clearFilters')}
                     </button>
                 ` : ''}
                 ${currentFilter !== 'all' ? `
                     <button onclick="clearCategoryFilter()" class="filter-btn-primary" style="margin-top: 1rem; padding: 0.75rem 1.5rem;">
-                        📋 Tüm Kategorileri Göster
+                        ${getTranslation('buttons.showAll')}
                     </button>
                 ` : ''}
             </div>`;
@@ -284,7 +413,8 @@ function createCategorySection(category) {
     // Category title
     const title = document.createElement('h2');
     title.className = 'category-title';
-    title.innerHTML = `<span class="category-icon">${category.icon}</span><span>${category.name}</span>`;
+    const translatedCategoryName = getTranslation(`categories.${category.id}`, category.name);
+    title.innerHTML = `<span class="category-icon">${category.icon}</span><span>${translatedCategoryName}</span>`;
     section.appendChild(title);
     
     // Menu grid
@@ -310,8 +440,8 @@ function createMenuItem(item) {
     if (item.featured) {
         const badge = document.createElement('span');
         badge.className = 'featured-badge';
-        badge.setAttribute('aria-label', 'En Sevilen Ürün');
-        badge.textContent = 'En Sevilen';
+        badge.setAttribute('aria-label', getTranslation('menu.featured', 'En Sevilen Ürün'));
+        badge.textContent = getTranslation('menu.featured', 'En Sevilen');
         card.appendChild(badge);
     }
 
@@ -357,7 +487,7 @@ function createMenuItem(item) {
     
     const name = document.createElement('h3');
     name.className = 'menu-item-name';
-    name.textContent = item.name;
+    name.textContent = getTranslation(`items.${item.id}.name`, item.name);
     
     const price = document.createElement('div');
     price.className = 'menu-item-price';
@@ -368,10 +498,11 @@ function createMenuItem(item) {
     content.appendChild(header);
     
     // Description
-    if (item.description) {
+    const translatedDescription = getTranslation(`items.${item.id}.description`, item.description || '');
+    if (translatedDescription) {
         const description = document.createElement('p');
         description.className = 'menu-item-description';
-        description.textContent = item.description;
+        description.textContent = translatedDescription;
         content.appendChild(description);
     }
 
@@ -416,7 +547,7 @@ function showLoading() {
     const container = document.getElementById('menuContainer');
     if (!container) return;
     
-    container.innerHTML = '<div class="loading">Menü yükleniyor</div>';
+    container.innerHTML = `<div class="loading">${getTranslation('menu.loading', 'Menü yükleniyor')}</div>`;
 }
 
 // Setup scroll-to-top button
@@ -675,11 +806,12 @@ function createFilterOptions() {
         if (!container) return;
         container.innerHTML = '';
         FILTER_GROUPS[group].forEach(option => {
+            const translatedName = getTranslation(`filterOptions.${group}.${option.id}`, option.name);
             const label = document.createElement('label');
             label.className = 'filter-option' + (activeFilters[group].includes(option.id) ? ' checked' : '');
             label.innerHTML = `
                 <input type="checkbox" value="${option.id}" ${activeFilters[group].includes(option.id) ? 'checked' : ''}>
-                <span>${option.icon} ${option.name}</span>`;
+                <span>${option.icon} ${translatedName}</span>`;
             const checkbox = label.querySelector('input');
             checkbox.addEventListener('change', () => {
                 if (checkbox.checked) {
@@ -703,22 +835,16 @@ function createPriceFilters() {
     const container = document.getElementById('priceFilters');
     if (!container) return;
     container.innerHTML = '';
-    const priceOptions = [
-        { id: 'all',     name: 'Tümü',     icon: '💰' },
-        { id: '0-300',   name: '0-300₺',   icon: '💰' },
-        { id: '300-450', name: '300-450₺', icon: '💰💰' },
-        { id: '450-600', name: '450-600₺', icon: '💰💰💰' },
-        { id: '600+',    name: '600₺+',    icon: '💎' }
-    ];
-    priceOptions.forEach(range => {
+    const priceOptionIds = ['all', '0-300', '300-450', '450-600', '600+'];
+    priceOptionIds.forEach(id => {
         const label = document.createElement('label');
-        label.className = 'price-option' + (activeFilters.price === range.id ? ' checked' : '');
+        label.className = 'price-option' + (activeFilters.price === id ? ' checked' : '');
         label.innerHTML = `
-            <input type="radio" name="priceRange" value="${range.id}" ${activeFilters.price === range.id ? 'checked' : ''}>
-            <span>${range.icon} ${range.name}</span>`;
+            <input type="radio" name="priceRange" value="${id}" ${activeFilters.price === id ? 'checked' : ''}>
+            <span>${getTranslation(`priceOptions.${id}`, id)}</span>`;
         const radio = label.querySelector('input');
         radio.addEventListener('change', () => {
-            activeFilters.price = range.id;
+            activeFilters.price = id;
             container.querySelectorAll('.price-option').forEach(el => el.classList.remove('checked'));
             label.classList.add('checked');
             updateFilterCount();
