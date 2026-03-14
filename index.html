@@ -58,57 +58,23 @@
             </div>
 
             <div class="filter-drawer-body">
-                <!-- Ingredient Filters -->
+                <!-- Protein Filters -->
                 <div class="filter-section">
-                    <h4 class="filter-section-title">İçerik</h4>
+                    <h4 class="filter-section-title">🍗 Protein</h4>
+                    <div class="filter-options" id="proteinOptions"></div>
+                </div>
 
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="protein">
-                            <span class="toggle-icon">▶</span>
-                            <span>🍗 Protein Kaynakları</span>
-                        </button>
-                        <div class="filter-group-items" data-group="protein" style="display: none;"></div>
-                    </div>
+                <!-- Carbohydrate Filters -->
+                <div class="filter-section">
+                    <h4 class="filter-section-title">🍞 Karbonhidrat</h4>
+                    <div class="filter-options" id="carbOptions"></div>
+                </div>
 
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="dairy">
-                            <span class="toggle-icon">▶</span>
-                            <span>🧀 Süt Ürünleri</span>
-                        </button>
-                        <div class="filter-group-items" data-group="dairy" style="display: none;"></div>
-                    </div>
-
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="carb">
-                            <span class="toggle-icon">▶</span>
-                            <span>🍞 Karbonhidrat</span>
-                        </button>
-                        <div class="filter-group-items" data-group="carb" style="display: none;"></div>
-                    </div>
-
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="veggie">
-                            <span class="toggle-icon">▶</span>
-                            <span>🥬 Popüler Sebzeler</span>
-                        </button>
-                        <div class="filter-group-items" data-group="veggie" style="display: none;"></div>
-                    </div>
-
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="sauce">
-                            <span class="toggle-icon">▶</span>
-                            <span>🌶️ Soslar</span>
-                        </button>
-                        <div class="filter-group-items" data-group="sauce" style="display: none;"></div>
-                    </div>
-
-                    <div class="filter-group">
-                        <button class="filter-group-toggle" data-group="special">
-                            <span class="toggle-icon">▶</span>
-                            <span>🌭 Şarküteri</span>
-                        </button>
-                        <div class="filter-group-items" data-group="special" style="display: none;"></div>
-                    </div>
+                <!-- Allergen Filters -->
+                <div class="filter-section">
+                    <h4 class="filter-section-title">⚠️ Alerjen Maddeler</h4>
+                    <p class="allergen-note">Seçilen alerjenler içeren ürünler listeden çıkarılır.</p>
+                    <div class="filter-options" id="allergenOptions"></div>
                 </div>
 
                 <!-- Price Filters -->

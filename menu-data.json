@@ -11,168 +11,411 @@
           "name": "Şalgamlı Kuskus Bowl",
           "description": "Şalgamlı kuskus, ızgara kabak, tavuk sote, yoğurt, yeşil zeytin",
           "price": "400",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "kuskus"
+            ],
+            "allergens": [
+              "sut",
+              "gluten"
+            ]
+          }
         },
         {
           "id": 2,
           "name": "Falafel Bowl",
           "description": "Karabuğday salatası, falafel, söğüş, tahin sos",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "baklagil"
+            ],
+            "carb": [],
+            "allergens": [
+              "susam"
+            ]
+          }
         },
         {
           "id": 3,
           "name": "Fettucini Bowl",
           "description": "Limon soslu kremalı makarna, haşlanmış sebze, ızgara tavuk",
           "price": "400",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "makarna"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 4,
           "name": "Kinoalı Hellim Bowl",
           "description": "Kinoa salatası, ızgara hellim, avokado, kuru üzüm",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "hellim"
+            ],
+            "carb": [
+              "kinoa"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 5,
           "name": "Izgara Tavuk Bowl",
           "description": "Kuru cacık, ızgara tavuk, marul, avokado, yeşil zeytin",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 6,
           "name": "Mantarlı Tavuklu Bowl",
           "description": "Makarna, kremalı mantarlı tavuk, marul, mor lahana, mısır",
           "price": "400",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "makarna"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 7,
           "name": "Tavuk Pilav Bowl",
           "description": "Nohutlu pilav, haşlanmış tavuk, çoban salata",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "baklagil"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 8,
           "name": "Thai Usulü Bowl",
           "description": "SADE pilav, ızgara mantar, thai soslu çıtır tavuk, salata",
           "price": "400",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 9,
           "name": "Köri Bowl",
           "description": "Makarna, köri soslu tavuk, salata",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "makarna"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 10,
           "name": "Teriyaki Bowl",
           "description": "Pilav, teriyaki soslu tavuk, salata",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 11,
           "name": "Bulgur Bowl",
           "description": "Meyhane pilavı, kaşarlı mantar, havuç tarator",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "koyu-peynir"
+            ],
+            "carb": [
+              "bulgur"
+            ],
+            "allergens": [
+              "sut",
+              "gluten"
+            ]
+          }
         },
         {
           "id": 12,
           "name": "Mantarlı Kuskus Bowl",
           "description": "Mantarlı peynir soslu kuskus, haşlanmış sebze, ızgara tavuk",
           "price": "420",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "kuskus"
+            ],
+            "allergens": [
+              "sut",
+              "gluten"
+            ]
+          }
         },
         {
           "id": 13,
           "name": "Vegan Bowl",
           "description": "Mercimek salatası, marul, söğüş, kavrulmuş nohut, lahana turşusu",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "baklagil"
+            ],
+            "carb": [],
+            "allergens": []
+          }
         },
         {
           "id": 14,
           "name": "Köfte Bowl",
           "description": "Pilav, çoban salata, anne köftesi, patates",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 15,
           "name": "SADE Soslu Bowl",
           "description": "Pilav, SADE soslu tavuk, salata",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 16,
           "name": "Köz Patlıcanlı Kuskus Bowl",
           "description": "SADE soslu kuskus, ızgara tavuk, salata",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "kuskus"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 17,
           "name": "Pesto Bowl",
           "description": "Pesto soslu fettucini, ızgara tavuk, salata",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "makarna"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 18,
           "name": "Spesiyal Köfte Bowl",
           "description": "Pilav, sebzeli dometesli köfte, köz patlıcan salatası",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 19,
           "name": "Humus Bowl",
           "description": "Kinoa, humus, çıtır nohut, söğüş, avokado, yeşil zeytin",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "baklagil"
+            ],
+            "carb": [
+              "kinoa"
+            ],
+            "allergens": [
+              "susam"
+            ]
+          }
         },
         {
           "id": 20,
           "name": "Somon Bowl",
           "description": "Soya soslu patates, ızgara kabak, biber, somon",
           "price": "650",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "balik"
+            ],
+            "carb": [],
+            "allergens": []
+          }
         },
         {
           "id": 21,
           "name": "Kremalı Somon",
           "description": "Kinoa, krema soslu somon, roka, havuç",
           "price": "650",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "balik"
+            ],
+            "carb": [
+              "kinoa"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 22,
           "name": "Teriyaki Soslu Somon",
           "description": "Basmati, teriyaki soslu somon, lahana turşusu, havuç",
           "price": "650",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "balik"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 23,
           "name": "Tandır Bowl",
           "description": "Siyah pirinç, kuzu tandır, guacamole sos, baharatlı mısır, SADE sos, mısır",
           "price": "650",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 24,
           "name": "Happy Fish",
           "description": "Pesto soslu kuskus, somon, salata",
           "price": "650",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "balik"
+            ],
+            "carb": [
+              "kuskus"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         }
       ]
     },
@@ -186,56 +429,160 @@
           "name": "Avokadolu Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, labneli avokado, haşlanmış yumurta, söğüş",
           "price": "400",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "yumurta"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 26,
           "name": "Hellimli Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, çırpılmış yumurta, ızgara hellim, avokado, söğüş",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "yumurta",
+              "hellim"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 27,
           "name": "Hindi Fümeli Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, labne, hindi füme, avokado, biberli omlet, söğüş",
           "price": "400",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "yumurta",
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 28,
           "name": "Pesto Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, pesto sos, ezine peynirli avokado, göz yumurta, acı yağ, söğüş",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "yumurta",
+              "beyaz-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 29,
           "name": "Sweet Chilli Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, avokado, sweet chilli soslu hellim ızgara, söğüş",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "hellim"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 30,
           "name": "Sucuklu Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, sucuklu hellimli yumurta, söğüş",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "yumurta",
+              "hellim",
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 31,
           "name": "Humuslu Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, humus, çıtır nohut, pastırma, acı yağ, söğüş",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "baklagil",
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "susam"
+            ]
+          }
         },
         {
           "id": 32,
           "name": "Mantarlı Ekmek Üstü",
           "description": "Ekşi mayalı ekmek, avokado, sarımsak kreması, soyalı mantar, söğüş",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         }
       ]
     },
@@ -249,35 +596,80 @@
           "name": "Tavuklu Salata",
           "description": "Marul, turşu, soğan, cherry domates, yoğurt sos, ızgara tavuk, mısır, meksika fasulyesi",
           "price": "370",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "baklagil"
+            ],
+            "carb": [],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 34,
           "name": "Hellimli Salata",
           "description": "Marul, yeşillik, cherry domates, avokado sos, ızgara hellim, kabak çekirdeği",
           "price": "370",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "hellim"
+            ],
+            "carb": [],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 35,
           "name": "Falafelli Salata",
           "description": "Marul, karabuğday, yeşillik, falafel, tahin sos, susam, cherry domates",
           "price": "370",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "baklagil"
+            ],
+            "carb": [],
+            "allergens": [
+              "susam"
+            ]
+          }
         },
         {
           "id": 36,
           "name": "Çıtır Salata",
           "description": "Marul, roka, turşu, kırmızı soğan, domates, çıtır tavuk, ballı hardal",
           "price": "370",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "bal"
+            ]
+          }
         },
         {
           "id": 37,
           "name": "Ton Balıklı Salata",
           "description": "Marul, yeşillik, cherry domates, ton balığı",
           "price": "370",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "balik"
+            ],
+            "carb": [],
+            "allergens": []
+          }
         }
       ]
     },
@@ -291,35 +683,81 @@
           "name": "Acılı Çıtır",
           "description": "Cajun soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
           "price": "370",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 39,
           "name": "Sweet Chilli Çıtır",
           "description": "Sweet Chilli soslu çıtır tavuk, patates, karamelize soğan sos, pembe sos",
           "price": "370",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 40,
           "name": "Çıtır Thai",
           "description": "Thai soslu çıtır tavuk, patates, köz biber sos, mayonez",
           "price": "370",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 41,
           "name": "Çıtır Köri",
           "description": "Körili çıtır tavuk, patates, köz biber sos, mayonez",
           "price": "370",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 42,
           "name": "SADE Çıtır",
           "description": "200 gr. çıtır tavuk, köz biber sos, ballı hardal, cajun sos, burger sos, mayonez",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "bal"
+            ]
+          }
         }
       ]
     },
@@ -333,21 +771,64 @@
           "name": "Köfte Burger",
           "description": "El yapımı hamberger ekmeği, burger sos, marul, 150 gr. dana köfte, cheddar peyniri, karamelize soğan, mayonez, jalapeno, patates",
           "price": "500",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 44,
           "name": "Tavuk Burger",
           "description": "El yapımı hamburger ekmeği, marul, acılı ballı hardal, çıtır tavuk but, çıtır kaşar peyniri, kuru soğan, mayonez, jalapeno, patates",
           "price": "550",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen",
+              "bal"
+            ]
+          }
         },
         {
           "id": 45,
           "name": "Gurme French Toast",
           "description": "El yapımı brioche ekmeği, kuzu tandır, kapya biber, soğan, eski kaşar, salata",
           "price": "650",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         }
       ]
     },
@@ -361,56 +842,160 @@
           "name": "Çıtır Tavuk Dürüm",
           "description": "Cajun sos, çıtır tavuk, marul, jalapeno, mayonez",
           "price": "400",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "wrap"
+            ],
+            "allergens": [
+              "gluten",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 47,
           "name": "Tavuk Dürüm",
           "description": "Mayonez, marul, tavuk, soğan, jalapone, mayonez",
           "price": "370",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "wrap"
+            ],
+            "allergens": [
+              "gluten",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 48,
           "name": "Köfte Dürüm",
           "description": "Anne köftesi, burger sos, kaşar peyniri, marul, karamelize soğan, mayonez, jalapeno",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "wrap"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 49,
           "name": "Tavuk Burrito",
           "description": "Basmati, labne, soya soslu marine edilmiş mantarlı tavuk göğüs, mısır, meksika fasulyesi, jalapeno, kibrit havuç, sarımsaklı mayonez",
           "price": "450",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "baklagil"
+            ],
+            "carb": [
+              "pilav",
+              "wrap"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 50,
           "name": "Meksika Burrito",
           "description": "Basmati, bolonez sos, guacamole sos, marul, jalapeno, mayonez, jalapeno",
           "price": "550",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et"
+            ],
+            "carb": [
+              "pilav",
+              "wrap"
+            ],
+            "allergens": [
+              "gluten",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 51,
           "name": "Köfte Burrito",
           "description": "Basmati, anne köftesi, köz biber, SADE sos, soğan, mayonez, jalapeno",
           "price": "450",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et"
+            ],
+            "carb": [
+              "pilav",
+              "wrap"
+            ],
+            "allergens": [
+              "gluten",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 52,
           "name": "Mantar Burrito (Vegan)",
           "description": "Basmati, avokado sos, sarımsak kreması, soya soslu mantar sote, havuç, mısır, marul, jalapeno",
           "price": "470",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [
+              "pilav",
+              "wrap"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 53,
           "name": "Tandır Burrito",
           "description": "Basmati, SADE sos, guacamole sos, kuzu tandır, cheddar peyniri, mayonez, jalapeno",
           "price": "600",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "pilav",
+              "wrap"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         }
       ]
     },
@@ -424,42 +1009,116 @@
           "name": "Çilekli French Toast",
           "description": "Brioche ekmeği, labne kreması, kırmızı meyve, bal",
           "price": "450",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen",
+              "bal"
+            ]
+          }
         },
         {
           "id": 55,
           "name": "Marmelatlı French Toast",
           "description": "Brioche ekmeği, labne kreması, orman meyvesi marmelatı, limon kabuğu, nane",
           "price": "450",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 56,
           "name": "Muzlu French Toast",
           "description": "Brioche ekmeği, yer fıstığı ezmesi, karamelize muz, bal, badem",
           "price": "450",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "yer-fistigi",
+              "yumurta-allergen",
+              "bal"
+            ]
+          }
         },
         {
           "id": 57,
           "name": "Fondü French Toast",
           "description": "Brioche ekmeği, eritilmiş çikolata, çilek, muz",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 58,
           "name": "Çıtır French Toast",
           "description": "Brioche ekmeği, hindi fümeli sos, çıtır tavuk, kuru domates",
           "price": "450",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 59,
           "name": "Scrambled Egg French Toast",
           "description": "Brioche ekmeği, hindi füme, kaşar peyniri, çırpılmış yumurta, söğüş",
           "price": "450",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "yumurta",
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         }
       ]
     },
@@ -473,63 +1132,168 @@
           "name": "Çıtır Bun (3 adet)",
           "description": "Cajun sos, marul, kuru soğan, çıtır tavuk",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 61,
           "name": "Köfte Bun (3 adet)",
           "description": "Burger sos, marul, domates, anne köftesi",
           "price": "470",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 62,
           "name": "Sote Bun (3 adet)",
           "description": "Sweet chilli sos, kaşar peyniri, jalapeno, tavuk sote",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 63,
           "name": "Sucuk Bun (3 adet)",
           "description": "Izgara hellim, sucuk, domates, marul",
           "price": "470",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "hellim",
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 64,
           "name": "Tavuklu Soğuk Bun (3 adet)",
           "description": "Tavuklu meze, marul",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 65,
           "name": "Tofu Bun (3 adet) (Vegan)",
           "description": "SADE tofu, havuç, salatalık, lahana turşusu",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tofu"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 66,
           "name": "Teriyaki Bun (3 adet)",
           "description": "Teriyaki soslu tavuk, soğan, havuç",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 67,
           "name": "Tandır Bun (3 adet)",
           "description": "Kuzu tandır, cheddar peyniri, kibrit patates",
           "price": "520",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 68,
           "name": "Meksika Bun (3 adet)",
           "description": "Bolonez sos, guacamole sos, kibrit patates",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         }
       ]
     },
@@ -543,35 +1307,98 @@
           "name": "Peynirli Tost",
           "description": "Cheddar peyniri, kaşar peyniri, söğüş",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 70,
           "name": "SADE'nin Tostu",
           "description": "Kuru domates sos, pesto sos, kaşar peyniri, söğüş",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 71,
           "name": "Anne Tostu",
           "description": "Beyaz peynir, kaşar peyniri, biber, domates, söğüş",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "koyu-peynir",
+              "beyaz-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 72,
           "name": "Sucuklu Tost",
           "description": "Sucuk, kaşar peyniri, söğüş",
           "price": "450",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 73,
           "name": "Tandır Tost",
           "description": "Kuzu tandır, eski kaşar",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         }
       ]
     },
@@ -585,14 +1412,37 @@
           "name": "Sebzeli Sandviç",
           "description": "Foccacia ekmeği, domates sos, roka, ızgara sebzeler, ezine peyniri",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "beyaz-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 75,
           "name": "Tavuklu Soğuk Sandviç",
           "description": "Foccaccia ekmeği, tavuklu meze, soğan turşusu, marul",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         }
       ]
     },
@@ -606,42 +1456,108 @@
           "name": "Kremalı Mantarlı Makarna",
           "description": "Fettucini, kuru soğan, mantar",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [
+              "makarna"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 77,
           "name": "Tavuklu Fettucini",
           "description": "Tavuk, krema, köy peyniri, çıtır soğan",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "beyaz-peynir"
+            ],
+            "carb": [
+              "makarna"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 78,
           "name": "Peynir Soslu Penne",
           "description": "4 çeşit peynir, muskat",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "koyu-peynir"
+            ],
+            "carb": [
+              "makarna"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 79,
           "name": "Cheddar Soslu Makarna",
           "description": "Çıtır tavuklu",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "makarna"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 80,
           "name": "Tavuklu Noodle",
           "description": "Tavuk, kabak, havuç, biber, taze soğan",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "noodle"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         },
         {
           "id": 81,
           "name": "Sebzeli Noodle",
           "description": "Mantar, kabak, havuç, biber, taze soğan",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [
+              "noodle"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         }
       ]
     },
@@ -655,14 +1571,39 @@
           "name": "Tavuklu Labne Soslu Taco (3 adet)",
           "description": "Labne sos, tavuk, meksika fasulyesi, jalapeno, çıtır soğan",
           "price": "400",
-          "featured": true
+          "featured": true,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "baklagil"
+            ],
+            "carb": [
+              "wrap"
+            ],
+            "allergens": [
+              "gluten",
+              "sut"
+            ]
+          }
         },
         {
           "id": 83,
           "name": "Klasik Taco",
           "description": "Bolonez sos, guacamole sos, kibrit patates, meksika fasulyesi, jalapeno",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "baklagil"
+            ],
+            "carb": [
+              "wrap"
+            ],
+            "allergens": [
+              "gluten"
+            ]
+          }
         }
       ]
     },
@@ -676,259 +1617,663 @@
           "name": "Glutensiz SADE Tofu Bowl",
           "description": "Zerdeçallı basmati, SADE sos, tofu, salata, avokado",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tofu"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 85,
           "name": "Glutensiz Vegan Thai Usulü Bowl",
           "description": "Basmati, thai soslu tofu, ızgara mantar, salata",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tofu"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 86,
           "name": "Glutensiz Çıtır Tofu Salata",
           "description": "Marul, roka, cherry domates, salatalık, mısır, taze soğan, avokado, çıtır tofu, böğürtlen sos",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tofu"
+            ],
+            "carb": [],
+            "allergens": []
+          }
         },
         {
           "id": 87,
           "name": "Glutensiz Sweet Chilli Soslu Bowl",
           "description": "Basmati, haşlanmış sebze, sweet chilli soslu tofu",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tofu"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 88,
           "name": "Glutensiz Pirinç Bowl",
           "description": "Siyah pirinç, humus, çıtır nohut, teriyaki soslu tofu, salata",
           "price": "400",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tofu",
+              "baklagil"
+            ],
+            "carb": [
+              "pilav"
+            ],
+            "allergens": [
+              "susam"
+            ]
+          }
         },
         {
           "id": 129,
           "name": "Glutensiz Çıtır Bun (3 adet)",
           "description": "Cajun sos, marul, kuru soğan, çıtır tavuk",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 89,
           "name": "Glutensiz Tofu Bun (3 adet)",
           "description": "SADE soslu tofu, salatalık, havuç, lahana turşusu",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tofu"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 90,
           "name": "Glutensiz Teriyaki Bun (3 adet)",
           "description": "Teriyaki soslu tavuk, havuç, taze soğan",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 91,
           "name": "Glutensiz Tavuklu Soğuk Bun (3 adet)",
           "description": "Tavuklu meze, marul",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 92,
           "name": "Glutensiz Sucuk Bun (3 adet)",
           "description": "Sucuk, hellim, domates, marul",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "hellim"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 93,
           "name": "Glutensiz Sote Bun (3 adet)",
           "description": "Tavuk sote, sweet chilli sos, jalapeno, kaşar peynir",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 94,
           "name": "Glutensiz Tandır Bun (3 adet)",
           "description": "Kuzu tandır, cheddar peyniri, kibrit patates",
           "price": "620",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 95,
           "name": "Glutensiz Meksika Bun (3 adet)",
           "description": "Bolonez sos, guacamole sos, kibrit patates",
           "price": "600",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 96,
           "name": "Glutensiz Sebzeli Sandviç",
           "description": "Domates sos, ızgara sebze, roka, ezine peyniri",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "beyaz-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 97,
           "name": "Glutensiz Tavuklu Soğuk Sandviç",
           "description": "Tavuklu meze, soğan turşusu, marul",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 98,
           "name": "Glutensiz Avokadolu Ekmek Üstü",
           "description": "Labneli avokado, haşlanmış yumurta, çörekotu, maydanoz, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "yumurta"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 99,
           "name": "Glutensiz Hellimli Ekmek Üstü",
           "description": "Çırpılmış yumurta, ızgara hellim, avokado, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "yumurta",
+              "hellim"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 100,
           "name": "Glutensiz Hindi Fümeli Ekmek Üstü",
           "description": "Labne, hindi füme, avokado, biberli omlet, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "yumurta",
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 101,
           "name": "Glutensiz Pesto Ekmek Üstü",
           "description": "Pesto sos, ezine peynirli avokado, göz yumurta, acı yağ, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "yumurta",
+              "beyaz-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 102,
           "name": "Glutensiz Humuslu Ekmek Üstü",
           "description": "Humus, çıtır nohut, pastırma, acı yağ",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "baklagil",
+              "et"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "susam"
+            ]
+          }
         },
         {
           "id": 103,
           "name": "Glutensiz Mantarlı Ekmek Üstü",
           "description": "Sarımsak kreması, avokado, soya soslu mantar, susam, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "susam"
+            ]
+          }
         },
         {
           "id": 104,
           "name": "Glutensiz Sweet Chilli Ekmek Üstü",
           "description": "Avokado, sweet chilli soslu ızgara hellim, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "hellim"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 105,
           "name": "Glutensiz Peynirli Tost",
           "description": "Kaşar peyniri, cheddar peyniri, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 106,
           "name": "Glutensiz SADE'nin Tostu",
           "description": "Kuru domates sos, pesto sos, kaşar peyniri, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 107,
           "name": "Glutensiz Anne Tostu",
           "description": "Beyaz peynir, domates, biber, kaşar peyniri, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "koyu-peynir",
+              "beyaz-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 108,
           "name": "Glutensiz Sucuklu Tost",
           "description": "Sucuk, kaşar peyniri, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 109,
           "name": "Glutensiz Tandır Tost",
           "description": "Kuzu tandır, eski kaşar, söğüş",
           "price": "620",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 110,
           "name": "Glutensiz Çıtır Dürüm",
           "description": "Çıtır tavuk, cajun sos, marul, jalapeno, mayonez",
           "price": "450",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "wrap"
+            ],
+            "allergens": [
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 111,
           "name": "Glutensiz Tavuk Dürüm",
           "description": "Mayonez, soğan, marul, tavuk sote, mayonez, jalapeno",
           "price": "420",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk"
+            ],
+            "carb": [
+              "wrap"
+            ],
+            "allergens": [
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 112,
           "name": "Glutensiz Tavuk Burrito",
           "description": "Basmati, labne, soya soslu tavuk, havuç, meksika fasulyesi, mısır, mayonez, jalapeno",
           "price": "550",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "tavuk",
+              "baklagil"
+            ],
+            "carb": [
+              "pilav",
+              "wrap"
+            ],
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 113,
           "name": "Glutensiz Mantar Burrito",
           "description": "Sarımsak kreması, avokado, soya soslu mantar, basmati, havuç, mısır, meksika fasulyesi, jalapeno",
           "price": "570",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "baklagil"
+            ],
+            "carb": [
+              "pilav",
+              "wrap"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 114,
           "name": "Glutensiz Meksika Burrito",
           "description": "Basmati, bolonez sos, guacamole sos, meksika fasulyesi, mısır, yeşillik, mayonez, jalapeno",
           "price": "650",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "baklagil"
+            ],
+            "carb": [
+              "pilav",
+              "wrap"
+            ],
+            "allergens": [
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 115,
           "name": "Glutensiz Tandır Burrito",
           "description": "Basmati, SADE sos, kuzu tandır, cheddar, guacamole sos, mayonez, jalapeno",
           "price": "700",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "pilav",
+              "wrap"
+            ],
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 116,
           "name": "Glutensiz Simit Bowl",
           "description": "Gulutensiz simit, haşlanmış yumurta, ezine peyniri, yeşil zeytin, avokado, söğüş",
           "price": "500",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "yumurta",
+              "beyaz-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 117,
           "name": "Glutensiz Köfte Burger",
           "description": "Burger sos, marul, glutensiz köfte, cheddar peyniri, karamelize soğan, patates, mayonez, jalapeno",
           "price": "550",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "et",
+              "koyu-peynir"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         },
         {
           "id": 118,
           "name": "Glutensiz Vegan Burger",
           "description": "Taco sos, vegan köfte, karamelize soğan, sote mantar, patates, taco sos, jalapeno",
           "price": "550",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [
+              "baklagil"
+            ],
+            "carb": [
+              "ekmek"
+            ],
+            "allergens": []
+          }
         },
         {
           "id": 119,
           "name": "Glutensiz Vegan Pasta Çeşitleri",
           "description": "Limonlu, çilekli, vişneli",
           "price": "600",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
+          }
         }
       ]
     },
@@ -942,28 +2287,48 @@
           "name": "Böğürtlenli Smoothie",
           "description": "",
           "price": "200",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": []
+          }
         },
         {
           "id": 121,
           "name": "Avokadolu Smoothie",
           "description": "",
           "price": "200",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": []
+          }
         },
         {
           "id": 122,
           "name": "Yeşil Detoks Smoothie",
           "description": "",
           "price": "200",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": []
+          }
         },
         {
           "id": 123,
           "name": "Kakaolu Smoothie",
           "description": "",
           "price": "200",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": []
+          }
         }
       ]
     },
@@ -977,35 +2342,64 @@
           "name": "Limonata Çeşitleri",
           "description": "Sade, çilekli, muzlu, böğürtlenli, sütlü",
           "price": "75",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 125,
           "name": "Ayran Çeşitleri",
           "description": "Sade, yeşil, sarı, pembe",
           "price": "75",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "sut"
+            ]
+          }
         },
         {
           "id": 126,
           "name": "Yerli Gazoz Çeşitleri",
           "description": "",
           "price": "70",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": []
+          }
         },
         {
           "id": 127,
           "name": "Çay",
           "description": "",
           "price": "60",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": []
+          }
         },
         {
           "id": 128,
           "name": "Su",
           "description": "",
           "price": "20",
-          "featured": false
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": []
+          }
         }
       ]
     }
