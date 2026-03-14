@@ -761,6 +761,27 @@ function setupFilterEvents() {
             closeFilterDrawer();
         });
     }
+
+    // Accordion toggles for each filter category
+    const accordionGroups = [
+        { toggleId: 'proteinToggle',  optionsId: 'proteinOptions' },
+        { toggleId: 'carbToggle',     optionsId: 'carbOptions' },
+        { toggleId: 'allergenToggle', optionsId: 'allergenOptions' }
+    ];
+    accordionGroups.forEach(({ toggleId, optionsId }) => {
+        const btn = document.getElementById(toggleId);
+        const container = document.getElementById(optionsId);
+        if (!btn || !container) return;
+        btn.addEventListener('click', () => {
+            const isOpen = container.classList.contains('open');
+            container.classList.toggle('open', !isOpen);
+            const icon = btn.querySelector('.toggle-icon');
+            if (icon) {
+                icon.classList.toggle('expanded', !isOpen);
+                icon.textContent = isOpen ? '▶' : '▼';
+            }
+        });
+    });
 }
 
 // Initialize the entire filter system
