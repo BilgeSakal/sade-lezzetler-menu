@@ -3,6 +3,28 @@ let menuData = null;
 let currentFilter = 'all';
 
 /* ============================================
+   ORDER MODE SYSTEM (online / restaurant)
+   ============================================ */
+
+// Read ?type=online or ?type=restaurant from URL; default to 'restaurant'
+function getOrderMode() {
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get('type');
+    return type === 'online' ? 'online' : 'restaurant';
+}
+
+// Cached order mode — set once at page load
+const orderMode = getOrderMode();
+
+// Return the correct price for the current order mode
+function getPrice(item) {
+    if (orderMode === 'online') {
+        return item.priceOnline !== undefined ? item.priceOnline : item.priceRestaurant;
+    }
+    return item.priceRestaurant !== undefined ? item.priceRestaurant : item.priceOnline;
+}
+
+/* ============================================
    LANGUAGE / TRANSLATION SYSTEM
    ============================================ */
 
@@ -253,6 +275,9 @@ function initializeMenu() {
     if (headerTitle) {
         headerTitle.textContent = `🌿 ${menuData.cafeName}`;
     }
+
+    // Update page title and mode indicator based on order mode
+    initOrderMode();
     
     // Create category navigation
     createCategoryNav();
@@ -262,6 +287,28 @@ function initializeMenu() {
     
     // Setup category filtering
     setupCategoryFiltering();
+}
+
+// Apply order-mode-specific UI updates (title, header indicator)
+function initOrderMode() {
+    const isOnline = orderMode === 'online';
+    const modeLabel = isOnline ? 'Online Siparişler' : 'Restoran';
+    const modeIcon = isOnline ? '📱' : '🍽️';
+    const cafeName = (menuData && menuData.cafeName) ? menuData.cafeName : 'Sade Lezzetler';
+
+    // Update browser tab title
+    document.title = `${cafeName} Menü - ${modeLabel}`;
+
+    // Update or create the mode indicator element in the header
+    let modeIndicator = document.getElementById('modeIndicator');
+    if (!modeIndicator) {
+        modeIndicator = document.createElement('p');
+        modeIndicator.id = 'modeIndicator';
+        modeIndicator.className = 'mode-indicator';
+        const headerContent = document.querySelector('.header-content');
+        if (headerContent) headerContent.appendChild(modeIndicator);
+    }
+    modeIndicator.textContent = `${modeIcon} ${modeLabel}`;
 }
 
 // Create category navigation buttons
@@ -491,7 +538,7 @@ function createMenuItem(item) {
     
     const price = document.createElement('div');
     price.className = 'menu-item-price';
-    price.textContent = `₺${item.price}`;
+    price.textContent = `₺${getPrice(item)}`;
     
     header.appendChild(name);
     header.appendChild(price);
@@ -693,7 +740,7 @@ function itemMatchesFilters(item) {
         };
         const range = priceRanges[activeFilters.price];
         if (range) {
-            const price = Number(item.price) || 0;
+        const price = Number(getPrice(item)) || 0;
             if (price < range.min || price >= range.max) return false;
         }
     }
