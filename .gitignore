@@ -19,3 +19,6 @@ logs
 tmp/
 temp/
 *.tmp
+
+# Server output
+nohup.out

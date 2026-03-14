@@ -1,0 +1,20 @@
+127.0.0.1 - - [14/Mar/2026 23:11:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /translations.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /menu-data.json HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/6.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/12.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/8.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/25.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/27.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] code 404, message File not found
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/33.jpg HTTP/1.1" 404 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/43.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/placeholder-food.svg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/46.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/49.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 23:11:54] "GET /images/54.jpg HTTP/1.1" 200 -
