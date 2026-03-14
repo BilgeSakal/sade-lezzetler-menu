@@ -1,56 +1,49 @@
 // Main application state
 let menuData = null;
 let currentFilter = 'all';
-let activeIngredients = [];
-let activePriceRange = 'all';
+
+const activeFilters = {
+    protein: [],
+    carb: [],
+    allergens: [],
+    price: 'all'
+};
 
 /* ============================================
-   SMART INGREDIENT FILTERS (19 filters, 41+ ingredients covered)
+   MANUAL FILTER GROUPS
    ============================================ */
 
-const SMART_INGREDIENTS = [
-    // GRUP 1: Protein Kaynakları
-    { id: 'tavuk', name: 'Tavuk', icon: '🍗', category: 'protein', description: 'Tavuk içeren tüm yemekler' },
-    { id: 'kirmizi-et', name: 'Kırmızı Et', icon: '🥩', category: 'protein', description: 'Et, köfte, kuzu, tandır', includes: ['et', 'köfte', 'kuzu', 'tandır', 'dana', 'anne köftesi'] },
-    { id: 'deniz-urunleri', name: 'Deniz Ürünleri', icon: '🐟', category: 'protein', description: 'Somon, ton balığı', includes: ['somon', 'ton balığı', 'balık'] },
-    { id: 'yumurta', name: 'Yumurta', icon: '🥚', category: 'protein', description: 'Yumurta içeren yemekler' },
-
-    // GRUP 2: Vejetaryen/Vegan Protein
-    { id: 'baklagil', name: 'Baklagiller', icon: '🫘', category: 'protein', description: 'Falafel, humus, nohut, fasulye', includes: ['falafel', 'humus', 'nohut', 'çıtır nohut', 'meksika fasulyesi', 'fasulye'] },
-    { id: 'tofu', name: 'Tofu', icon: '🟨', category: 'protein', description: 'Tofu içeren vegan yemekler' },
-    { id: 'hellim', name: 'Hellim', icon: '🧀', category: 'protein', description: 'Izgara hellim' },
-
-    // GRUP 3: Süt Ürünleri
-    { id: 'peynir', name: 'Peynir', icon: '🧀', category: 'dairy', description: 'Kaşar, cheddar, ezine, parmesan', includes: ['kaşar', 'cheddar', 'ezine', 'eski kaşar', 'beyaz peynir', 'peynir', 'köy peyniri', 'parmesan'] },
-    { id: 'sut-urunleri', name: 'Süt/Krema/Yoğurt', icon: '🥛', category: 'dairy', description: 'Krema, yoğurt, labne içeren', includes: ['krema', 'yoğurt', 'labne', 'süt', 'kuru cacık'] },
-
-    // GRUP 4: Karbonhidrat
-    { id: 'ekmek', name: 'Ekmek', icon: '🍞', category: 'carb', description: 'Tüm ekmek ürünleri', includes: ['ekmek', 'ekşi mayalı ekmek', 'wrap', 'tortilla', 'bun', 'brioche', 'foccacia'] },
-    { id: 'pilav-tahil', name: 'Pilav/Tahıl', icon: '🍚', category: 'carb', description: 'Pilav, kinoa, bulgur, kuskus', includes: ['pilav', 'basmati', 'siyah pirinç', 'pirinç', 'kinoa', 'bulgur', 'kuskus', 'karabuğday', 'meyhane pilavı'] },
-    { id: 'makarna', name: 'Makarna/Noodle', icon: '🍝', category: 'carb', description: 'Makarna, fettucini, penne, noodle', includes: ['makarna', 'fettucini', 'penne', 'noodle', 'pasta'] },
-
-    // GRUP 5: Popüler Sebzeler
-    { id: 'avokado', name: 'Avokado', icon: '🥑', category: 'veggie', description: 'Avokado içeren' },
-    { id: 'mantar', name: 'Mantar', icon: '🍄', category: 'veggie', description: 'Mantar sote, ızgara mantar' },
-    { id: 'patates', name: 'Patates', icon: '🥔', category: 'veggie', description: 'Patates, kibrit patates' },
-
-    // GRUP 6: Sos Profilleri
-    { id: 'acili', name: 'Acılı', icon: '🌶️', category: 'sauce', description: 'Cajun, thai, sweet chilli, jalapeno', includes: ['cajun', 'cajun sos', 'thai', 'thai sos', 'sweet chilli', 'jalapeno', 'acı'] },
-    { id: 'kremali', name: 'Kremalı Soslar', icon: '🥛', category: 'sauce', description: 'Krema sos, peynir sos, cheddar sos', includes: ['krema sos', 'kremalı', 'peynir sos', 'cheddar sos', 'limon soslu kremalı'] },
-    { id: 'asya-usulu', name: 'Asya Sosları', icon: '🥢', category: 'sauce', description: 'Teriyaki, soya sos', includes: ['teriyaki', 'teriyaki sos', 'soya', 'soya sos'] },
-    { id: 'ozel-soslar', name: 'SADE Özel Soslar', icon: '⭐', category: 'sauce', description: 'SADE sos, pesto, guacamole, tahin', includes: ['SADE sos', 'pesto', 'pesto sos', 'guacamole', 'guacamole sos', 'tahin', 'tahin sos', 'burger sos', 'köz biber sos', 'ballı hardal'] },
-
-    // GRUP 7: Şarküteri
-    { id: 'sarkuteri', name: 'Şarküteri', icon: '🌭', category: 'special', description: 'Sucuk, pastırma, hindi füme', includes: ['sucuk', 'pastırma', 'hindi füme', 'hindi fümeli'] }
-];
-
-const PRICE_RANGES = [
-    { id: 'all', name: 'Tümü', min: 0, max: Infinity, icon: '💰' },
-    { id: '0-300', name: '0-300₺', min: 0, max: 300, icon: '💰' },
-    { id: '300-450', name: '300-450₺', min: 300, max: 450, icon: '💰💰' },
-    { id: '450-600', name: '450-600₺', min: 450, max: 600, icon: '💰💰💰' },
-    { id: '600+', name: '600₺+', min: 600, max: Infinity, icon: '💎' }
-];
+const FILTER_GROUPS = {
+    protein: [
+        { id: 'tavuk', name: 'Tavuk', icon: '🍗' },
+        { id: 'et', name: 'Et', icon: '🥩' },
+        { id: 'balik', name: 'Balık', icon: '🐟' },
+        { id: 'yumurta', name: 'Yumurta', icon: '🥚' },
+        { id: 'tofu', name: 'Tofu', icon: '🟨' },
+        { id: 'koyu-peynir', name: 'Kaşar / Cheddar', icon: '🧀' },
+        { id: 'beyaz-peynir', name: 'Beyaz Peynir', icon: '🧀' },
+        { id: 'hellim', name: 'Hellim', icon: '🧀' },
+        { id: 'baklagil', name: 'Baklagil', icon: '🫘' }
+    ],
+    carb: [
+        { id: 'ekmek', name: 'Ekmek', icon: '🍞' },
+        { id: 'pilav', name: 'Pilav', icon: '🍚' },
+        { id: 'makarna', name: 'Makarna', icon: '🍝' },
+        { id: 'kinoa', name: 'Kinoa', icon: '🌾' },
+        { id: 'bulgur', name: 'Bulgur', icon: '🌾' },
+        { id: 'kuskus', name: 'Kuskus', icon: '🌾' },
+        { id: 'wrap', name: 'Wrap / Dürüm', icon: '🌯' },
+        { id: 'noodle', name: 'Noodle', icon: '🍜' }
+    ],
+    allergens: [
+        { id: 'gluten', name: 'Gluten', icon: '🌾' },
+        { id: 'sut', name: 'Süt / Laktoz', icon: '🥛' },
+        { id: 'yumurta-allergen', name: 'Yumurta', icon: '🥚' },
+        { id: 'yer-fistigi', name: 'Yer Fıstığı', icon: '🥜' },
+        { id: 'susam', name: 'Susam', icon: '🌿' },
+        { id: 'bal', name: 'Bal', icon: '🍯' }
+    ]
+};
 
 /* ============================================
    Category Warning (Çölyak Uyarısı)
@@ -235,10 +228,13 @@ function renderMenu() {
     }
 
     // STEP 2: Apply ingredient and price filters to the selected categories
-    if (activeIngredients.length > 0 || activePriceRange !== 'all') {
+    const filtersActive = activeFilters.protein.length > 0 || activeFilters.carb.length > 0 ||
+                          activeFilters.allergens.length > 0 || activeFilters.price !== 'all';
+
+    if (filtersActive) {
         categoriesToRender = categoriesToRender.map(category => {
             const filteredItems = category.items.filter(item => {
-                return itemMatchesIngredients(item) && itemMatchesPrice(item);
+                return itemMatchesFilters(item);
             });
             return { ...category, items: filteredItems };
         }).filter(category => category.items.length > 0);
@@ -252,7 +248,8 @@ function renderMenu() {
 
     // Show "no results" message if needed
     if (container.children.length === 0) {
-        const filterActive = activeIngredients.length > 0 || activePriceRange !== 'all';
+        const filterActive = activeFilters.protein.length > 0 || activeFilters.carb.length > 0 ||
+                             activeFilters.allergens.length > 0 || activeFilters.price !== 'all';
         const categoryName = currentFilter === 'all' ? 'menüde' :
             (menuData.categories.find(c => c.id === currentFilter)?.name || 'kategoride');
 
@@ -548,59 +545,55 @@ document.addEventListener('keydown', function(e) {
 });
 
 /* ============================================
-   SMART FILTER SYSTEM
+   MANUAL FILTER SYSTEM
    ============================================ */
 
-// Auto-detect ingredients from item name/description
-function autoExtractIngredients(item) {
-    const desc = (item.description || '').toLowerCase();
-    const name = item.name.toLowerCase();
-    const text = desc + ' ' + name;
+// Check if an item matches all active filters
+function itemMatchesFilters(item) {
+    const cats = item.categories || { protein: [], carb: [], allergens: [] };
 
-    const foundIngredients = [];
-
-    // Word-boundary check that handles Turkish characters
-    function containsWord(haystack, needle) {
-        const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        return new RegExp('(^|[\\s,;.()])' + escaped + '($|[\\s,;.()/])', 'i').test(haystack);
+    // Price filter
+    if (activeFilters.price !== 'all') {
+        const priceRanges = {
+            '0-300':   { min: 0,   max: 300 },
+            '300-450': { min: 300, max: 450 },
+            '450-600': { min: 450, max: 600 },
+            '600+':    { min: 600, max: Infinity }
+        };
+        const range = priceRanges[activeFilters.price];
+        if (range) {
+            const price = Number(item.price) || 0;
+            if (price < range.min || price >= range.max) return false;
+        }
     }
 
-    SMART_INGREDIENTS.forEach(ingredient => {
-        if (ingredient.includes) {
-            if (ingredient.includes.some(keyword => containsWord(text, keyword.toLowerCase()))) {
-                foundIngredients.push(ingredient.id);
-            }
-        } else {
-            if (containsWord(text, ingredient.name.toLowerCase())) {
-                foundIngredients.push(ingredient.id);
-            }
-        }
-    });
+    // Protein filter: OR logic — item must contain at least one selected protein
+    if (activeFilters.protein.length > 0) {
+        const hasProtein = activeFilters.protein.some(p => cats.protein.includes(p));
+        if (!hasProtein) return false;
+    }
 
-    return [...new Set(foundIngredients)];
-}
+    // Carb filter: OR logic — item must contain at least one selected carb
+    if (activeFilters.carb.length > 0) {
+        const hasCarb = activeFilters.carb.some(c => cats.carb.includes(c));
+        if (!hasCarb) return false;
+    }
 
-// Check if item matches any selected ingredient filter (OR logic)
-function itemMatchesIngredients(item) {
-    if (activeIngredients.length === 0) return true;
-    const itemIngredients = autoExtractIngredients(item);
-    return activeIngredients.some(id => itemIngredients.includes(id));
-}
+    // Allergen filter: NOT logic — exclude items containing any selected allergen
+    if (activeFilters.allergens.length > 0) {
+        const hasAllergen = activeFilters.allergens.some(a => cats.allergens.includes(a));
+        if (hasAllergen) return false;
+    }
 
-// Check if item price falls within selected range
-function itemMatchesPrice(item) {
-    if (activePriceRange === 'all') return true;
-    const range = PRICE_RANGES.find(r => r.id === activePriceRange);
-    if (!range) return true;
-    const price = Number(item.price) || 0;
-    return price >= range.min && price < range.max;
+    return true;
 }
 
 // Update badge showing number of active filters
 function updateFilterCount() {
     const badge = document.getElementById('filterCount');
     if (!badge) return;
-    const count = activeIngredients.length + (activePriceRange !== 'all' ? 1 : 0);
+    const count = activeFilters.protein.length + activeFilters.carb.length +
+                  activeFilters.allergens.length + (activeFilters.price !== 'all' ? 1 : 0);
     if (count > 0) {
         badge.textContent = count;
         badge.style.display = 'flex';
@@ -611,12 +604,12 @@ function updateFilterCount() {
 
 // Apply filters and re-render menu
 function applyFilters() {
-    // When filters are applied, reset category to "all" so it searches entire menu
-    if (activeIngredients.length > 0 || activePriceRange !== 'all') {
+    const filtersActive = activeFilters.protein.length > 0 || activeFilters.carb.length > 0 ||
+                          activeFilters.allergens.length > 0 || activeFilters.price !== 'all';
+    if (filtersActive) {
         currentFilter = 'all';
         activateFirstCategoryButton();
     }
-
     updateFilterCount();
     renderMenu();
     closeFilterDrawer();
@@ -637,9 +630,11 @@ function activateFirstCategoryButton() {
 
 // Clear only content/price filters (keep category selection)
 function clearContentFilters() {
-    activeIngredients = [];
-    activePriceRange = 'all';
-    createIngredientFilters();
+    activeFilters.protein = [];
+    activeFilters.carb = [];
+    activeFilters.allergens = [];
+    activeFilters.price = 'all';
+    createFilterOptions();
     createPriceFilters();
     updateFilterCount();
     renderMenu();
@@ -649,18 +644,6 @@ function clearContentFilters() {
 function clearCategoryFilter() {
     currentFilter = 'all';
     activateFirstCategoryButton();
-    renderMenu();
-}
-
-// Clear ALL filters (category + content + price)
-function clearAllFilters() {
-    currentFilter = 'all';
-    activateFirstCategoryButton();
-    activeIngredients = [];
-    activePriceRange = 'all';
-    createIngredientFilters();
-    createPriceFilters();
-    updateFilterCount();
     renderMenu();
 }
 
@@ -682,28 +665,30 @@ function closeFilterDrawer() {
     }
 }
 
-// Generate ingredient checkboxes grouped by category
-function createIngredientFilters() {
-    const categories = ['protein', 'dairy', 'carb', 'veggie', 'sauce', 'special'];
-    categories.forEach(cat => {
-        const container = document.querySelector(`.filter-group-items[data-group="${cat}"]`);
+// Generate checkboxes for protein, carb, and allergen filter groups
+function createFilterOptions() {
+    const groups = ['protein', 'carb', 'allergens'];
+    const containerIds = { protein: 'proteinOptions', carb: 'carbOptions', allergens: 'allergenOptions' };
+
+    groups.forEach(group => {
+        const container = document.getElementById(containerIds[group]);
         if (!container) return;
         container.innerHTML = '';
-        SMART_INGREDIENTS.filter(ing => ing.category === cat).forEach(ingredient => {
+        FILTER_GROUPS[group].forEach(option => {
             const label = document.createElement('label');
-            label.className = 'filter-item' + (activeIngredients.includes(ingredient.id) ? ' checked' : '');
+            label.className = 'filter-option' + (activeFilters[group].includes(option.id) ? ' checked' : '');
             label.innerHTML = `
-                <input type="checkbox" value="${ingredient.id}" ${activeIngredients.includes(ingredient.id) ? 'checked' : ''}>
-                <span>${ingredient.icon} ${ingredient.name}</span>`;
+                <input type="checkbox" value="${option.id}" ${activeFilters[group].includes(option.id) ? 'checked' : ''}>
+                <span>${option.icon} ${option.name}</span>`;
             const checkbox = label.querySelector('input');
             checkbox.addEventListener('change', () => {
                 if (checkbox.checked) {
-                    if (!activeIngredients.includes(ingredient.id)) {
-                        activeIngredients.push(ingredient.id);
+                    if (!activeFilters[group].includes(option.id)) {
+                        activeFilters[group].push(option.id);
                     }
                     label.classList.add('checked');
                 } else {
-                    activeIngredients = activeIngredients.filter(id => id !== ingredient.id);
+                    activeFilters[group] = activeFilters[group].filter(id => id !== option.id);
                     label.classList.remove('checked');
                 }
                 updateFilterCount();
@@ -718,16 +703,23 @@ function createPriceFilters() {
     const container = document.getElementById('priceFilters');
     if (!container) return;
     container.innerHTML = '';
-    PRICE_RANGES.forEach(range => {
+    const priceOptions = [
+        { id: 'all',     name: 'Tümü',     icon: '💰' },
+        { id: '0-300',   name: '0-300₺',   icon: '💰' },
+        { id: '300-450', name: '300-450₺', icon: '💰💰' },
+        { id: '450-600', name: '450-600₺', icon: '💰💰💰' },
+        { id: '600+',    name: '600₺+',    icon: '💎' }
+    ];
+    priceOptions.forEach(range => {
         const label = document.createElement('label');
-        label.className = 'price-filter-item' + (activePriceRange === range.id ? ' checked' : '');
+        label.className = 'price-option' + (activeFilters.price === range.id ? ' checked' : '');
         label.innerHTML = `
-            <input type="radio" name="priceRange" value="${range.id}" ${activePriceRange === range.id ? 'checked' : ''}>
+            <input type="radio" name="priceRange" value="${range.id}" ${activeFilters.price === range.id ? 'checked' : ''}>
             <span>${range.icon} ${range.name}</span>`;
         const radio = label.querySelector('input');
         radio.addEventListener('change', () => {
-            activePriceRange = range.id;
-            container.querySelectorAll('.price-filter-item').forEach(el => el.classList.remove('checked'));
+            activeFilters.price = range.id;
+            container.querySelectorAll('.price-option').forEach(el => el.classList.remove('checked'));
             label.classList.add('checked');
             updateFilterCount();
         });
@@ -769,28 +761,11 @@ function setupFilterEvents() {
             closeFilterDrawer();
         });
     }
-
-    // Collapsible group toggles
-    document.querySelectorAll('.filter-group-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const group = btn.dataset.group;
-            const items = document.querySelector(`.filter-group-items[data-group="${group}"]`);
-            if (!items) return;
-            const isExpanded = btn.classList.contains('expanded');
-            if (isExpanded) {
-                btn.classList.remove('expanded');
-                items.style.display = 'none';
-            } else {
-                btn.classList.add('expanded');
-                items.style.display = 'flex';
-            }
-        });
-    });
 }
 
 // Initialize the entire filter system
 function initializeFilters() {
-    createIngredientFilters();
+    createFilterOptions();
     createPriceFilters();
     setupFilterEvents();
 }
