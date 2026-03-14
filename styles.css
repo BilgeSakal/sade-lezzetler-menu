@@ -42,30 +42,28 @@ body {
 .header {
     background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
     color: white;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
     box-shadow: var(--shadow-md);
 }
 
-.header h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-    letter-spacing: 0.02em;
+.header-logo {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.header .tagline {
-    font-size: 0.9rem;
-    opacity: 0.85;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    margin-top: 0.25rem;
+@media (max-width: 768px) {
+    .header-logo {
+        max-width: 250px;
+    }
 }
 
-.header p:not(.tagline) {
-    font-size: 1rem;
-    opacity: 0.9;
-    font-weight: 300;
+@media (max-width: 480px) {
+    .header-logo {
+        max-width: 200px;
+    }
 }
 
 .mode-indicator {
