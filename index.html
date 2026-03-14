@@ -60,21 +60,31 @@
             <div class="filter-drawer-body">
                 <!-- Protein Filters -->
                 <div class="filter-section">
-                    <h4 class="filter-section-title">🍗 Protein</h4>
-                    <div class="filter-options" id="proteinOptions"></div>
+                    <button class="filter-group-toggle" id="proteinToggle">
+                        <span>🍗 Protein</span>
+                        <span class="toggle-icon expanded">▼</span>
+                    </button>
+                    <div class="filter-group-items open" id="proteinOptions"></div>
                 </div>
 
                 <!-- Carbohydrate Filters -->
                 <div class="filter-section">
-                    <h4 class="filter-section-title">🍞 Karbonhidrat</h4>
-                    <div class="filter-options" id="carbOptions"></div>
+                    <button class="filter-group-toggle" id="carbToggle">
+                        <span>🍞 Karbonhidrat</span>
+                        <span class="toggle-icon">▶</span>
+                    </button>
+                    <div class="filter-group-items" id="carbOptions"></div>
                 </div>
 
                 <!-- Allergen Filters -->
                 <div class="filter-section">
-                    <h4 class="filter-section-title">⚠️ Alerjen Maddeler</h4>
-                    <p class="allergen-note">Seçilen alerjenler içeren ürünler listeden çıkarılır.</p>
-                    <div class="filter-options" id="allergenOptions"></div>
+                    <button class="filter-group-toggle" id="allergenToggle">
+                        <span>⚠️ Alerjen Maddeler</span>
+                        <span class="toggle-icon">▶</span>
+                    </button>
+                    <div class="filter-group-items" id="allergenOptions">
+                        <p class="allergen-note">Seçilen alerjenler içeren ürünler listeden çıkarılır.</p>
+                    </div>
                 </div>
 
                 <!-- Price Filters -->
