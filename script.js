@@ -289,26 +289,12 @@ function initializeMenu() {
     setupCategoryFiltering();
 }
 
-// Apply order-mode-specific UI updates (title, header indicator)
+// Apply order-mode-specific UI updates (title only)
 function initOrderMode() {
-    const isOnline = orderMode === 'online';
-    const modeLabel = isOnline ? 'Online Siparişler' : 'Restoran';
-    const modeIcon = isOnline ? '📱' : '🍽️';
     const cafeName = (menuData && menuData.cafeName) ? menuData.cafeName : 'Sade Lezzetler';
 
     // Update browser tab title
-    document.title = `${cafeName} Menü - ${modeLabel}`;
-
-    // Update or create the mode indicator element in the header
-    let modeIndicator = document.getElementById('modeIndicator');
-    if (!modeIndicator) {
-        modeIndicator = document.createElement('p');
-        modeIndicator.id = 'modeIndicator';
-        modeIndicator.className = 'mode-indicator';
-        const headerContent = document.querySelector('.header-content');
-        if (headerContent) headerContent.appendChild(modeIndicator);
-    }
-    modeIndicator.textContent = `${modeIcon} ${modeLabel}`;
+    document.title = `${cafeName} Menü - ${orderMode === 'online' ? 'Online Siparişler' : 'Restoran'}`;
 }
 
 // Create category navigation buttons
