@@ -499,7 +499,7 @@ function createMenuItem(item) {
     // Make image clickable - open in modal
     img.addEventListener('click', function(e) {
         e.stopPropagation(); // Prevent card click if any
-        openImageModal(this.src, item.name);
+        openImageModal(this.src, item.name, item);
     });
 
     card.appendChild(img);
@@ -637,11 +637,21 @@ function initCategoryScroll() {
    IMAGE MODAL FUNCTIONS
    ============================================ */
 
+// Convert allergen IDs to Turkish display names
+function getAllergenNames(allergenIds) {
+    if (!allergenIds || allergenIds.length === 0) return [];
+    return allergenIds.map(id => {
+        const match = FILTER_GROUPS.allergens.find(a => a.id === id);
+        return match ? match.name : id;
+    });
+}
+
 // Open image modal
-function openImageModal(imageSrc, caption) {
+function openImageModal(imageSrc, caption, item) {
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
     const modalCaption = document.getElementById('modalCaption');
+    const modalAllergens = document.getElementById('modalAllergens');
 
     if (!modal || !modalImg || !modalCaption) return;
 
@@ -649,6 +659,21 @@ function openImageModal(imageSrc, caption) {
     modalImg.src = imageSrc;
     modalImg.alt = caption;
     modalCaption.textContent = caption;
+
+    // Display allergen information
+    if (modalAllergens) {
+        const allergenIds = item && item.categories && item.categories.allergens
+            ? item.categories.allergens
+            : [];
+        const names = getAllergenNames(allergenIds);
+        if (names.length > 0) {
+            modalAllergens.textContent = '⚠️ Alerjenler: ' + names.join(', ');
+            modalAllergens.className = 'modal-allergens modal-allergens--has-allergens';
+        } else {
+            modalAllergens.textContent = '✅ Alerjen içermez';
+            modalAllergens.className = 'modal-allergens modal-allergens--safe';
+        }
+    }
 
     // Show modal
     modal.classList.add('active');
