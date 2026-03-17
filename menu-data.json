@@ -1055,7 +1055,8 @@
             ],
             "allergens": [
               "gluten",
-              "yumurta-allergen"
+              "yumurta-allergen",
+              "sut"
             ]
           }
         },
@@ -1162,7 +1163,8 @@
               "gluten",
               "yer-fistigi",
               "yumurta-allergen",
-              "bal"
+              "bal",
+              "sut"
             ]
           }
         },
@@ -1202,7 +1204,9 @@
             ],
             "allergens": [
               "gluten",
-              "yumurta-allergen"
+              "yumurta-allergen",
+              "susam",
+              "sut"
             ]
           }
         },
@@ -1225,7 +1229,8 @@
             "allergens": [
               "gluten",
               "sut",
-              "yumurta-allergen"
+              "yumurta-allergen",
+              "susam"
             ]
           }
         }
@@ -1251,7 +1256,8 @@
               "ekmek"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "yumurta-allergen"
             ]
           }
         },
@@ -1270,7 +1276,8 @@
               "ekmek"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "yumurta-allergen"
             ]
           }
         },
@@ -1331,7 +1338,9 @@
               "ekmek"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "sut",
+              "yumurta-allergen"
             ]
           }
         },
@@ -1350,7 +1359,8 @@
               "ekmek"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "susam"
             ]
           }
         },
@@ -1369,7 +1379,8 @@
               "ekmek"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "susam"
             ]
           }
         },
