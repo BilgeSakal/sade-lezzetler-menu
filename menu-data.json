@@ -1467,7 +1467,8 @@
             ],
             "allergens": [
               "gluten",
-              "sut"
+              "sut",
+              "yer-fistigi"
             ]
           }
         },
@@ -1557,7 +1558,7 @@
             ],
             "allergens": [
               "gluten",
-              "sut"
+              "sut",
             ]
           }
         },
@@ -1576,7 +1577,9 @@
               "ekmek"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "sut",
+              "yumurta-allergen"
             ]
           }
         }
@@ -1600,7 +1603,9 @@
               "makarna"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "yumurta-allergen",
+              "sut"
             ]
           }
         },
@@ -1621,7 +1626,8 @@
             ],
             "allergens": [
               "gluten",
-              "sut"
+              "sut",
+              "yumurta-allergen"
             ]
           }
         },
@@ -1641,7 +1647,8 @@
             ],
             "allergens": [
               "gluten",
-              "sut"
+              "sut",
+              "yumurta-allergen"
             ]
           }
         },
@@ -1661,7 +1668,8 @@
             ],
             "allergens": [
               "gluten",
-              "sut"
+              "sut",
+              "yumurta-allergen"
             ]
           }
         },
@@ -1680,7 +1688,9 @@
               "noodle"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "yumurta-allergen",
+              "susam"
             ]
           }
         },
@@ -1697,7 +1707,9 @@
               "noodle"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "yumurta-allergen",
+              "susam"
             ]
           }
         }
@@ -2473,7 +2485,10 @@
           "categories": {
             "protein": [],
             "carb": [],
-            "allergens": []
+            "allergens": [
+              "sut",
+              "bal"
+            ]
           }
         },
         {
@@ -2486,7 +2501,10 @@
           "categories": {
             "protein": [],
             "carb": [],
-            "allergens": []
+            "allergens": [
+              "sut",
+              "bal"
+            ]
           }
         },
         {
@@ -2512,7 +2530,11 @@
           "categories": {
             "protein": [],
             "carb": [],
-            "allergens": []
+            "allergens": [
+              "sut",
+              "bal",
+              "yer-fistigi"
+            ]
           }
         }
       ]
