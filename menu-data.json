@@ -566,7 +566,8 @@
             "allergens": [
               "gluten",
               "sut",
-              "yumurta-allergen"
+              "yumurta-allergen",
+              "yer-fistigi"
             ]
           }
         },
@@ -647,7 +648,8 @@
               "ekmek"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "susam"
             ]
           }
         }
@@ -706,7 +708,8 @@
             ],
             "carb": [],
             "allergens": [
-              "susam"
+              "susam",
+              "gluten"
             ]
           }
         },
@@ -724,7 +727,8 @@
             "carb": [],
             "allergens": [
               "gluten",
-              "bal"
+              "bal",
+              "yumurta-allergen"
             ]
           }
         },
@@ -763,7 +767,9 @@
             ],
             "carb": [],
             "allergens": [
-              "gluten"
+              "gluten",
+              "sut",
+              "yumurta-allergen"
             ]
           }
         },
@@ -780,7 +786,9 @@
             ],
             "carb": [],
             "allergens": [
-              "gluten"
+              "gluten",
+              "yumurta-allergen",
+              "sut"
             ]
           }
         },
@@ -797,7 +805,8 @@
             ],
             "carb": [],
             "allergens": [
-              "gluten"
+              "gluten",
+              "yumurta-allergen"
             ]
           }
         },
@@ -814,7 +823,8 @@
             ],
             "carb": [],
             "allergens": [
-              "gluten"
+              "gluten",
+              "yumurta-allergen"
             ]
           }
         },
@@ -832,6 +842,8 @@
             "carb": [],
             "allergens": [
               "gluten",
+              "yumurta-allergen",
+              "sut",
               "bal"
             ]
           }
@@ -861,7 +873,8 @@
             "allergens": [
               "gluten",
               "sut",
-              "yumurta-allergen"
+              "yumurta-allergen",
+              "susam"
             ]
           }
         },
@@ -884,6 +897,7 @@
               "gluten",
               "sut",
               "yumurta-allergen",
+              "susam",
               "bal"
             ]
           }
@@ -906,7 +920,8 @@
             "allergens": [
               "gluten",
               "sut",
-              "yumurta-allergen"
+              "yumurta-allergen",
+              "susam"
             ]
           }
         }
