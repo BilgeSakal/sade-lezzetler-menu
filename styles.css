@@ -589,6 +589,23 @@ body {
   margin-top: 20px;
 }
 
+/* Allergen Info in Modal */
+.modal-allergens {
+  text-align: center;
+  font-size: 1rem;
+  max-width: 800px;
+  padding: 6px 16px 16px;
+  margin: 0;
+}
+
+.modal-allergens--has-allergens {
+  color: #ffcc80;
+}
+
+.modal-allergens--safe {
+  color: #a5d6a7;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .modal-content {
