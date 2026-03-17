@@ -22,6 +22,7 @@
             ],
             "allergens": [
               "sut",
+              "yumurta-allergen",
               "gluten"
             ]
           }
@@ -39,6 +40,7 @@
             ],
             "carb": [],
             "allergens": [
+              "gluten",
               "susam"
             ]
           }
@@ -59,7 +61,8 @@
             ],
             "allergens": [
               "gluten",
-              "sut"
+              "sut",
+              "yumurta-allergen"
             ]
           }
         },
@@ -115,7 +118,8 @@
             ],
             "allergens": [
               "gluten",
-              "sut"
+              "sut",
+              "yumurta-allergen"
             ]
           }
         },
@@ -151,7 +155,11 @@
             "carb": [
               "pilav"
             ],
-            "allergens": []
+            "allergens": [
+              "gluten",
+              "yumurta-allergen",
+              "susam"
+            ]
           }
         },
         {
@@ -169,7 +177,9 @@
               "makarna"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "sut",
+              "yumurta-allergen"
             ]
           }
         },
@@ -187,7 +197,9 @@
             "carb": [
               "pilav"
             ],
-            "allergens": []
+            "allergens": [
+              "susam"
+            ]
           }
         },
         {
@@ -227,7 +239,8 @@
             ],
             "allergens": [
               "sut",
-              "gluten"
+              "gluten",
+              "yumurta-allergen"
             ]
           }
         },
@@ -260,7 +273,10 @@
             "carb": [
               "pilav"
             ],
-            "allergens": []
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
           }
         },
         {
@@ -277,7 +293,9 @@
             "carb": [
               "pilav"
             ],
-            "allergens": []
+            "allergens": [
+              "sut"
+            ]
           }
         },
         {
@@ -296,6 +314,8 @@
             ],
             "allergens": [
               "gluten"
+              "yumurta-allergen",
+              "sut"
             ]
           }
         },
@@ -314,7 +334,10 @@
               "makarna"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "yumurta-allergen",
+              "sut",
+              "yer-fistigi"
             ]
           }
         },
@@ -332,7 +355,10 @@
             "carb": [
               "pilav"
             ],
-            "allergens": []
+            "allergens": [
+              "gluten",
+              "yumurta-allergen"
+            ]
           }
         },
         {
@@ -366,7 +392,9 @@
               "balik"
             ],
             "carb": [],
-            "allergens": []
+            "allergens": [
+              "susam"
+            ]
           }
         },
         {
@@ -402,7 +430,9 @@
             "carb": [
               "pilav"
             ],
-            "allergens": []
+            "allergens": [
+              "susam"
+            ]
           }
         },
         {
@@ -419,7 +449,9 @@
             "carb": [
               "pilav"
             ],
-            "allergens": []
+            "allergens": [
+              "sut"
+            ]
           }
         },
         {
@@ -437,7 +469,10 @@
               "kuskus"
             ],
             "allergens": [
-              "gluten"
+              "gluten",
+              "sut",
+              "yumurta-allergen",
+              "yer-fistigi"
             ]
           }
         }
