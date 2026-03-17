@@ -152,20 +152,17 @@ const FILTER_GROUPS = {
         { id: 'balik', name: 'Balık', icon: '🐟' },
         { id: 'yumurta', name: 'Yumurta', icon: '🥚' },
         { id: 'tofu', name: 'Tofu', icon: '🟨' },
-        { id: 'koyu-peynir', name: 'Kaşar / Cheddar', icon: '🧀' },
-        { id: 'beyaz-peynir', name: 'Beyaz Peynir', icon: '🧀' },
-        { id: 'hellim', name: 'Hellim', icon: '🧀' },
-        { id: 'baklagil', name: 'Baklagil', icon: '🫘' }
+        { id: 'peynir', name: 'Peynir', icon: '🧀' }
     ],
     carb: [
-        { id: 'ekmek', name: 'Ekmek', icon: '🍞' },
-        { id: 'pilav', name: 'Pilav', icon: '🍚' },
-        { id: 'makarna', name: 'Makarna', icon: '🍝' },
-        { id: 'kinoa', name: 'Kinoa', icon: '🌾' },
-        { id: 'bulgur', name: 'Bulgur', icon: '🌾' },
+        { id: 'pirinc-cesitleri', name: 'Pirinç Çeşitleri', icon: '🍚' },
+        { id: 'makarna-noodle', name: 'Makarna/Noodle', icon: '🍝' },
         { id: 'kuskus', name: 'Kuskus', icon: '🌾' },
-        { id: 'wrap', name: 'Wrap / Dürüm', icon: '🌯' },
-        { id: 'noodle', name: 'Noodle', icon: '🍜' }
+        { id: 'karabuday', name: 'Karabuğday', icon: '🌾' },
+        { id: 'kinoa', name: 'Kinoa', icon: '🌾' },
+        { id: 'baklagil', name: 'Baklagil', icon: '🫘' },
+        { id: 'ekmek-cesitleri', name: 'Ekmek Çeşitleri', icon: '🍞' },
+        { id: 'lavas', name: 'Lavaş', icon: '🌯' }
     ],
     allergens: [
         { id: 'gluten', name: 'Gluten', icon: '🌾' },
