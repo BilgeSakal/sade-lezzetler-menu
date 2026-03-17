@@ -125,9 +125,6 @@ function updateStaticText() {
     const footerMain = document.querySelector('.footer p:first-child');
     if (footerMain) footerMain.textContent = getTranslation('footer.text');
 
-    const footerCopy = document.querySelector('.footer .small-text');
-    if (footerCopy) footerCopy.textContent = getTranslation('footer.copy');
-
     // Scroll-to-top aria-label
     const scrollBtn = document.getElementById('scrollToTop');
     if (scrollBtn) scrollBtn.setAttribute('aria-label', getTranslation('scrollToTop'));
