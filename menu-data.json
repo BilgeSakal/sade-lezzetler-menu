@@ -1782,7 +1782,9 @@
             "carb": [
               "pilav"
             ],
-            "allergens": []
+            "allergens": [
+              "susam"
+            ]
           }
         },
         {
@@ -1799,7 +1801,9 @@
             "carb": [
               "pilav"
             ],
-            "allergens": []
+            "allergens": [
+              "susam"
+            ]
           }
         },
         {
@@ -1814,7 +1818,9 @@
               "tofu"
             ],
             "carb": [],
-            "allergens": []
+            "allergens": [
+              "bal"
+            ]
           }
         },
         {
@@ -1868,7 +1874,9 @@
             "carb": [
               "ekmek"
             ],
-            "allergens": []
+            "allergens": [
+              "yumurta-allergen"
+            ]
           }
         },
         {
@@ -1885,7 +1893,9 @@
             "carb": [
               "ekmek"
             ],
-            "allergens": []
+            "allergens": [
+              "susam"
+            ]
           }
         },
         {
@@ -1902,7 +1912,9 @@
             "carb": [
               "ekmek"
             ],
-            "allergens": []
+            "allergens": [
+              "susam"
+            ]
           }
         },
         {
@@ -1919,7 +1931,10 @@
             "carb": [
               "ekmek"
             ],
-            "allergens": []
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
           }
         },
         {
@@ -2032,7 +2047,10 @@
             "carb": [
               "ekmek"
             ],
-            "allergens": []
+            "allergens": [
+              "sut",
+              "yumurta-allergen"
+            ]
           }
         },
         {
@@ -2114,7 +2132,8 @@
             ],
             "allergens": [
               "sut",
-              "yumurta-allergen"
+              "yumurta-allergen",
+              "yer-fistigi"
             ]
           }
         },
@@ -2208,7 +2227,8 @@
               "ekmek"
             ],
             "allergens": [
-              "sut"
+              "sut",
+              "yer-fistigi"
             ]
           }
         },
@@ -2287,6 +2307,7 @@
               "wrap"
             ],
             "allergens": [
+              "sut",
               "yumurta-allergen"
             ]
           }
@@ -2366,9 +2387,7 @@
               "pilav",
               "wrap"
             ],
-            "allergens": [
-              "yumurta-allergen"
-            ]
+            "allergens": []
           }
         },
         {
@@ -2388,8 +2407,7 @@
               "wrap"
             ],
             "allergens": [
-              "sut",
-              "yumurta-allergen"
+              "sut"
             ]
           }
         },
@@ -2410,7 +2428,8 @@
             ],
             "allergens": [
               "sut",
-              "yumurta-allergen"
+              "yumurta-allergen",
+              "susam"
             ]
           }
         },
@@ -2431,7 +2450,7 @@
             ],
             "allergens": [
               "sut",
-              "yumurta-allergen"
+              "susam"
             ]
           }
         },
@@ -2449,7 +2468,9 @@
             "carb": [
               "ekmek"
             ],
-            "allergens": []
+            "allergens": [
+              "susam"
+            ]
           }
         },
         {
@@ -2462,10 +2483,7 @@
           "categories": {
             "protein": [],
             "carb": [],
-            "allergens": [
-              "sut",
-              "yumurta-allergen"
-            ]
+            "allergens": []
           }
         }
       ]
