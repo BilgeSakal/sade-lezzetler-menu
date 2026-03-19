@@ -11,7 +11,7 @@
       "carb": "🍞 Karbonhidrat",
       "allergen": "⚠️ Alerjen Maddeler",
       "priceRange": "💰 Fiyat Aralığı",
-      "allergenNote": "Seçilen alerjenler içeren ürünler listeden çıkarılır."
+      "allergenNote": "ℹ️ Seçtiklerinizi içerenler listelenmeyecektir."
     },
     "buttons": {
       "clear": "🔄 Temizle",
@@ -239,7 +239,7 @@
       "carb": "🍞 Carbohydrate",
       "allergen": "⚠️ Allergen Substances",
       "priceRange": "💰 Price Range",
-      "allergenNote": "Items containing selected allergens will be removed from the list."
+      "allergenNote": "ℹ️ Items containing those you selected will not be listed."
     },
     "buttons": {
       "clear": "🔄 Clear",

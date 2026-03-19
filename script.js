@@ -879,6 +879,12 @@ function createFilterOptions() {
             });
             container.appendChild(label);
         });
+        if (group === 'allergens') {
+            const note = document.createElement('p');
+            note.className = 'allergen-note';
+            note.textContent = getTranslation('filters.allergenNote');
+            container.appendChild(note);
+        }
     });
 }
 
