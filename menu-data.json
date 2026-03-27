@@ -2456,6 +2456,88 @@
       ]
     },
     {
+      "id": "tatli-bowl",
+      "name": "Tatlı Bowl",
+      "icon": "🌮",
+      "items": [
+        {
+          "id": 130,
+          "name": "Yulaf Bowl",
+          "description": "Yulaf lapası, muz, mevsim meyveleri, badem, yer fıstığı ezmesi",
+          "priceOnline": "500",
+          "priceRestaurant": "400",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "bal",
+              "yer-fistigi"
+            ]
+          }
+        },
+        {
+          "id": 131,
+          "name": "Yoğurt Bowl",
+          "description": "Chia, granola, mevsim meyveleri, yer fıstığı ezmesi",
+          "priceOnline": "500",
+          "priceRestaurant": "400",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "bal",
+              "yer-fistigi",
+              "susam"
+            ]
+          }
+        },
+        {
+          "id": 132,
+          "name": "Smoothie Bowl",
+          "description": "Çilek, muz, granola, mevsim meyveleri, hindistan cevisi, bal",
+          "priceOnline": "500",
+          "priceRestaurant": "400",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "bal",
+              "yer-fistigi",
+              "susam"
+            ]
+          }
+        },
+        {
+          "id": 131,
+          "name": "Çikolatalı Smoothie Bowl",
+          "description": "Muz, kakao, granola, çikolata, hindistan cevisi",
+          "priceOnline": "500",
+          "priceRestaurant": "400",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "bal",
+              "yer-fistigi",
+              "susam"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "smoothie",
       "name": "Smoothie",
       "icon": "🥤",
