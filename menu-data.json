@@ -2517,7 +2517,7 @@
           }
         },
         {
-          "id": 131,
+          "id": 133,
           "name": "Çikolatalı Smoothie Bowl",
           "description": "Muz, kakao, granola, çikolata, hindistan cevisi",
           "priceOnline": "500",
@@ -2532,6 +2532,149 @@
               "bal",
               "yer-fistigi",
               "susam"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kurabiye",
+      "name": "Kurabiye",
+      "icon": "🌮",
+      "items": [
+        {
+          "id": 134,
+          "name": "Three Chocolate Chips Cookie",
+          "description": "",
+          "priceOnline": "300",
+          "priceRestaurant": "200",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta"
+            ]
+          }
+        },
+        {
+          "id": 135,
+          "name": "Badem Kremalı Kurabiye",
+          "description": "",
+          "priceOnline": "300",
+          "priceRestaurant": "200",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta"
+            ]
+          }
+        },
+        {
+          "id": 136,
+          "name": "Antep Fıstığı Dolgulu Kurabiye",
+          "description": "",
+          "priceOnline": "300",
+          "priceRestaurant": "200",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta"
+            ]
+          }
+        },
+        {
+          "id": 137,
+          "name": "Beyaz Çikolata Dolgulu Kurabiye",
+          "description": "",
+          "priceOnline": "300",
+          "priceRestaurant": "200",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta"
+            ]
+          }
+        },
+        {
+          "id": 138,
+          "name": "Tadelle Kurabiye (kg)",
+          "description": "",
+          "priceOnline": "1200",
+          "priceRestaurant": "1000",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta"
+            ]
+          }
+        },
+        {
+          "id": 139,
+          "name": "Tatlı Kurabiye (kg)",
+          "description": "",
+          "priceOnline": "1000",
+          "priceRestaurant": "900",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta",
+              "yer-fistigi"
+            ]
+          }
+        },
+        {
+          "id": 140,
+          "name": "Tuzlu Kurabiye",
+          "description": "",
+          "priceOnline": "1000",
+          "priceRestaurant": "900",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "gluten",
+              "sut",
+              "yumurta",
+              "susam"
+            ]
+          }
+        },
+        {
+          "id": 141,
+          "name": "Glutensiz Kurabiye",
+          "description": "",
+          "priceOnline": "60",
+          "priceRestaurant": "50",
+          "featured": false,
+          "categories": {
+            "protein": [],
+            "carb": [],
+            "allergens": [
+              "yumurta"
             ]
           }
         }
