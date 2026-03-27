@@ -558,7 +558,7 @@ function renderBadges(badges) {
     };
 
     return badges.map(badge =>
-        `<span class="badge badge-${badge}">${badgeIcons[badge] || ''} ${badge}</span>`
+        `<span class="badge badge-${badge}">${badgeIcons[badge] || ''} ${getTranslation('badges.' + badge, badge)}</span>`
     ).join('');
 }
 
@@ -638,12 +638,12 @@ function initCategoryScroll() {
    IMAGE MODAL FUNCTIONS
    ============================================ */
 
-// Convert allergen IDs to Turkish display names
+// Convert allergen IDs to translated display names
 function getAllergenNames(allergenIds) {
     if (!allergenIds || allergenIds.length === 0) return [];
     return allergenIds.map(id => {
         const match = FILTER_GROUPS.allergens.find(a => a.id === id);
-        return match ? match.name : id;
+        return match ? getTranslation(`filterOptions.allergens.${id}`, match.name) : id;
     });
 }
 
@@ -668,10 +668,10 @@ function openImageModal(imageSrc, caption, item) {
             : [];
         const names = getAllergenNames(allergenIds);
         if (names.length > 0) {
-            modalAllergens.textContent = '⚠️ Alerjenler: ' + names.join(', ');
+            modalAllergens.textContent = getTranslation('modal.allergens', '⚠️ Allergens') + ': ' + names.join(', ');
             modalAllergens.className = 'modal-allergens modal-allergens--has-allergens';
         } else {
-            modalAllergens.textContent = '✅ Alerjen içermez';
+            modalAllergens.textContent = getTranslation('modal.noAllergens', '✅ No allergens');
             modalAllergens.className = 'modal-allergens modal-allergens--safe';
         }
     }
