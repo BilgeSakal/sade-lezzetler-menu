@@ -38,7 +38,9 @@
             "protein": [
               "baklagil"
             ],
-            "carb": [],
+            "carb": [
+              "karabuday"
+            ],
             "allergens": [
               "gluten",
               "susam"
@@ -75,7 +77,7 @@
           "featured": false,
           "categories": {
             "protein": [
-              "hellim"
+              "peynir"
             ],
             "carb": [
               "kinoa"
@@ -132,11 +134,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "tavuk",
-              "baklagil"
+              "tavuk"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": []
           }
@@ -153,7 +154,7 @@
               "tavuk"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -195,7 +196,7 @@
               "tavuk"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "susam"
@@ -210,11 +211,9 @@
           "priceRestaurant": "400",
           "featured": false,
           "categories": {
-            "protein": [
-              "koyu-peynir"
-            ],
+            "protein": [],
             "carb": [
-              "bulgur"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -231,8 +230,7 @@
           "featured": true,
           "categories": {
             "protein": [
-              "tavuk",
-              "koyu-peynir"
+              "tavuk"
             ],
             "carb": [
               "kuskus"
@@ -252,10 +250,10 @@
           "priceRestaurant": "400",
           "featured": false,
           "categories": {
-            "protein": [
+            "protein": [],
+            "carb": [
               "baklagil"
             ],
-            "carb": [],
             "allergens": []
           }
         },
@@ -271,7 +269,7 @@
               "et"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -291,7 +289,7 @@
               "tavuk"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -353,7 +351,7 @@
               "et"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -369,11 +367,10 @@
           "priceRestaurant": "400",
           "featured": false,
           "categories": {
-            "protein": [
-              "baklagil"
-            ],
+            "protein": [],
             "carb": [
-              "kinoa"
+              "kinoa",
+              "baklagil"
             ],
             "allergens": [
               "susam"
@@ -428,7 +425,7 @@
               "balik"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "susam"
@@ -447,7 +444,7 @@
               "et"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -495,7 +492,7 @@
               "yumurta"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -514,10 +511,10 @@
           "categories": {
             "protein": [
               "yumurta",
-              "hellim"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -539,7 +536,7 @@
               "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -557,11 +554,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "yumurta",
-              "beyaz-peynir"
+              "yumurta"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -580,10 +576,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "hellim"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -601,11 +597,11 @@
           "categories": {
             "protein": [
               "yumurta",
-              "hellim",
+              "peynir",
               "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -623,11 +619,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "baklagil",
               "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -645,7 +640,7 @@
           "categories": {
             "protein": [],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -669,8 +664,7 @@
           "featured": true,
           "categories": {
             "protein": [
-              "tavuk",
-              "baklagil"
+              "tavuk"
             ],
             "carb": [],
             "allergens": [
@@ -687,7 +681,7 @@
           "featured": false,
           "categories": {
             "protein": [
-              "hellim"
+              "peynir"
             ],
             "carb": [],
             "allergens": [
@@ -703,10 +697,10 @@
           "priceRestaurant": "370",
           "featured": false,
           "categories": {
-            "protein": [
-              "baklagil"
+            "protein": [],
+            "carb": [
+              "karabuday"
             ],
-            "carb": [],
             "allergens": [
               "susam",
               "gluten"
@@ -864,11 +858,10 @@
           "featured": true,
           "categories": {
             "protein": [
-              "et",
-              "koyu-peynir"
+              "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -887,11 +880,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "tavuk",
-              "koyu-peynir"
+              "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -911,11 +903,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "et",
-              "koyu-peynir"
+              "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -944,7 +935,7 @@
               "tavuk"
             ],
             "carb": [
-              "wrap"
+              "lavas"
             ],
             "allergens": [
               "gluten",
@@ -964,7 +955,7 @@
               "tavuk"
             ],
             "carb": [
-              "wrap"
+              "lavas"
             ],
             "allergens": [
               "gluten",
@@ -981,11 +972,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "et",
-              "koyu-peynir"
+              "et"
             ],
             "carb": [
-              "wrap"
+              "lavas"
             ],
             "allergens": [
               "gluten",
@@ -1003,12 +993,11 @@
           "featured": true,
           "categories": {
             "protein": [
-              "tavuk",
-              "baklagil"
+              "tavuk"
             ],
             "carb": [
-              "pilav",
-              "wrap"
+              "pirinc-cesitleri",
+              "lavas"
             ],
             "allergens": [
               "gluten",
@@ -1029,8 +1018,8 @@
               "et"
             ],
             "carb": [
-              "pilav",
-              "wrap"
+              "pirinc-cesitleri",
+              "lavas"
             ],
             "allergens": [
               "gluten",
@@ -1050,8 +1039,8 @@
               "et"
             ],
             "carb": [
-              "pilav",
-              "wrap"
+              "pirinc-cesitleri",
+              "lavas"
             ],
             "allergens": [
               "gluten",
@@ -1070,8 +1059,8 @@
           "categories": {
             "protein": [],
             "carb": [
-              "pilav",
-              "wrap"
+              "pirinc-cesitleri",
+              "lavas"
             ],
             "allergens": [
               "gluten"
@@ -1087,12 +1076,11 @@
           "featured": false,
           "categories": {
             "protein": [
-              "et",
-              "koyu-peynir"
+              "et"
             ],
             "carb": [
-              "pilav",
-              "wrap"
+              "pirinc-cesitleri",
+              "lavas"
             ],
             "allergens": [
               "gluten",
@@ -1118,7 +1106,7 @@
           "categories": {
             "protein": [],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1138,7 +1126,7 @@
           "categories": {
             "protein": [],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1157,7 +1145,7 @@
           "categories": {
             "protein": [],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1178,7 +1166,7 @@
           "categories": {
             "protein": [],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1196,11 +1184,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "tavuk",
-              "et"
+              "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1219,12 +1206,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "yumurta",
-              "et",
-              "koyu-peynir"
+              "yumurta"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1253,7 +1238,7 @@
               "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1273,7 +1258,7 @@
               "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1290,11 +1275,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "tavuk",
-              "koyu-peynir"
+              "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1311,11 +1295,11 @@
           "featured": false,
           "categories": {
             "protein": [
-              "hellim",
-              "et"
+              "et",
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1335,7 +1319,7 @@
               "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1356,7 +1340,7 @@
               "tofu"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1376,7 +1360,7 @@
               "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1393,11 +1377,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "et",
-              "koyu-peynir"
+              "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1417,7 +1400,7 @@
               "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten"
@@ -1440,10 +1423,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "koyu-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1460,10 +1443,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "koyu-peynir"
+              "penir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1481,11 +1464,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "koyu-peynir",
-              "beyaz-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1503,10 +1485,10 @@
           "categories": {
             "protein": [
               "et",
-              "koyu-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1524,10 +1506,10 @@
           "categories": {
             "protein": [
               "et",
-              "koyu-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1551,10 +1533,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "beyaz-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1574,7 +1556,7 @@
               "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "gluten",
@@ -1600,7 +1582,7 @@
           "categories": {
             "protein": [],
             "carb": [
-              "makarna"
+              "makarna-noodle"
             ],
             "allergens": [
               "gluten",
@@ -1618,11 +1600,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "tavuk",
-              "beyaz-peynir"
+              "tavuk"
             ],
             "carb": [
-              "makarna"
+              "makarna-noodle"
             ],
             "allergens": [
               "gluten",
@@ -1640,10 +1621,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "koyu-peynir"
+              "peynir"
             ],
             "carb": [
-              "makarna"
+              "makarna-noodle"
             ],
             "allergens": [
               "gluten",
@@ -1661,10 +1642,11 @@
           "featured": false,
           "categories": {
             "protein": [
-              "tavuk"
+              "tavuk",
+              "peynir"
             ],
             "carb": [
-              "makarna"
+              "makarna-noodle"
             ],
             "allergens": [
               "gluten",
@@ -1685,7 +1667,7 @@
               "tavuk"
             ],
             "carb": [
-              "noodle"
+              "makarna-noodle"
             ],
             "allergens": [
               "gluten",
@@ -1704,7 +1686,7 @@
           "categories": {
             "protein": [],
             "carb": [
-              "noodle"
+              "makarna-noodle"
             ],
             "allergens": [
               "gluten",
@@ -1729,11 +1711,10 @@
           "featured": true,
           "categories": {
             "protein": [
-              "tavuk",
-              "baklagil"
+              "tavuk"
             ],
             "carb": [
-              "wrap"
+              "baklagil"
             ],
             "allergens": [
               "gluten",
@@ -1750,11 +1731,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "et",
-              "baklagil"
+              "et"
             ],
             "carb": [
-              "wrap"
+              "baklagil"
             ],
             "allergens": [
               "gluten"
@@ -1780,7 +1760,7 @@
               "tofu"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "susam"
@@ -1799,7 +1779,7 @@
               "tofu"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "susam"
@@ -1835,7 +1815,7 @@
               "tofu"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": []
           }
@@ -1849,11 +1829,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "tofu",
-              "baklagil"
+              "tofu"
             ],
             "carb": [
-              "pilav"
+              "pirinc-cesitleri"
             ],
             "allergens": [
               "susam"
@@ -1872,7 +1851,7 @@
               "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "yumurta-allergen"
@@ -1891,7 +1870,7 @@
               "tofu"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "susam"
@@ -1910,7 +1889,7 @@
               "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "susam"
@@ -1929,7 +1908,7 @@
               "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -1947,10 +1926,10 @@
           "categories": {
             "protein": [
               "et",
-              "hellim"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -1966,11 +1945,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "tavuk",
-              "koyu-peynir"
+              "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -1986,11 +1964,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "et",
-              "koyu-peynir"
+              "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -2009,7 +1986,7 @@
               "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": []
           }
@@ -2023,10 +2000,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "beyaz-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -2045,7 +2022,7 @@
               "tavuk"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -2065,7 +2042,7 @@
               "yumurta"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -2083,10 +2060,10 @@
           "categories": {
             "protein": [
               "yumurta",
-              "hellim"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -2107,7 +2084,7 @@
               "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -2124,11 +2101,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "yumurta",
-              "beyaz-peynir"
+              "yumurta"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -2146,11 +2122,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "baklagil",
               "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "susam"
@@ -2167,7 +2142,7 @@
           "categories": {
             "protein": [],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "susam"
@@ -2183,10 +2158,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "hellim"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -2202,10 +2177,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "koyu-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -2221,10 +2196,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "koyu-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -2241,11 +2216,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "koyu-peynir",
-              "beyaz-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -2262,10 +2236,10 @@
           "categories": {
             "protein": [
               "et",
-              "koyu-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -2282,10 +2256,10 @@
           "categories": {
             "protein": [
               "et",
-              "koyu-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut"
@@ -2304,7 +2278,7 @@
               "tavuk"
             ],
             "carb": [
-              "wrap"
+              "lavas"
             ],
             "allergens": [
               "sut",
@@ -2324,7 +2298,7 @@
               "tavuk"
             ],
             "carb": [
-              "wrap"
+              "lavas"
             ],
             "allergens": [
               "yumurta-allergen"
@@ -2340,12 +2314,11 @@
           "featured": false,
           "categories": {
             "protein": [
-              "tavuk",
-              "baklagil"
+              "tavuk"
             ],
             "carb": [
-              "pilav",
-              "wrap"
+              "pirinc-cesitleri",
+              "lavas"
             ],
             "allergens": [
               "sut",
@@ -2361,12 +2334,10 @@
           "priceRestaurant": "570",
           "featured": false,
           "categories": {
-            "protein": [
-              "baklagil"
-            ],
+            "protein": [],
             "carb": [
-              "pilav",
-              "wrap"
+              "pirinc-cesitleri",
+              "lavas"
             ],
             "allergens": []
           }
@@ -2380,12 +2351,11 @@
           "featured": false,
           "categories": {
             "protein": [
-              "et",
-              "baklagil"
+              "et"
             ],
             "carb": [
-              "pilav",
-              "wrap"
+              "pirinc-cesitleri",
+              "lavas"
             ],
             "allergens": []
           }
@@ -2399,12 +2369,11 @@
           "featured": false,
           "categories": {
             "protein": [
-              "et",
-              "koyu-peynir"
+              "et"
             ],
             "carb": [
-              "pilav",
-              "wrap"
+              "pirinc-cesitleri",
+              "lavas"
             ],
             "allergens": [
               "sut"
@@ -2421,10 +2390,10 @@
           "categories": {
             "protein": [
               "yumurta",
-              "beyaz-peynir"
+              "peynir"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -2442,11 +2411,10 @@
           "featured": false,
           "categories": {
             "protein": [
-              "et",
-              "koyu-peynir"
+              "et"
             ],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri"
             ],
             "allergens": [
               "sut",
@@ -2462,11 +2430,10 @@
           "priceRestaurant": "550",
           "featured": false,
           "categories": {
-            "protein": [
-              "baklagil"
-            ],
+            "protein": [],
             "carb": [
-              "ekmek"
+              "ekmek-cesitleri",
+              "baklagil"
             ],
             "allergens": [
               "susam"
@@ -2497,7 +2464,7 @@
           "id": 120,
           "name": "Böğürtlenli Smoothie",
           "description": "",
-          "priceOnline": "300",
+          "priceOnline": "200",
           "priceRestaurant": "200",
           "featured": false,
           "categories": {
@@ -2513,7 +2480,7 @@
           "id": 121,
           "name": "Avokadolu Smoothie",
           "description": "",
-          "priceOnline": "300",
+          "priceOnline": "200",
           "priceRestaurant": "200",
           "featured": false,
           "categories": {
@@ -2529,7 +2496,7 @@
           "id": 122,
           "name": "Yeşil Detoks Smoothie",
           "description": "",
-          "priceOnline": "300",
+          "priceOnline": "200",
           "priceRestaurant": "200",
           "featured": false,
           "categories": {
@@ -2542,7 +2509,7 @@
           "id": 123,
           "name": "Kakaolu Smoothie",
           "description": "",
-          "priceOnline": "300",
+          "priceOnline": "200",
           "priceRestaurant": "200",
           "featured": false,
           "categories": {
@@ -2566,7 +2533,7 @@
           "id": 124,
           "name": "Limonata Çeşitleri",
           "description": "Sade, çilekli, muzlu, böğürtlenli, sütlü",
-          "priceOnline": "175",
+          "priceOnline": "75",
           "priceRestaurant": "75",
           "featured": false,
           "categories": {
@@ -2581,7 +2548,7 @@
           "id": 125,
           "name": "Ayran Çeşitleri",
           "description": "Sade, yeşil, sarı, pembe",
-          "priceOnline": "175",
+          "priceOnline": "75",
           "priceRestaurant": "75",
           "featured": false,
           "categories": {
@@ -2596,7 +2563,7 @@
           "id": 126,
           "name": "Yerli Gazoz Çeşitleri",
           "description": "",
-          "priceOnline": "170",
+          "priceOnline": "70",
           "priceRestaurant": "70",
           "featured": false,
           "categories": {
@@ -2609,7 +2576,7 @@
           "id": 127,
           "name": "Çay",
           "description": "",
-          "priceOnline": "160",
+          "priceOnline": "60",
           "priceRestaurant": "60",
           "featured": false,
           "categories": {
@@ -2622,7 +2589,7 @@
           "id": 128,
           "name": "Su",
           "description": "",
-          "priceOnline": "120",
+          "priceOnline": "20",
           "priceRestaurant": "20",
           "featured": false,
           "categories": {
