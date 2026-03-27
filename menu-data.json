@@ -2458,7 +2458,7 @@
     {
       "id": "tatli-bowl",
       "name": "Tatlı Bowl",
-      "icon": "🌮",
+      "icon": "🍮",
       "items": [
         {
           "id": 130,
@@ -2540,7 +2540,7 @@
     {
       "id": "kurabiye",
       "name": "Kurabiye",
-      "icon": "🌮",
+      "icon": "🍪",
       "items": [
         {
           "id": 134,
