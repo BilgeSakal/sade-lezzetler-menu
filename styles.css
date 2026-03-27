@@ -1077,6 +1077,93 @@ body {
     }
 }
 
+/* =============================================
+   SQUIRREL ANIMATION
+   ============================================= */
+
+.squirrel-container {
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(110%);
+    pointer-events: none;
+    will-change: transform;
+}
+
+.squirrel-container.squirrel-enter {
+    animation: squirrelSlideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.squirrel-container.squirrel-idle {
+    transform: translateY(0);
+    animation: squirrelBob 1.2s ease-in-out infinite;
+}
+
+.squirrel-container.squirrel-exit {
+    animation: squirrelSlideDown 0.5s ease-in forwards;
+}
+
+.squirrel-body {
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.squirrel-message {
+    background: #ffffff;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 0.3rem;
+    white-space: nowrap;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+}
+
+.squirrel-message::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--color-primary);
+    border-bottom: none;
+}
+
+@keyframes squirrelSlideUp {
+    from { transform: translateY(110%); }
+    to   { transform: translateY(0); }
+}
+
+@keyframes squirrelBob {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
+}
+
+@keyframes squirrelSlideDown {
+    from { transform: translateY(0); }
+    to   { transform: translateY(110%); }
+}
+
+@media (max-width: 480px) {
+    .squirrel-container {
+        right: 1rem;
+    }
+
+    .squirrel-body {
+        font-size: 2.75rem;
+    }
+}
+
 /* Responsive */
 @media (max-width: 767px) {
     .category-warning {
