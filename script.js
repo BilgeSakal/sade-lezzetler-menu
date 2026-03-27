@@ -751,16 +751,16 @@ function itemMatchesFilters(item) {
         }
     }
 
-    // Protein filter: OR logic — item must contain at least one selected protein
+    // Protein filter: AND logic — item must contain ALL selected proteins
     if (activeFilters.protein.length > 0) {
-        const hasProtein = activeFilters.protein.some(p => cats.protein.includes(p));
-        if (!hasProtein) return false;
+        const hasAllProteins = activeFilters.protein.every(p => cats.protein.includes(p));
+        if (!hasAllProteins) return false;
     }
 
-    // Carb filter: OR logic — item must contain at least one selected carb
+    // Carb filter: AND logic — item must contain ALL selected carbs
     if (activeFilters.carb.length > 0) {
-        const hasCarb = activeFilters.carb.some(c => cats.carb.includes(c));
-        if (!hasCarb) return false;
+        const hasAllCarbs = activeFilters.carb.every(c => cats.carb.includes(c));
+        if (!hasAllCarbs) return false;
     }
 
     // Allergen filter: NOT logic — exclude items containing any selected allergen
