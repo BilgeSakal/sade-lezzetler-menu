@@ -240,6 +240,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initCategoryScroll();
     initImageModal();
     initializeFilters();
+    initSquirrel();
 });
 
 // Load menu data from JSON file
@@ -973,4 +974,33 @@ function initializeFilters() {
     createFilterOptions();
     createPriceFilters();
     setupFilterEvents();
+}
+
+/* =============================================
+   SQUIRREL ANIMATION
+   ============================================= */
+
+function initSquirrel() {
+    const squirrel = document.getElementById('squirrelContainer');
+    if (!squirrel) return;
+
+    // Slide up
+    squirrel.classList.add('squirrel-enter');
+
+    // Switch to idle bobbing after entrance completes
+    setTimeout(() => {
+        squirrel.classList.remove('squirrel-enter');
+        squirrel.classList.add('squirrel-idle');
+    }, 500);
+
+    // Begin exit animation at 4.5 s
+    setTimeout(() => {
+        squirrel.classList.remove('squirrel-idle');
+        squirrel.classList.add('squirrel-exit');
+    }, 4500);
+
+    // Remove from DOM after full 5 s cycle
+    setTimeout(() => {
+        squirrel.remove();
+    }, 5000);
 }
